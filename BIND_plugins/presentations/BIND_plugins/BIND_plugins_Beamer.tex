@@ -1,0 +1,576 @@
+\documentclass[c,14pt]{beamer}
+
+% Packages pour le français
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+
+\usepackage{array}
+\usepackage{pslatex}
+
+% pour le style et les couleurs
+\input{BINDTheme}
+
+\newcommand{\gargantuan}{\fontsize{60}{65}\selectfont}
+
+
+% Contenu de la page de titre
+\title{Utilisation de BIND au LESCOT}
+\subtitle{Différents développements fondés sur BIND}
+\author{Arnaud Bonnard, Damien Sornette}
+\date{6 décembre 2010}
+
+\begin{document}
+
+	\frame{\titlepage}
+
+	\frame{
+		\frametitle{\ }
+		\begin{center}
+				\includegraphics[width=10cm]{./images/bind_text_logo.png}
+		\end{center}
+	}
+
+	\frame{
+		\frametitle{BIND}
+		\framesubtitle{Un framework logiciel}
+		\label{Framework}
+		\begin{itemize}
+				\item Boite à outils logicielle
+				\item Squelette applicatif de référence
+				\item Architecture cible
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=5.5cm]{./images/toolbox.jpg}
+		\end{center}
+	}
+	
+	\frame{
+	\frametitle{Les 3 types d'éléments}
+	\begin{itemize}
+		\item Notre élément unitaire est un trajet ou \og{trip}\fg{} composé de trois types de données :
+	\end{itemize}
+	%\framebox{
+	\begin{picture}(300,60)
+		\put(30,0){\includegraphics[width=1.5cm]{./images/data.png}}
+		\put(36,38){Data}
+		\put(135,0){\includegraphics[width=1.5cm]{./images/event.png}}
+		\put(138,38){Event}
+		\put(240,0){\includegraphics[width=1.5cm]{./images/situation.png}}
+		\put(239,38){Situation}
+	\end{picture}
+	%}
+	}
+	
+		\frame{
+		\frametitle{Caractéristiques du framework}
+		\begin{itemize}
+				\item<1-> Une structuration métier et autodescriptive des données
+				\item<2-> Un moteur d'accès aux données
+				\item<3-> Une architecture de modules graphiques synchronisables
+		\end{itemize}
+		\begin{center}
+			\begin{picture}(300,100)
+				\uncover<1->{\put(0,20){\includegraphics[width=2cm]{./images/database.png}}}
+				\uncover<1->{\put(15,40){Trip}}
+				\uncover<2->{\put(120,20){\includegraphics[width=2cm]{./images/gears.png}}}
+				\uncover<3->{\put(240,20){\includegraphics[width=2cm]{./images/window.png}}}
+			\end{picture}
+		\end{center}
+	}
+	
+
+	
+
+	\frame{
+		\frametitle{Structure des donnés}
+		\begin{picture}(320,200)
+			\put(75,-10){\includegraphics[width=7cm]{./images/database.png}}
+			\put(165,160){Trip}
+			\put(110,45){\includegraphics[width=1.1cm]{./images/subject.png}}
+			\put(110,75){\includegraphics[width=1.1cm]{./images/video.png}}
+			\put(110,105){\includegraphics[width=1.1cm]{./images/attribute.png}}
+			
+			\put(160,45){\includegraphics[width=1.1cm]{./images/MetaData.png}}
+			\put(160,75){\includegraphics[width=1.1cm]{./images/MetaEvent.png}}
+			\put(160,105){\includegraphics[width=1.1cm]{./images/MetaSituation.png}}
+			
+			\put(210,45){\includegraphics[width=1.1cm]{./images/data.png}}
+			\put(210,75){\includegraphics[width=1.1cm]{./images/event.png}}
+			\put(210,105){\includegraphics[width=1.1cm]{./images/situation.png}}
+		\end{picture}
+	}
+
+	\frame{
+		\frametitle{Moteur d'accès aux données}
+		\begin{picture}(320,200)
+			\put(90,0){\includegraphics[width=6cm]{./images/gears.png}}
+			\put(140,80){\includegraphics[width=1.8cm]{./images/database.png}}
+			\put(155,100){\small{Trip}}
+		\end{picture}
+	}
+
+	\frame{
+		\frametitle{Moteur d'accès aux données}
+		\begin{itemize}
+			\item BIND prend en charge l'accès aux données via son interface
+			\item On ne touche \textbf{jamais} aux données sans passer par le framework
+			\item L'implémentation de l'interface logicielle prend en charge les fonctions de bas niveau
+		\end{itemize}
+	}
+
+
+	\frame{
+		\frametitle{Modules graphiques}
+		\begin{itemize}
+			\item Objets de base pour la création d'applications graphiques
+			\begin{itemize}
+			  \item Pas de plugins inclus dans BIND
+			\end{itemize}
+			\item Mécanisme de synchronisation
+			\begin{itemize}
+				\item Chaque trip est doté d'un timer interne
+				\item Utilisation du design pattern observer / observable
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\begin{picture}(300,100)
+				\put(60,20){\includegraphics[width=2cm]{./images/window.png}}
+				\put(180,20){\includegraphics[width=2cm]{./images/chrono.png}}
+			\end{picture}
+		\end{center}
+	}
+
+	\frame{
+		\frametitle{Principes de fonctionnement}
+		\begin{itemize}
+			\item BIND structure la communication entre le trip et les modules graphiques
+		\end{itemize}
+	\begin{center}
+		\includegraphics[width=3.5cm]{./images/fonctionnement.png}
+	\end{center}
+	}
+	
+	\frame{
+		\frametitle{Synthèse}
+		\begin{picture}(320,200)
+			\put(0,45){\includegraphics[width=3cm]{./images/gears.png}}
+			\put(26.5,86.5){\includegraphics[width=0.8cm]{./images/database.png}}
+			\put(33,95){\tiny{Trip}}
+			\put(87,80){\gargantuan{+}}
+			\put(122,60){\includegraphics[width=2.5cm]{./images/window.png}}
+			\put(197,80){\gargantuan{=}}
+			\put(232,78){\includegraphics[width=4cm]{./images/bind_text_logo.png}}
+		\end{picture}
+	}
+
+	\frame{
+	\frametitle{BIND}
+	\label{Paradigme}
+	\framesubtitle{Paradigme et usages}
+	\begin{itemize}
+		\item Création de 2 types d'applications métier
+	\end{itemize}
+		\begin{columns}
+		\begin{column}[l]{6cm}
+			\put(0,0){\includegraphics[width=5.5cm]{./images/code.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\put(0,0){\includegraphics[width=5.5cm]{./images/window.png}}
+		\end{column}
+	\end{columns}
+	}
+
+
+	\frame{
+	\frametitle{\ }
+	\label{Changement}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(-20,0){\includegraphics[width=7.5cm]{./images/peinture.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Les modules graphiques}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+	
+			\frame{
+		\frametitle{Un module graphique = un plugin}
+		\begin{itemize}
+			\item BIND fournit
+			\begin{itemize}
+				\item Une fenêtre de fond
+				\item La connexion au trip
+				\item Bien d'autres choses !
+			\end{itemize}
+		\end{itemize}
+	\begin{center}
+		\includegraphics[width=2cm]{./images/pluginVide.png}
+	\end{center}
+		}
+		
+					\frame{
+		\frametitle{Un plugin = une fonctionnalité}
+		\begin{itemize}
+			\item On ajoute alors des fonctionnalités 
+			\begin{itemize}
+				\item Composants graphiques (boutons, listes, \ldots)
+				\item Algorithmes métiers
+			\end{itemize}
+		\end{itemize}
+	\begin{center}
+		\includegraphics[width=7cm]{./images/pluginSpeedVide.png}
+	\end{center}
+		}
+	
+						\frame{
+		\frametitle{Une fonctionnalité réutilisable}
+		\begin{itemize}
+			\item Affichages configurables
+			\item Utilisation d'un même plugin
+			\begin{itemize}
+				\item Sur différentes données compatibles
+				\item Sur des données issues de sources différentes
+			\end{itemize}
+		\end{itemize}
+	\begin{center}
+		\includegraphics[width=7cm]{./images/pluginMultiple.png}
+	\end{center}
+		}
+		
+								\frame{
+		\frametitle{Interfaces de configuration}
+		\begin{itemize}
+			\item Chaque plugin possède un configurateur
+				\begin{itemize}
+					\item Interface de génération des paramètres
+					\item Présente les données disponibles en fonction du contenu du trip
+				\end{itemize}
+			\item BIND offre les mécanismes de base des configurateurs
+		\end{itemize}
+		}
+		
+								\frame{
+		\frametitle{Exemple de configurateur}
+	\begin{center}
+		\includegraphics[width=8cm]{./images/configurateur.png}
+	\end{center}
+		}
+		
+	\frame{
+		\frametitle{Plusieurs configurations en même temps}
+		\begin{itemize}
+			\item On peut lancer plusieurs fois le plugin avec des configuration différentes!
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/plusieursPlugins.png}
+		\end{center}	
+	}
+		
+				
+	\frame{
+		\frametitle{Vers une interface de liaison}
+		\begin{itemize}
+			\item On a besoin
+			\begin{itemize}
+				\item de sélectionner un trip
+				\item de choisir un ensemble de plugins
+				\item de créer leur configuration respective
+			\end{itemize}
+		\end{itemize}
+	}
+		
+		
+	\frame{
+		\frametitle{Une interface de liaison}
+		\begin{itemize}
+			\item Pour faciliter
+			\begin{itemize}
+				\item le chargement et la sélection des trips
+				\item le lancement des plugins
+				\item la mise au point des configurations
+			\end{itemize}
+			\item Pour sauvegarder ces paramètres d'environnement
+		\end{itemize}
+		}
+		
+
+		\frame{
+		\frametitle{Un point d'entrée}
+		\begin{center}
+			\includegraphics[width=9cm]{./images/loaderAvant.png}
+		\end{center}	
+	}	
+	
+	\frame{
+		\frametitle{Lancement des plugins}
+		\begin{center}
+			\includegraphics[width=11cm]{./images/desPlugins.png}
+		\end{center}	
+	}	
+	\frame{
+	\frametitle{\ }
+	\label{Catalogue}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(-20,0){\includegraphics[width=5cm]{./images/catalogue.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Catalogue des modules graphiques existants}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}		
+		
+			\frame{
+		\frametitle{Magnéto}
+		\begin{itemize}
+			\item Interface de contrôle du temps courant de l'analyse
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/magneto.png}
+		\end{center}	
+	}
+	
+				\frame{
+		\frametitle{Videoplayer}
+		\begin{itemize}
+			\item Lecture de vidéo et son
+			\item Prend en charge tous les codecs windows avec fonctionnalité d'accès direct
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/videoplayer.png}
+		\end{center}	
+	}
+	
+					\frame{
+		\frametitle{Data Plotter}
+		\begin{itemize}
+			\item Affichage en courbes 
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/pluginMultiple.png}
+		\end{center}	
+	}
+	
+						\frame{
+		\frametitle{Valeurs instantanées}
+		\begin{itemize}
+			\item Affichage numérique des valeurs instantanées
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/valueDisplay.png}
+		\end{center}	
+	}
+	
+		\frame{
+		\frametitle{Incrustation vidéo de valeurs instantanées}
+		\begin{itemize}
+			\item Fonctionne de paire avec le plugin videoplayer
+			\item Incruste à l'image des valeurs instantanées
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/videoIncrustation.png}
+		\end{center}	
+	}
+	
+	
+	\frame{
+		\frametitle{Affichage graphique des situations}
+		\begin{itemize}
+			\item Visualisation de la durée des situations
+			\item Valeur des variables
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=12cm]{./images/situationDisplay.png}
+		\end{center}	
+	}	
+	
+	
+\frame{
+		\frametitle{Navigation dans les events/situations}
+		\begin{itemize}
+			\item Visualisation et navigation
+			\item Ajout de filtres
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=12cm]{./images/eventBrowser.png}
+		\end{center}	
+	}	
+	
+	\frame{
+		\frametitle{Retouche des events/situations}
+		\begin{itemize}
+			\item Edition de toutes les variables de l'event/situation
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=5cm]{./images/eventEditor.png}
+		\end{center}	
+	}	
+	
+		\frame{
+		\frametitle{Envoi réseau}
+		\begin{itemize}
+			\item Envoi de données au protocole XMPP
+			\item Exemple : synchronisation avec ABSTRACT, Stateflow\ldots
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=5cm]{./images/xmppStreamer.png}
+		\end{center}	
+	}	
+	
+	
+	
+		\frame{
+		\frametitle{Déploiement}
+		\begin{itemize}
+			\item Tout ceci peut être agrégé dans un paquet
+			\begin{itemize}
+				\item qui ne nécessite pas Matlab
+				\item deployable facilement 
+				\item facile à installer
+			\end{itemize}
+		\end{itemize}
+		}
+	
+		\frame{
+	\frametitle{\ }
+	\label{Catalogue}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(+30,0){\includegraphics[width=3cm]{./images/cuisinier.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Modules graphiques en développement}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}	
+	
+	
+	\frame{
+		\frametitle{Codage d'informations à la video}
+		\begin{itemize}
+			\item Ajout d'events ou de situations
+			\item Configurable selon un \og{}protocole de codage\fg{}
+			\item Outil spécifique
+		\end{itemize}
+	}	
+	
+		\frame{
+		\frametitle{Protocole de codage}
+		\begin{itemize}
+			\item Ce n'est pas un plugin de BIND
+			\item Définition de ce que l'on va coder
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=12cm]{./images/codingProtocoleComplet.jpg}
+		\end{center}
+	}	
+	
+		
+		\frame{
+		\frametitle{Plugin de codage}
+		\begin{itemize}
+			\item Génère automatiquement fenêtres, boutons et fonctionnalités
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=7.5cm]{./images/codingWindow.png}
+		\end{center}
+	}
+		
+		
+	\frame{
+		\frametitle{Utilisation d'un périphérique Jog Shuffle}
+		\begin{itemize}
+			\item En parallèle du plugin Magnéto
+			\item Comme sur les postes de dépouillement
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=6cm]{./images/shuffle.jpg}
+		\end{center}	
+	}	
+	
+		\frame{
+		\frametitle{Connexion vers affichage cartographique}
+		\begin{itemize}
+			\item Envoi de données pour incrustation sur fond de carte google
+			\item Interaction cartes / données
+		\end{itemize}
+				\begin{center}
+			\includegraphics[width=8cm]{./images/googleMaps_Situations.png}
+		\end{center}
+	}	
+		
+	
+		\frame{
+	\frametitle{\ }
+	\label{Changement}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(-20,0){\includegraphics[width=7.5cm]{./images/peinture.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Synthèse}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+	
+	\frame{
+		\frametitle{BIND et ses plugins}
+		\begin{itemize}
+			\item Modules graphiques 
+			\begin{itemize}
+				\item issus des réflexions du groupe de travail \og{}dépouillement\fg{}
+				\item fondés sur BIND
+				\item developpés en fonction des besoins
+			\end{itemize}
+		\end{itemize}
+	}	
+	
+	
+	\frame{
+	\frametitle{\ }
+	\begin{center}
+		\textbf{Merci de votre attention !}
+	\end{center}
+	}
+
+	\frame{
+	\frametitle{Contacts}
+	\begin{itemize}
+		\item Arnaud Bonnard : \url{arnaud.bonnard@inrets.fr}
+		\item Damien Sornette : \url{damien.sornette@inrets.fr}
+	\end{itemize}
+	}
+
+	\frame{
+	\frametitle{Crédits iconographiques}
+	\begin{itemize}
+		\tiny{
+		\item[\tiny{$\bullet$}] Slide \ref{Problematique} : \url{http://www.flickr.com/photos/yomostro/2972523219/}
+		\item[\tiny{$\bullet$}] Slide \ref{Excel} : \url{http://www.iconarchive.com/show/softdimension-icons-by-benjigarner/Excel-icon.html}
+		\item[\tiny{$\bullet$}] Slide \ref{Fonctionnalites} : \url{http://www.flickr.com/photos/crystaljingsr/3915514724/}
+		\item[\tiny{$\bullet$}] Slide \ref{Changement} : \url{http://www.flickr.com/photos/crystaljingsr/3915513242/}
+		\item[\tiny{$\bullet$}] Slide \ref{Travail} : \url{http://www.flickr.com/photos/crystaljingsr/3915515338/}
+		\item[\tiny{$\bullet$}] Slide \ref{Paradigme} (à gauche) : \url{http://www.flickr.com/photos/crystaljingsr/3915514014/}
+		\item[\tiny{$\bullet$}] Slide \ref{Reponse} : \url{http://www.flickr.com/photos/crystaljingsr/3915514014/}
+		\item[\tiny{$\bullet$}] Slide \ref{Avenir} : \url{http://www.flickr.com/photos/john/4776861/}
+		\item[\tiny{$\bullet$}] Slide \ref{Exemples} : \url{http://www.flickr.com/photos/crystaljingsr/3914731337/}
+		\item[\tiny{$\bullet$}] Slide \ref{Projet} : \url{http://www.flickr.com/photos/crystaljingsr/3915515536/}
+		\item[\tiny{$\bullet$}] Slide \ref{Autour} : \url{http://www.flickr.com/photos/gadl/237122671/}
+		\item[\tiny{$\bullet$}] Slide \ref{Catalogue} : \url{http://www.flickr.com/photos/crystaljingsr/3915515846/sizes/z/in/set-72157622354789320/}
+		\item[\tiny{$\bullet$}] Slide \ref{Cuisinier} : \url{http://www.flickr.com/photos/crystaljingsr/3915515338/sizes/z/in/photostream/}
+		\item[\tiny{$\bullet$}] Les autres éléments iconographiques ont soit été créés pour la présentation, soit appartiennent au domaine public.
+		}
+	\end{itemize}
+	}
+
+\end{document}

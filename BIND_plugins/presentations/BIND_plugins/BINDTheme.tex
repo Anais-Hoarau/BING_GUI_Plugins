@@ -1,0 +1,43 @@
+\usetheme{Madrid}
+
+\definecolor{bleu_fonce}{RGB}{00,10,147}
+\setbeamercolor{structure}{fg=black}
+\setbeamercolor{normal text}{fg=bleu_fonce,bg=white}
+\setbeamercolor{item}{fg=bleu_fonce,bg=bleu_fonce!75}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+%%%%%%%%%Centrage des titres de frames%%%%%
+	\makeatletter
+	\long\def\beamer@@frametitle[#1]#2{%
+	  \beamer@ifempty{#2}{}{%
+	    \gdef\insertframetitle{\centering{#2\ifnum\beamer@autobreakcount>0\relax{}\space\usebeamertemplate*{frametitle continuation}\fi}}%
+	  \gdef\beamer@frametitle{#2}%
+	  \gdef\beamer@shortframetitle{#1}%
+	}%
+	}
+	\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  } 
+
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamertemplate{items}[circle]
+
+%Tentative de redéfinition du pied de page
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+	\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+		\usebeamerfont{author in head/foot}\insertshortauthor~~%(\insertshortinstitute)
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+		%\usebeamerfont{title in head/foot}\insertshorttitle
+		\put(0,-1){\includegraphics[width=1.9mm]{./images/bind_logo.png}}
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+		%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+		\usebeamerfont{date in head/foot}\hspace*{2em}
+		\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}

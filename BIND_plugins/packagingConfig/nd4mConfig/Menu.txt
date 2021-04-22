@@ -1,0 +1,96 @@
+Format: 1.4
+
+
+Title: BIND_Plugins
+
+# You can also add a sub-title to your menu like this:
+# SubTitle: [subtitle]
+
+# You can add a footer to your documentation like this:
+# Footer: [text]
+# If you want to add a copyright notice, this would be the place to do it.
+
+# You can add a timestamp to your documentation like one of these:
+# Timestamp: Generated on month day, year
+# Timestamp: Updated mm/dd/yyyy
+# Timestamp: Last updated mon day
+#
+#   m     - One or two digit month.  January is "1"
+#   mm    - Always two digit month.  January is "01"
+#   mon   - Short month word.  January is "Jan"
+#   month - Long month word.  January is "January"
+#   d     - One or two digit day.  1 is "1"
+#   dd    - Always two digit day.  1 is "01"
+#   day   - Day with letter extension.  1 is "1st"
+#   yy    - Two digit year.  2006 is "06"
+#   yyyy  - Four digit year.  2006 is "2006"
+#   year  - Four digit year.  2006 is "2006"
+
+
+# --------------------------------------------------------------------------
+# 
+# Cut and paste the lines below to change the order in which your files
+# appear on the menu.  Don't worry about adding or removing files, Natural
+# Docs will take care of that.
+# 
+# You can further organize the menu by grouping the entries.  Add a
+# "Group: [name] {" line to start a group, and add a "}" to end it.
+# 
+# You can add text and web links to the menu by adding "Text: [text]" and
+# "Link: [name] ([URL])" lines, respectively.
+# 
+# The formatting and comments are auto-generated, so don't worry about
+# neatness when editing the file.  Natural Docs will clean it up the next
+# time it is run.  When working with groups, just deal with the braces and
+# forget about the indentation and comments.
+# 
+# --------------------------------------------------------------------------
+
+
+Group: BIND_plugins  {
+
+   Group: +configurators  {
+
+      File: AnnotationConfigurator  (+fr\+lescot\+bind\+configurators\AnnotationConfigurator.m)
+      File: DataPlotterConfigurator  (+fr\+lescot\+bind\+configurators\DataPlotterConfigurator.m)
+      File: EventSituationBrowserConfigurator  (+fr\+lescot\+bind\+configurators\EventSituationBrowserConfigurator.m)
+      File: MagnetoConfigurator  (+fr\+lescot\+bind\+configurators\MagnetoConfigurator.m)
+      File: SituationDisplayConfigurator  (+fr\+lescot\+bind\+configurators\SituationDisplayConfigurator.m)
+      File: ValueDisplayConfigurator  (+fr\+lescot\+bind\+configurators\ValueDisplayConfigurator.m)
+      File: VideoPlayerConfigurator  (+fr\+lescot\+bind\+configurators\VideoPlayerConfigurator.m)
+      File: XMPPStreamerConfigurator  (+fr\+lescot\+bind\+configurators\XMPPStreamerConfigurator.m)
+      }  # Group: +configurators
+
+   Group: +plugins  {
+
+      File: Annotation  (+fr\+lescot\+bind\+plugins\Annotation.m)
+      File: DataPlotter  (+fr\+lescot\+bind\+plugins\DataPlotter.m)
+      File: EventSituationBrowser  (+fr\+lescot\+bind\+plugins\EventSituationBrowser.m)
+      File: Magneto  (+fr\+lescot\+bind\+plugins\Magneto.m)
+      File: MockUpTripPlugin  (+fr\+lescot\+bind\+plugins\MockUpTripPlugin.m)
+      File: SituationDisplay  (+fr\+lescot\+bind\+plugins\SituationDisplay.m)
+      File: ValueDisplay  (+fr\+lescot\+bind\+plugins\ValueDisplay.m)
+      File: VideoPlayer  (+fr\+lescot\+bind\+plugins\VideoPlayer.m)
+      File: XMPPStreamer  (+fr\+lescot\+bind\+plugins\XMPPStreamer.m)
+      }  # Group: +plugins
+
+   Group: +widgets  {
+
+      File: EventSituationList  (+fr\+lescot\+bind\+widgets\EventSituationList.m)
+      File: EventSituationSelector  (+fr\+lescot\+bind\+widgets\EventSituationSelector.m)
+      File: PositionChooser  (+fr\+lescot\+bind\+widgets\PositionChooser.m)
+      File: VariablesSelector  (+fr\+lescot\+bind\+widgets\VariablesSelector.m)
+      }  # Group: +widgets
+
+   File: Analyzer  (+fr\+lescot\+bind\+loading\Analyzer.m)
+   File: LoaderMockUp  (+fr\+lescot\+bind\+loading\LoaderMockUp.m)
+   }  # Group: BIND_plugins
+
+Group: Index  {
+
+   Index: Everything
+   Class Index: Classes
+   Function Index: Functions
+   Property Index: Properties
+   }  # Group: Index
+
