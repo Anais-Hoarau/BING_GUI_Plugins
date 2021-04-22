@@ -1,0 +1,49 @@
+Title: 3.Interfaces graphiques
+
+Introduction: 
+Afin de rester cohérent avec tout ce que nous avons vu auparavant et de rester dans un modèle objet pour notre application, nous allons créer une classe pour représenter notre interface graphique. Le constructeur de la classe contiendra toutes les instructions de construction de l'aspect initial, les properties contiendront les variables qui permettent de connaitre l'état de l'interface (et uniquement de l'interface, pas de l'objet métier qu'elle réprésente !), et la dynamisation se fera via des callbacks vers des méthodes privées de la classe.
+
+Création d'une fenêtre:
+On va utiliser la méthode *figure*, qui fait apparaitre une figure et retourne un handler (une référence) qui nous permettra de manipuler cette fenêtre.
+>figureHandler = figure();
+ La fenêtre est créee par défaut avec un certain nombre de barres d'outils et de paramètres qu'il est possible de surcharger, soit en ajoutant les paires paramètre/valeur au constructeur, soit en utilisant la méthode set de la manière suivante :
+>set(figureHandler, <nom du paramètre>, <valeur du paramètre>);
+La liste des propriétés disponibles pour une fenêtre est disponible en recherchant *Figure properties* dans l'aide de Matlab. Une méthode get à la syntaxe similaire à celle du set permet de récupérer les valeurs des properties.
+
+Ajouter des composants:
+Les contrôles graphiques classiques (liste déroulante, boutons radio, texte, boutons, ...) sont créés à l'aide de la méthode *uicontrol*. La syntaxe est la suivante :
+>uicontrolHandler = uicontrol(parentComponentHandler, 'Property1', 'PropertyValue1', ...)
+parentComponentHandler est le handler du composant sur lequel on va fixer le contrôle. Il s'agit souvent du handler de la fenêtre, mais il peut également s'agir d'un handler vers un panel (zone d'une fenêtre), comme nous le verrons plus tard.
+
+Il existe également des composants qui ne sont pas créés via uicontrol, comme *uitable*, qui permet de faire des tableaux, *uipanel*, qui permet de segmenter l'espace, *uimenu* et *uipushtool* qui permettent de créer des menus déroulants ou à base d'icones, *uigetfile* et *uigetdir* qui permettent de faire apparaitre une popup de choix de fichier / dossier, ...
+
+Le fait de passer le handler du composant parent en argument va automatiquement afficher le composant sur le composant parent. On utilise la propriété *Position* pour régler à la fois la taille et la position du composant.
+
+Organiser et répartir les composants:
+
+Afin de clarifier l'interface et de faciliter le développement, on peut utiliser des *uipanel*. Ces composants sont des zones, qui peuvent être de couleur différent de la fenêtre principale ou non, et qui peuvent avoir un titre, et une bordure. Ces composants ont deux avantages :
+- Ils permettent de créer des "blocs" dans l'interface, afin de créer des regroupements thématiques de contrôles, améliorant ainsi l'ergonomie.
+- Ils facilitent le positionnement, puisque les éléments positionnés dans un uipanel le sont par rapport au panel et non par rapport à la fenêtre. Ainsi, si on déplace le panel, le positionnement des éléments du panel ne change pas.
+
+Pour créer un uipanel, on fait comme pour n'importe quel composant, en passant le handler de la fenêtre (ou d'un autre panel !) en argument. Puis, on crée les contrôles en leur passant en argument le handler vers le panel.
+
+On dispose également d'une fonction d'alignement des objets, qui s'appelle *align*, mais qui n'est pas très utile puisqu'on va généralement positionner soit même les objets de manière statique. Elle peut par contre rendre des services si l'on souhaite développer une interface dynamique capable d'aligner et répartir ses composants.
+
+Menus:
+
+Pour construire les menus, on utilise la méthode *uimenu*, qui fonctionne de manière assez similaire aux commandes vues précédemment. On commence par créer l'élement de menu racine en indiquant comme parent le handler de la fenêtre, puis les élements du menu en leur passant en argument le handler de la racine du menu, et ainsi de suite si l'on souhaite construire tout une arborescence de menu. Il existe également d'autres possibilités, détaillées dans la documentation de la fonction uimenu et dans la page uimenu properties.
+
+Dynamiser les interfaces:
+La documentation indique pour les différents type de contrôles quels sont les callbacks disponibles. Chaque contrôle dispose au moins de 'Callback', qui correspond à l'action principale du contrôle (cliquer pour un bouton, cocher pour une case, etc). Quel que soit le callback choisi, l'association de la méthode à l'action se fait de la même manière. La syntaxe de la fonction de callback (généralement une méthode privée de la classe de l'interface graphique) est la suivante :
+> function monCallback(this, source, eventdata, args)
+*this* est comme d'habitude utilisé pour la syntaxe objet de Matlab. *source* est la référence de l'objet qui a provoqué l'appel au callback. Cette variable est renseignée automatiquement lors de l'appel. Ainsi, on peut avoir un callback unique associé à plusieurs objet de même type, mais qui agit uniquement sur l'objet qui a provoqué l'appel. Par exemple, si on écrit un callback qui change la couleur d'un bouton, on peut associer la même méthode de callback à plusieurs boutons, mais lorsqu'on cliquera sur un bouton, seule sa couleur changera. *eventdata* est également renseigné automatiquement, et contient des informations sur l'évènement qui a déclenché l'appel au callback, par exemple la touche du clavier dans le cas d'un appui de touche, etc. On peut ensuite ajouter à la signature de la fonction n'importe quel autre argument nécessaire à son fonctionnement. Attention néanmoins à bien le passer à la création du handler dans ce cas !
+Pour associer le callback au contrôle on procède de la manière suivante :
+>callbackHandler = @this.monCallback;
+>set(monControleHandler, 'Callback', callbackHandler);
+en modifiant éventuellement le nom de la propriété pour changer l'action que l'on souhaite lier.
+Les callbacks seront mis en application lors d'une formation ultérieure concernant le modèle Observer / Observable.
+
+Exercice d'application:
+Nous allons développer une, représentant une sorte de machine dotée de leviers. Pour le moment nous allons développer uniquement la partie statique de l'interface, la partie dynamique sera ajoutée via le modèle Observer / Observable dans une formation ultérieure. L'interface est détaillée dans l'image ci-dessous (see Machine.png). Le menu "Fichier" contiendra les éléments "Reset" et "Fermer".
+
+Un corrigé est diponible dans le dossier source de la documentation de cette formation.

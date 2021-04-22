@@ -1,0 +1,225 @@
+Format: 1.4
+
+
+Title: BIND
+
+# You can also add a sub-title to your menu like this:
+# SubTitle: [subtitle]
+
+# You can add a footer to your documentation like this:
+# Footer: [text]
+# If you want to add a copyright notice, this would be the place to do it.
+
+# You can add a timestamp to your documentation like one of these:
+# Timestamp: Generated on month day, year
+# Timestamp: Updated mm/dd/yyyy
+# Timestamp: Last updated mon day
+#
+#   m     - One or two digit month.  January is "1"
+#   mm    - Always two digit month.  January is "01"
+#   mon   - Short month word.  January is "Jan"
+#   month - Long month word.  January is "January"
+#   d     - One or two digit day.  1 is "1"
+#   dd    - Always two digit day.  1 is "01"
+#   day   - Day with letter extension.  1 is "1st"
+#   yy    - Two digit year.  2006 is "06"
+#   yyyy  - Four digit year.  2006 is "2006"
+#   year  - Four digit year.  2006 is "2006"
+
+
+# --------------------------------------------------------------------------
+# 
+# Cut and paste the lines below to change the order in which your files
+# appear on the menu.  Don't worry about adding or removing files, Natural
+# Docs will take care of that.
+# 
+# You can further organize the menu by grouping the entries.  Add a
+# "Group: [name] {" line to start a group, and add a "}" to end it.
+# 
+# You can add text and web links to the menu by adding "Text: [text]" and
+# "Link: [name] ([URL])" lines, respectively.
+# 
+# The formatting and comments are auto-generated, so don't worry about
+# neatness when editing the file.  Natural Docs will clean it up the next
+# time it is run.  When working with groups, just deal with the braces and
+# forget about the indentation and comments.
+# 
+# You can use this file on other computers even if they use different
+# directories.  As long as the command line points to the same source files,
+# Natural Docs will be able to correct the locations automatically.
+# 
+# --------------------------------------------------------------------------
+
+
+Group: Doc  {
+
+   File: Conception  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\Conception.txt)
+   File: Database  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\Database.txt)
+   File: Documentation  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\Documentation.txt)
+
+   Group: Formation  {
+
+      File: 0.Conventions  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\Conventions\Conventions.txt)
+      File: 1.Héritage et Interfaces  (no auto-title, C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\Heritage\Heritage.txt)
+      File: 2.Exceptions  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\Exceptions\Exceptions.txt)
+      File: 3.Interfaces graphiques  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\UI\Interfaces graphiques.txt)
+      File: 4.Observer / Observable  (no auto-title, C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\Observer_Observable\Observer_Observable.txt)
+      File: 5.Bases de données relationnelles  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\doc\custom_files\formation\BDD\BDD.txt)
+      }  # Group: Formation
+
+   }  # Group: Doc
+
+Group: Src  {
+
+   Group: configurators  {
+
+      File: Argument  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+configurators\Argument.m)
+      File: Configuration  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+configurators\Configuration.m)
+      File: ConfiguratorUser  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+configurators\ConfiguratorUser.m)
+      File: PluginConfigurator  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+configurators\PluginConfigurator.m)
+      }  # Group: configurators
+
+   Group: data  {
+
+      File: MetaBase  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaBase.m)
+      File: MetaData  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaData.m)
+      File: MetaDataVariable  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaDataVariable.m)
+      File: MetaEvent  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaEvent.m)
+      File: MetaEventVariable  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaEventVariable.m)
+      File: MetaInformations  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaInformations.m)
+      File: MetaParticipant  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaParticipant.m)
+      File: MetaSituation  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaSituation.m)
+      File: MetaSituationVariable  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaSituationVariable.m)
+      File: MetaVariableBase  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaVariableBase.m)
+      File: MetaVideoFile  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\MetaVideoFile.m)
+      File: Record  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+data\Record.m)
+      }  # Group: data
+
+   Group: exceptions  {
+
+      File: ArgumentException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\ArgumentException.m)
+      File: BINDException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\BINDException.m)
+      File: ContentException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\ContentException.m)
+      File: DataException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\DataException.m)
+      File: EventException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\EventException.m)
+      File: FileException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\FileException.m)
+      File: MetaInfosException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\MetaInfosException.m)
+      File: NetworkException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\NetworkException.m)
+      File: ObserverException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\ObserverException.m)
+      File: PluginException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\PluginException.m)
+      File: SituationException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\SituationException.m)
+      File: SQLException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\SQLException.m)
+      File: UnclassifiedException  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+exceptions\UnclassifiedException.m)
+      }  # Group: exceptions
+
+   Group: kernel  {
+
+      File: implementation.SQLiteTrip  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\+implementation\SQLiteTrip.m)
+      File: TimerMessage  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\TimerMessage.m)
+      File: TimerTrip  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\TimerTrip.m)
+      File: Trip  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\Trip.m)
+      File: TripMessage  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\TripMessage.m)
+      File: TripSet  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+kernel\TripSet.m)
+      }  # Group: kernel
+
+   Group: loading  {
+
+      File: Environnement  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+loading\Environnement.m)
+      File: Loader  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+loading\Loader.m)
+      }  # Group: loading
+
+   Group: observation  {
+
+      File: FixedValuesMessage  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+observation\FixedValuesMessage.m)
+      File: Message  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+observation\Message.m)
+      File: Observable  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+observation\Observable.m)
+      File: Observer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+observation\Observer.m)
+      File: RegexpMessage  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+observation\RegexpMessage.m)
+      }  # Group: observation
+
+   Group: plugins  {
+
+      File: AnalysisPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\AnalysisPlugin.m)
+      File: EncodingPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\EncodingPlugin.m)
+      File: GraphicalPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\GraphicalPlugin.m)
+      File: KeyMessage  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\KeyMessage.m)
+      File: KeyPressManager  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\KeyPressManager.m)
+      File: Plugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\Plugin.m)
+      File: TripPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\TripPlugin.m)
+      File: TripStreamingPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\TripStreamingPlugin.m)
+      File: VisualisationPlugin  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+plugins\VisualisationPlugin.m)
+      }  # Group: plugins
+
+   Group: processing  {
+
+      Group: +eventDiscoverers  {
+
+         File: ChangingValueFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\ChangingValueFinder.m)
+         File: DownwardThresholdFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\DownwardThresholdFinder.m)
+         File: LocalExtremumFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\LocalExtremumFinder.m)
+         File: LocalMaxFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\LocalMaxFinder.m)
+         File: LocalMinFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\LocalMinFinder.m)
+         File: UpwardThresholdFinder  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+eventDiscoverers\UpwardThresholdFinder.m)
+         }  # Group: +eventDiscoverers
+
+      Group: +signalProcessors  {
+
+         File: LinearInterpoler  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+signalProcessors\LinearInterpoler.m)
+         File: MovingAverageSmoothing  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+signalProcessors\MovingAverageSmoothing.m)
+         File: QADDerivative  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+signalProcessors\QADDerivative.m)
+         File: Scaler  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+signalProcessors\Scaler.m)
+         }  # Group: +signalProcessors
+
+      Group: +situationAggregators  {
+
+         File: Average  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\Average.m)
+         File: HFC  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\HFC.m)
+         File: Max  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\Max.m)
+         File: Min  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\Min.m)
+         File: SRR  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\SRR.m)
+         File: Stdev  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\Stdev.m)
+         File: SteeringEntropy  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationAggregators\SteeringEntropy.m)
+         }  # Group: +situationAggregators
+
+      Group: +situationDiscoverers  {
+
+         File: AboveThreshold  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\AboveThreshold.m)
+         File: BelowThreshold  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\BelowThreshold.m)
+         File: EqualThreshold  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\EqualThreshold.m)
+         File: InRange  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\InRange.m)
+         File: OutOfRange  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\OutOfRange.m)
+         File: RangeComparer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\RangeComparer.m)
+         File: StabilityDiscoverer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\StabilityDiscoverer.m)
+         File: ThresoldComparer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\+situationDiscoverers\ThresoldComparer.m)
+         }  # Group: +situationDiscoverers
+
+      File: EventDiscoverer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\EventDiscoverer.m)
+      File: SignalProcessor  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\SignalProcessor.m)
+      File: SituationAggregator  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\SituationAggregator.m)
+      File: SituationDiscoverer  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+processing\SituationDiscoverer.m)
+      }  # Group: processing
+
+   Group: utils  {
+
+      File: CellArrayUtils  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+utils\CellArrayUtils.m)
+      File: ClassPathUtils  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+utils\ClassPathUtils.m)
+      File: PluginUtils  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+utils\PluginUtils.m)
+      File: StringUtils  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+utils\StringUtils.m)
+      File: TripSetUtils  (C:\documents\Developpements\LESCOT-Expl\BIND\trunk\src\+fr\+lescot\+bind\+utils\TripSetUtils.m)
+      }  # Group: utils
+
+   }  # Group: Src
+
+Group: Index  {
+
+   Index: Everything
+   Class Index: Classes
+   Function Index: Functions
+   Property Index: Properties
+   }  # Group: Index
+
+
+
+##### Do not change or remove these lines. #####
+Data: 1(D3330wbfu9NEG\t6bBG/GouIIGEG\t6b15r0FLz5sIobxvyBbtHN\Ab6H9)
+Data: 1(h3330wbfu9NEG\t6bBG/GouIIGEG\t6b15r0FLz5sIobxvyBbtHN\Abfu9b9N6tuEVc8oG6)

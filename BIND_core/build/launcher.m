@@ -1,0 +1,1 @@
+fr.lescot.bind.plugins.demo.demoLauncher

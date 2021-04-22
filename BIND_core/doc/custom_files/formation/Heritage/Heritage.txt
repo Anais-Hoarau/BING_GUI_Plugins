@@ -1,0 +1,120 @@
+Title: 1.Objets, Héritage et Interfaces
+
+Objets / Concepts de base:
+Informatiquement parlant, un objet est une structure de données composée de deux grandes catégories d'éléments :
+
+- Des *attributs* qui contiennent l'état de l'objet
+- Des *méthodes* qui définissent le comportement de l'objet et permettent de modifier son état.
+
+Un objet est généralement une représentation informatique d'une entité réelle concrète, mais, dès qu'on aborde le cas de programmes complexes, certains objets sont des représentations d'entités plus conceptuelles. Dans un programme, un objet est une *instance* d'une *classe*. La classe définit quels sont les attributs et méthodes que possèderont les objets qui l'instancient, mais pas les valeurs des attributs. La classe définit donc un comportement identique à tout les objets qui l'instancient, mais ne fixe pas leur état. Le passage de la classe à l'objet instancié se fait via le *constructeur*, une méthode particulière qui instancie un objet avec un état initial par défaut ou dépendant de paramètres passés à l'exécution.
+
+Par exemple, si on dispose d'une classe *Voiture*, elle pourra disposer d'un méthode *accélérer* qui augmente sa vitesse, d'une méthode *freiner*, qui la diminue, d'un attribut *vitesse* qui indique sa vitesse courante, et d'un attribut *couleur* qui indique la couleur de la peinture.
+
+De manière général, et bien que dans la plupart des langages il soit possible d'accéder et de modifier directement les valeurs des attributs, il est préférable de les rendre privées et de fournir des méthodes de manipulation dites *accesseurs*, qui seront en charge de retourner la valeur de l'attribut ou de la modifier. Cela permet de s'assurer que la logique interne de la classe puisse être modifiée sans changer sa signature externe. Ces méthodes sont généralement nommées *get<NomAttribut>* et *set<NomAttribut>* pour les identifier facilement.
+ 
+Dans la classe Voiture, on ajouterait donc une méthode *getCouleur* qui retourne la valeur de la couleur, *setCouleur*, qui permet de repeindre la voiture (de manière fort économique), d'une méthode *getVitesse* qui retourne la vitesse courante en km/h, et d'une méthode *setVitesse* privée, qui sera appelée par les méthodes accélérer et freiner pour changer la valeur courante de la vitesse suite aux calculs effectués par les méthodes.
+
+Objets / Matlab:
+Dans Matlab, on définit une classe par fichier. Le fichier doit obligatoirement porter le nom de la classe. Le fichier possède la structure suivante :
+>classdef MaClasse
+>
+>	%Bloc d'attributs privés
+>   properties(Access = private)
+>		attribut1;
+>		attribut2;
+>   end
+>    
+>  %Bloc de méthodes publiques
+>   methods(Access = public)
+>		function out = methode1(this, arg1, arg2)
+>		end
+>
+>		%Constructeur	
+>		function this = MaClasse()
+>		end
+>	end
+>
+>	%Bloc de méthodes privées
+>	methods(Access = private)
+>		function methode2(this, arg1, arg2)
+>		end
+>   end
+>end
+
+
+ 
+Héritage / Définitions:
+L'héritage est un concept propre à la programmation objet, qui permet de créer une classe proche d'une autre sans la réécrire intégralement, mais plutôt en récupérant le comportement de la classe de base et en le modifiant (ajout / modification et plus rarement suppression de fonctionnalités). Certains langages permettent l'héritage multiple, qui permet ainsi de "fusionner" plusieurs classes pour en créer une nouvelle qui dispose des capacités de toutes les classes dont elle dérive.
+
+La classe de base est dite *classe mère*, tant dit que celle qui en hérite est dite *classe fille* ou *classe dérivée*.
+
+Le mécanisme d'héritage est parfois appelé *spécialisation* car on l'utilise souvent pour affiner le comportement d'une classe très générique.
+
+Héritage / Fonctionnement:
+Dans la déclaration de la classe fille, une syntaxe propre au langage permet de la déclarer comme héritant de la classe mère (qui doit donc être pré-existante). Grâce à cette syntaxe, la classe fille sera, si l'on ne lui ajoute ni méthode ni attribut, exactement identique à la classe mère (avec dans certains langages l'exception des attributs privés de la classe mère qui ne sont pas directement accessibles depuis la classe fille).
+
+Une fois ce squelette déclaré, on peut modifier le comportement de la classe mère de deux manières différentes :
+
+- Ajouter des fonctionnalités, sous forme d'attributs ou de méthodes supplémentaires. Ces fonctionnalités seront disponibles pour tout objet de la classe fille.
+
+- Surcharger des fonctionnalités de la classe mère, afin de modifier leur comportement. On redéclare alors dans la classe fille une méthode du même nom que celui de la classe mère. On a alors le choix de ré-écrire intégralement une méthode, ou d'intégrer un appel au code de la méthode de la classe mère à d'autres pièces de code. Par exemple, on peut imaginer d'intégrer l'appel à la méthode de la classe mère dans un branchement conditionnel.
+
+Un autre interêt de l'héritage est que la classe fille est considérée comme étant également de la classe mère. En effet, elle dispose forcémment d'un pool minimum de méthodes égal à celui de la classe mère. Ainsi, on peut passer en argument un objet de la classe fille à une méthode qui en requiert un de la classe mère. Par contre, les fonctionnalités ajoutées à la classe fille ne seront pas disponibles, et il faut s'assurer que celles qui ont été modifiées resteront cohérentes avec l'usage qui est fait de l'objet.
+
+Héritage / Matlab:
+Dans Matlab, l'héritage et l'héritage multiples sont possibles. Les attributs privés ne sont pas accessibles depuis la classe fille. Il en va de même pour les méthodes privées. La suite de ce document part du principe que la version de Matlab utilisée est suffisamment récente pour disposer de la syntaxe de déclaration de classes avec le mot clé *classdef*.
+
+La syntaxe pour déclarer un héritage simple est la suivante :
+> classdef classeFille < classeMère
+
+Celle pour un héritage multiple est très similaire :
+> classdef classeFille < classeMère1 & ... & classeMèreN
+
+De plus, il faut absolument que la classe au somment de l'arborescence d'héritage hérite de la classe *handle* afin que l'objet soit passé par référence, et non par valeur, ce qui est nécessaire pour le bon fonctionnement de l'héritage.
+
+Lorsque l'on souhaite invoquer dans une méthode la méthode avec le même nom mais provenant de la classe mère (ou pour être exacte d'une classe mère qu'elle qu'elle soit, même si ce n'est pas un héritage direct), la syntaxe à employer est la suivante (on se place ici dans la classe fille qui réalise l'appel) :
+>function maMéthode(this, unParam)
+>   this.maMéthode@ClasseMère(unParam)
+>end
+Il ne faut surtout pas oublier le *this* devant le nom de la méthode, faute de quoi Matlab ne retrouverait pas l'objet sur lequel appliquer la méthode, et retournerait une erreur concernant un paramètre non initialisé.
+
+Interfaces / Définitions:
+Les interfaces sont des classes particulières dont toutes les méthodes sont abstraites (c'est à dire que seul leurs noms et leurs paramètres d'entrée et de sortie sont définis). Ces classes ne sont pas instanciables en elles-même, et ne servent en fait qu'à être dérivées par d'autres classes, dont on peut ainsi définir le lot minimum de fonctions qu'elle doivent contenir. Une classe qui implémente une interface se doit d'implémenter elle même toutes les méthodes, ou doit être une classe abstraite (i.e. non instanciable, généralement parce qu'incomplète, mais qui peut néanmoins contenir des implémentations "concrètes" de méthodes).
+
+En définissant les fonctions dont doit disposer un objet implémentant une certaine interface, on peut ainsi admettre n'importe quelle implementation de celle-ci comme argument d'une méthode dont le paramètre attendu en entrée est une interface.
+
+Interfaces / Matlab:
+Dans Matlab les interfaces n'existent malheureusement pas en tant que telles, et une classe est automatiquement considérée comme abstraite si au moins une des ses méthodes est abstraite.
+Pour émuler les interfaces, il faut donc créer une classe et déclarer tout ses méthodes comme abstraites. On rappelle que la syntaxe pour indiquer que des fonctions sont abstraites est la suivante :
+>methods(Abstract)
+>
+>   function out = méthode1
+>     ...
+>   end
+>
+>   ...
+>
+>end
+
+Ensuite, en lieu et place d'une implémentation d'interface, il faut dériver notre classe abstraite.
+
+De plus, Matlab ne permet pas de typer les arguments d'une méthode, et on peut donc vouloir s'assurer que la variable est bien une instance d'une classe fille de la pseudo interface (directement ou non), à l'aide de la méthode *isa()*, afin de rendre le code plus robuste.
+
+Récapitulatif / Visibilité et modificateurs des méthodes:
+
+- public : la méthode peut être appelée depuis des objets de n'importe quelle classe
+- private : la méthode n'est accessible qu'aux autres méthodes de la classe
+- protected : la méthode est accessible depuis les méthodes de la classe et des classes dérivées
+- Sealed : la méthode ne peut pas être surchargée dans une classe fille
+- Abstract : La méthode n'a qu'une signature, pas d'implémentation. Elle doit donc être implémentée dans une classe fille pour pouvoir être utilisée
+- Static : La méthode peut être appelée directement sur la classe et non sur une instance. 
+ 
+Récapitulatif / Visibilité et modificateurs des attributs:
+
+- public : l'attribut peut être appelé depuis des objets de n'importe quelle classe
+- private : l'attribut n'est accessible qu'aux autres méthodes de la classe
+- protected : l'attribut est accessible depuis les méthodes de la classe et des classes dérivées
+- Constant : l'attribut possède une valeur constante, partagée par toutes les instances de la classe
+
+Exercice d'application:
+Afin de mettre en application le concept d'héritage dans Matlab (et au passage de réviser quelques bases de la notation UML), nous allons développer les classes de l'arborescence suivante (see animalia.png). Concernant l'implémentation des méthodes en elles-mêmes, un simple *disp* suffira. Un corrigé (par Arnaud Bonnard) est disponible dans le dossier doc/custom_files/Formation/Héritage/Corrigé du SVN.

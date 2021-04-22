@@ -1,0 +1,13 @@
+Title: Conception
+
+General conception:
+
+The whole UML class diagram (see classes.png) shows how classes interact conception-wise. To get a larger and dynamic view of the diagram, open UML.vpp with Visual Paradigm of UML (http://www.visual-paradigm.com/product/vpuml/), which is located in the same folder than all the custom documentation files (see Documentation for more details).
+
+Inner working:
+
+The inner working of BIND is based on the Observer / Observable design pattern, with the Trip objects being the Observable, while the plugins play the role of the Observers. The wikipedia article (http://en.wikipedia.org/wiki/Observer_pattern) describes this pattern and the theory behind it.
+
+The following diagram presents the call stack for a simple action that need to display some data from the Trip database(see sequence1.png).
+
+The next diagram (see sequence2.png) presents the propagation of a Timer event through the application made of two plugins that need to display datas synchronized with the Trip's timer.

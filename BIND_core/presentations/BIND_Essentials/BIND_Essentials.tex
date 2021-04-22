@@ -1,0 +1,634 @@
+\documentclass[c,14pt]{beamer}
+
+% Packages pour le français
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[frenchb]{babel}
+
+\usepackage{array}
+\usepackage{pslatex}
+
+% pour le style et les couleurs
+\input{BINDTheme}
+
+\newcommand{\gargantuan}{\fontsize{60}{65}\selectfont}
+
+
+% Contenu de la page de titre
+\title{BIND}
+\subtitle{Une boîte à outils pour l'analyse de données expérimentales}
+\author{Arnaud Bonnard, Damien Sornette}
+\date{29 novembre 2010}
+
+\begin{document}
+
+	\frame{\titlepage}
+
+	\frame{
+		\frametitle{Le LESCOT}
+		\begin{itemize}
+		\item Laboratoire de sciences humaines
+		\item Analyse du comportement des \og{conducteurs}\fg{} et de leur activité de conduite
+		\item Différents outils pour recueillir des données comportementales\\
+			\vspace{2mm}
+			\includegraphics[width=4.8cm]{./images/margo.jpg}
+			\hspace{2mm}
+			\includegraphics[width=4.8cm]{./images/cosmosimu.png}
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{Problématique}
+		\begin{itemize}
+		\item Différents outils de recueil
+		\item De nombreuses expérimentations 
+		\item D'énormes quantités de données
+		\end{itemize}
+
+		\begin{center}
+			\textbf{Comment formaliser le processus d'analyse des données ?}
+		\end{center}
+	}
+
+	\frame{
+		\frametitle{Problématique}
+		\framesubtitle{Comment formaliser le processus d'analyse des données ?}
+		
+		\begin{itemize}
+			\item Des processus d'analyse
+			\begin{itemize}
+				\item Accès
+				\item Visualisation 
+				\item Enrichissement 
+				\item Extraction
+			\end{itemize}
+			\item Des données
+			\begin{itemize}
+				\item Paramètres continus
+				\item Données événementielles
+				\item Données situationnelles
+			\end{itemize}
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{Approche}
+		\begin{itemize}
+			\item Définition des concepts métiers
+			\item Définition des contraintes
+			\item Choix d'un environnement logiciel
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{Définition des concepts métiers}
+		\begin{itemize}
+			\item Notre élément unitaire est un trajet ou \og{trip}\fg{} composé de trois types de données :
+		\end{itemize}
+		%\framebox{
+		\begin{picture}(300,60)
+			\put(30,0){\includegraphics[width=1.5cm]{./images/data.png}}
+			\put(36,38){Data}
+			\put(135,0){\includegraphics[width=1.5cm]{./images/event.png}}
+			\put(138,38){Event}
+			\put(240,0){\includegraphics[width=1.5cm]{./images/situation.png}}
+			\put(239,38){Situation}
+		\end{picture}
+		%}
+	}
+
+	\frame{
+		\frametitle{Définition des contraintes}
+		\begin{itemize}
+			\item Répondre aux questions :
+			\begin{itemize}
+				\item Qu'est ce qu'il y dans les données ?
+				\item Comment est ce qu'on va analyser nos données ?
+			\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item On a aussi besoin de :
+			\begin{itemize}
+				\item Connaître
+				\item Partager
+				\item Capitaliser
+			\end{itemize}
+		\end{itemize}
+	}
+
+	\frame{
+	\frametitle{Définition des contraintes}
+		\framesubtitle{Connaître}
+		\begin{itemize}
+			\item Les expérimentations sont de nature variée
+			\item On collecte des données hétérogènes en provenance de sources différentes
+		\end{itemize}
+		\begin{center}
+			\textbf{Système auto-descriptif}
+		\end{center}
+	}
+
+	\frame{
+	\frametitle{Définition des contraintes}
+	\framesubtitle{Partager}
+	\begin{itemize}
+		\item Ce qui a été réalisé doit 
+			\begin{itemize}
+			  \item être transférable
+			  \item être utilisable par d'autres
+			  \item rester utilisable longtemps après
+			\end{itemize}
+	\end{itemize}
+	\begin{center}
+		\textbf{Système solidement documenté}
+	\end{center}
+}
+
+	\frame{
+	\frametitle{Définition des contraintes}
+	\framesubtitle{Capitaliser}
+	\begin{itemize}
+		\item On a besoin de s'appuyer sur nos expériences pour mieux se focaliser sur l'innovation
+	\end{itemize}
+	\begin{center}
+		\textbf{Système porteur de nos compétences techniques}
+	\end{center}
+}
+
+	\frame{
+	\frametitle{Définir un environnement logiciel}
+	\begin{itemize}
+		\item Déjà connu au sein du laboratoire
+		\item Usuel dans le monde scientifique
+		\item Suffisamment polyvalent
+	\end{itemize}
+	\begin{center}
+		\textbf{Matlab}
+	\end{center}
+}
+
+	\frame{
+		\frametitle{\ }
+		\label{Problematique}
+		\begin{picture}(300,200)
+			\put(-25,0){\includegraphics[width=7cm]{./images/robot.jpg}}
+			\put(160,160){\textbf{Une problématique\dots}}
+			\put(185,100){\textbf{\dots{} des contraintes\dots}}
+			\put(175,40){\textbf{\dots{} une solution !}}
+		\end{picture}
+	}
+
+	\frame{
+	\frametitle{Vers une solution}
+	\begin{itemize}
+		\item Un framework logiciel pour
+		\begin{itemize}
+			\item Répondre aux contraintes
+			\item Implémenter les compétences métier
+			\item Standardiser les développements du laboratoire
+		\end{itemize}
+	\end{itemize}
+	}
+
+	\frame{
+	\frametitle{Un framework logiciel}
+	\label{Framework}
+	\begin{itemize}
+		\item Qu'est ce que c'est ?
+		\begin{itemize}
+			\item Boite à outils logicielle
+			\item Squelette applicatif de référence
+			\item Architecture cible
+		\end{itemize}
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=5.5cm]{./images/toolbox.jpg}
+	\end{center}
+	}
+
+	\frame{
+		\frametitle{\ }
+		\begin{center}
+				\includegraphics[width=10cm]{./images/bind_text_logo.png}
+		\end{center}
+	}
+
+	\frame{
+		\frametitle{BIND}
+		\begin{itemize}
+				\item Se prononce \og{}\emph{Baïnde}\fg
+				\item \og{}To bind\fg : \emph{lier} ou \emph{attacher}
+		\end{itemize}
+	\begin{center}
+		\textbf{BIND créé le lien entre les données et les utilisateurs, via ses outils}
+	\end{center}
+	}
+
+	\frame{
+	\frametitle{\ }
+	\label{Fonctionnalites}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\includegraphics[width=5cm]{./images/loupe.jpg}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Quelles sont les fonctionnalités de BIND ?}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+
+	\frame{
+		\frametitle{BIND}
+		\begin{itemize}
+				\item<1-> Une structuration métier et autodescriptive des données
+				\item<2-> Un moteur d'accès aux données
+				\item<3-> Une architecture de modules graphiques synchronisables
+		\end{itemize}
+		\begin{center}
+			\begin{picture}(300,100)
+				\uncover<1->{\put(0,20){\includegraphics[width=2cm]{./images/database.png}}}
+				\uncover<1->{\put(15,40){Trip}}
+				\uncover<2->{\put(120,20){\includegraphics[width=2cm]{./images/gears.png}}}
+				\uncover<3->{\put(240,20){\includegraphics[width=2cm]{./images/window.png}}}
+			\end{picture}
+		\end{center}
+	}
+
+	\frame{
+		\frametitle{Structure des données... en résumé}
+		\begin{picture}(320,200)
+			\put(75,-10){\includegraphics[width=7cm]{./images/database.png}}
+			\put(165,160){Trip}
+			\put(110,45){\includegraphics[width=1.1cm]{./images/subject.png}}
+			\put(110,75){\includegraphics[width=1.1cm]{./images/video.png}}
+			\put(110,105){\includegraphics[width=1.1cm]{./images/attribute.png}}
+			
+			\put(160,45){\includegraphics[width=1.1cm]{./images/MetaData.png}}
+			\put(160,75){\includegraphics[width=1.1cm]{./images/MetaEvent.png}}
+			\put(160,105){\includegraphics[width=1.1cm]{./images/MetaSituation.png}}
+			
+			\put(210,45){\includegraphics[width=1.1cm]{./images/data.png}}
+			\put(210,75){\includegraphics[width=1.1cm]{./images/event.png}}
+			\put(210,105){\includegraphics[width=1.1cm]{./images/situation.png}}
+		\end{picture}
+	}
+
+	\frame{
+		\frametitle{Moteur d'accès aux données}
+		\begin{picture}(320,200)
+			\put(90,0){\includegraphics[width=6cm]{./images/gears.png}}
+			\put(140,80){\includegraphics[width=1.8cm]{./images/database.png}}
+			\put(155,100){\small{Trip}}
+		\end{picture}
+	}
+
+	\frame{
+		\frametitle{Moteur d'accès aux données}
+		\begin{itemize}
+			\item BIND prend en charge l'accès aux données via son interface
+			\item On ne touche \textbf{jamais} aux données sans passer par le framework
+			\item L'implémentation de l'interface logicielle prend en charge les fonctions de bas niveau
+		\end{itemize}
+	}
+
+
+	\frame{
+		\frametitle{Sauvegarde des trips}
+		\begin{itemize}
+			\item BIND définit une interface pour les formats de données
+			\begin{itemize}
+				\item Tout format respectant l'interface est dit BINDable
+			\end{itemize}
+			\item Une implémentation de cette interface existe : \textbf{SQLite}
+			\item On peut en imaginer d'autres
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{Traitement des données}
+		\begin{itemize}
+			\item BIND prend en charge certains mécanismes de traitement des données
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=5cm]{./images/SignalProcessors.png}
+			\\
+			\includegraphics[width=5cm]{./images/EventDiscoverers.png}
+			\\
+			\includegraphics[width=5cm]{./images/SituationDiscoverers.png}
+			\\
+			\includegraphics[width=5cm]{./images/SituationalAgregator.png}
+		\end{center}
+	}
+
+
+	\frame{
+		\frametitle{Modules graphiques}
+		\begin{picture}(320,200)
+			\put(85,15){\includegraphics[width=6cm]{./images/window.png}}
+		\end{picture}
+	}
+
+	\frame{
+		\frametitle{Modules graphiques}
+		\begin{itemize}
+			\item Objets de base pour la création d'applications graphiques
+			\begin{itemize}
+			  \item Pas de modules graphiques inclus dans BIND
+			\end{itemize}
+			\item Mécanisme de synchronisation
+			\begin{itemize}
+				\item Chaque trip est doté d'un timer interne
+				\item Utilisation du design pattern observer / observable
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\begin{picture}(300,100)
+				\put(60,20){\includegraphics[width=2cm]{./images/window.png}}
+				\put(180,20){\includegraphics[width=2cm]{./images/chrono.png}}
+			\end{picture}
+		\end{center}
+	}
+
+	\frame{
+	\frametitle{BIND}
+	\label{Paradigme}
+	\framesubtitle{Paradigme et usages}
+	\begin{itemize}
+		\item Création de 2 types d'applications métier
+	\end{itemize}
+		\begin{columns}
+		\begin{column}[l]{6cm}
+			\put(0,0){\includegraphics[width=5.5cm]{./images/code.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\put(0,0){\includegraphics[width=5.5cm]{./images/window.png}}
+		\end{column}
+	\end{columns}
+	}
+
+	\frame{
+		\frametitle{Synthèse}
+		\begin{picture}(320,200)
+			\put(0,45){\includegraphics[width=3cm]{./images/gears.png}}
+			\put(26.5,86.5){\includegraphics[width=0.8cm]{./images/database.png}}
+			\put(33,95){\tiny{Trip}}
+			\put(87,80){\gargantuan{+}}
+			\put(122,60){\includegraphics[width=2.5cm]{./images/window.png}}
+			\put(197,80){\gargantuan{=}}
+			\put(232,78){\includegraphics[width=4cm]{./images/bind_text_logo.png}}
+		\end{picture}
+	}
+
+	\frame{
+	\frametitle{\ }
+	\label{Changement}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(-20,0){\includegraphics[width=7.5cm]{./images/peinture.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Qu'est-ce que ca change ?}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+
+	\frame{
+	\frametitle{Les méthodes de travail}
+	\begin{itemize}
+		\item On continuera de développer
+			\begin{itemize}
+				\item des scripts de traitement de données
+				\item des logiciels de visualisation
+				\item des outils de modélisation, de simulation
+				\item \dots
+			\end{itemize}
+			\begin{center}
+				\textbf{Mais on les developpera en utilisant BIND, ou on les connectera à BIND}
+			\end{center}
+	\end{itemize}
+	}
+
+		\frame{
+	\frametitle{Avant}
+		\begin{center}
+			\includegraphics[width=9cm]{./images/archi_avant.png}
+		\end{center}
+	}
+
+	\frame{
+	\frametitle{Après}
+		\begin{center}
+			\includegraphics[width=9cm]{./images/archi_apres.png}
+		\end{center}
+	}
+
+		
+	\frame{
+	\frametitle{Démarche de conception}
+		\begin{center}
+			\includegraphics[width=9cm]{./images/perspective.png}
+		\end{center}
+	}
+	
+	\frame{
+	\frametitle{Finalement\dots{} BIND}
+		\begin{itemize}
+			\item Fait plein de choses\dots{} mais ne fait rien!
+			\item Sert à créer des applications et des outils métiers
+		\end{itemize}
+		\begin{center}
+				\textbf{La façon de faire change}
+		\end{center}
+	}
+	
+
+	\frame{
+	\frametitle{\ }
+	\label{Autour}
+	\begin{columns}
+		\begin{column}[c]{6cm}
+			\put(10,0){\includegraphics[width=5.5cm]{./images/environment.png}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{BIND et son environnement}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+
+	\frame{
+	\frametitle{Lecture des données}
+	\begin{itemize}
+		\item Format standard et ouvert
+			\begin{itemize}
+				\item Partage de données
+				\item Utilisation avec d'autres outils
+			\end{itemize}
+			\item SQLite
+			\begin{itemize}
+				\item Visualisation rapide avec SQLite Manager
+			\end{itemize}
+			\vspace{2mm}
+			\begin{center}
+				\includegraphics[width=5.8cm]{./images/SqliteManager.png}
+			\end{center}
+	\end{itemize}
+	}
+	
+	\frame{
+	\frametitle{Documentation}
+	\framesubtitle{Pour les développeurs}
+	\begin{center}
+		\includegraphics[width=6cm]{./images/recordDocumentation.png}
+	\end{center}
+	}
+
+	\frame{
+	\frametitle{Distribution}
+		\begin{itemize}
+			\item On peut facilement distribuer des logiciels bâtis sur BIND
+			\item Création d'application autonomes
+			\begin{itemize}
+				\item Possibilité d'empaqueter un ensemble de scripts 
+				\item Possibilité d'empaqueter des interfaces graphiques
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\textbf{Partage des outils}
+		\end{center}
+	}
+
+
+	\frame{
+	\frametitle{\ }
+	\label{Reponse}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(-20,0){\includegraphics[width=6cm]{./images/question.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Est-ce que BIND répond à notre problématique ?}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+
+		\frame{
+	\frametitle{BIND dans la chaine de traitement des données}
+	\label{Excel}
+	\begin{center}
+		\includegraphics[width=11.8cm]{./images/chaineTraitement.png}
+	\end{center}
+	}
+	
+	\frame{
+	\frametitle{Réponse à la problématique}
+	\begin{itemize}
+		\item BIND : Une boîte à outils pour l'analyse de données expérimentales
+		\item Utiliser BIND permet de 
+		\begin{itemize}
+			\item Guider l'activité de conception
+		  \item Réutiliser les développements
+			\item Faciliter l'échange d'outils et de données
+		\end{itemize}
+	\end{itemize}
+	\begin{center}
+			\textbf{Formalisation des processus d'analyse des données}
+	\end{center}
+	}
+		
+	\frame{
+	\frametitle{\ }
+	\label{Avenir}
+	\begin{columns}
+		\begin{column}[l]{5cm}
+			\put(0,0){\includegraphics[width=5cm]{./images/road.jpg}}
+		\end{column}
+		\begin{column}[r]{6cm}
+			\begin{center}
+				\textbf{Quel avenir pour BIND ?}
+			\end{center}
+		\end{column}
+	\end{columns}
+	}
+
+	\frame{
+	\frametitle{Stratégie d'évolution}
+		\begin{itemize}
+			\item Développement
+				\begin{itemize}
+					\item en fonction des besoins
+					\item vers l'industrialisation du logiciel
+				\end{itemize}
+			\item Transfert
+				\begin{itemize}
+					\item interne INRETS... puis vers l'extérieur
+					\item accompagnement : documentation, exemples, tutoriels 'getting started'...
+			\end{itemize}
+		\end{itemize}
+		
+			\begin{center}
+				\textbf{Projet vivant et dynamique}
+			\end{center}
+	}
+	
+	\frame{
+	\frametitle{Licence logiciel}
+		\begin{itemize}
+			\item Diffusion par étapes
+				\begin{itemize}
+					\item Accompagnement de quelques intéressés
+					\item Consolidation
+					\item Diffusion plus large\dots
+				\end{itemize}
+			\item Choix d'une licence libre GPL ou LGPL
+				\begin{itemize}
+					\item Création d'une communauté
+					\item \url{http://bind-project.inrets.fr}
+				\end{itemize}
+		\end{itemize}
+	}
+	
+
+	\frame{
+	\frametitle{\ }
+	\begin{center}
+		\textbf{Merci de votre attention !}
+	\end{center}
+	}
+
+	\frame{
+	\frametitle{Contacts}
+	\begin{itemize}
+		\item Arnaud Bonnard : \url{arnaud.bonnard@inrets.fr}
+		\item Damien Sornette : \url{damien.sornette@inrets.fr}
+	\end{itemize}
+	}
+
+	\frame{
+	\frametitle{Crédits iconographiques}
+	\begin{itemize}
+		\tiny{
+		\item[\tiny{$\bullet$}] Slide \ref{Problematique} : \url{http://www.flickr.com/photos/yomostro/2972523219/}
+		\item[\tiny{$\bullet$}] Slide \ref{Framework} : \url{http://www.flickr.com/photos/mesh/7876556/}
+		\item[\tiny{$\bullet$}] Slide \ref{Fonctionnalites} : \url{http://www.flickr.com/photos/crystaljingsr/3915514724/}
+		\item[\tiny{$\bullet$}] Slide \ref{Changement} : \url{http://www.flickr.com/photos/crystaljingsr/3915513242/}
+		\item[\tiny{$\bullet$}] Slide \ref{Travail} : \url{http://www.flickr.com/photos/crystaljingsr/3915515338/}
+		\item[\tiny{$\bullet$}] Slide \ref{Paradigme} (à gauche) : \url{http://www.flickr.com/photos/crystaljingsr/3915514014/}
+		\item[\tiny{$\bullet$}] Slide \ref{Reponse} : \url{http://www.flickr.com/photos/crystaljingsr/3915514014/}
+		\item[\tiny{$\bullet$}] Slide \ref{Avenir} : \url{http://www.flickr.com/photos/john/4776861/}
+		\item[\tiny{$\bullet$}] Slide \ref{Exemples} : \url{http://www.flickr.com/photos/crystaljingsr/3914731337/}
+		\item[\tiny{$\bullet$}] Slide \ref{Projet} : \url{http://www.flickr.com/photos/crystaljingsr/3915515536/}
+		\item[\tiny{$\bullet$}] Slide \ref{Autour} : \url{http://www.flickr.com/photos/gadl/237122671/}
+		\item[\tiny{$\bullet$}] Les autres éléments iconographiques ont soit été créés pour la présentation, soit appartiennent au domaine public.
+		}
+	\end{itemize}
+	}
+
+\end{document}

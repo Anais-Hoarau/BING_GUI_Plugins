@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg6482"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="perpsective.svg">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective6488" />
+    <inkscape:perspective
+       id="perspective6465"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6570"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6595"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="1124.0219"
+     inkscape:cy="501.32169"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1150"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6583"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         id="path2998-2"
+         d="m 382.77285,316.48898 c 0,89.95697 0,89.95697 0,89.95697"
+         style="fill:#000a93;fill-opacity:1;stroke:#000a93;stroke-width:16.56500052999999900;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none;color:#000000;fill-rule:nonzero;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         transform="translate(-17.247566,129.77106)"
+         d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="2.6179939"
+         sodipodi:arg1="1.5707963"
+         sodipodi:r2="8.3375835"
+         sodipodi:r1="16.675167"
+         sodipodi:cy="269.49396"
+         sodipodi:cx="400.02042"
+         sodipodi:sides="3"
+         id="path6192"
+         style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="star" />
+    </g>
+    <g
+       id="g6542"
+       transform="translate(31.239777,-81.55839)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         ry="3.3687804"
+         y="322.02637"
+         x="60.698784"
+         height="76.003197"
+         width="581.66858"
+         id="rect2906"
+         style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:0.86176133;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         id="text2986"
+         y="374.35413"
+         x="300.20496"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="374.35413"
+           x="300.20496"
+           id="tspan2988"
+           sodipodi:role="line">Outils</tspan></text>
+    </g>
+    <g
+       id="g6523"
+       transform="translate(29.922356,-55.55839)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         ry="5.5088639"
+         y="485.39862"
+         x="120.01033"
+         height="75.761444"
+         width="465.68033"
+         id="rect2916"
+         style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         id="text2990"
+         y="537.59576"
+         x="304.64737"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="537.59576"
+           x="304.64737"
+           id="tspan2992"
+           sodipodi:role="line">BIND</tspan></text>
+    </g>
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2926"
+       width="581.31671"
+       height="75.652176"
+       x="92.114494"
+       y="622.86426"
+       ry="6.6543374"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="199.05214"
+       y="671.0517"
+       id="text2994"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2996"
+         x="199.05214"
+         y="671.0517">Sources de données</tspan></text>
+    <g
+       transform="translate(0,188.96759)"
+       id="g6583-1"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\aperspective.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         id="path2998-2-3"
+         d="m 382.77285,316.48898 c 0,89.95697 0,89.95697 0,89.95697"
+         style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:16.56500053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+         transform="translate(-17.247566,129.77106)"
+         d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="2.6179939"
+         sodipodi:arg1="1.5707963"
+         sodipodi:r2="8.3375835"
+         sodipodi:r1="16.675167"
+         sodipodi:cy="269.49396"
+         sodipodi:cx="400.02042"
+         sodipodi:sides="3"
+         id="path6192-8"
+         style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="star" />
+    </g>
+  </g>
+</svg>

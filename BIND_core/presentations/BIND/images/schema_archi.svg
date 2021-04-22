@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="schema_archi.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path3808"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path3790"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path3918"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3796"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3802"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2863"
+       inkscape:persp3d-origin="373.37598 : 173.374 : 1"
+       inkscape:vp_z="746.75195 : 260.061 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 260.061 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2868"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2868-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2868-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2944"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2965"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2965-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5556"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-8"
+       style="overflow:visible">
+      <path
+         id="path3808-8"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective6202"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6224"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6250"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6271"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6296"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6321"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6346"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6374"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="379.0646"
+     inkscape:cy="724.53558"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1150"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2906"
+       width="581.42859"
+       height="124.28571"
+       x="78.571426"
+       y="59.505039"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2916"
+       width="465.68033"
+       height="75.761444"
+       x="78.571426"
+       y="354.34677"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2926"
+       width="581.31671"
+       height="75.652176"
+       x="78.571426"
+       y="444.30389"
+       ry="6.6543374"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="190.98494"
+       y="132.06781"
+       id="text2986"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2988"
+         x="190.98494"
+         y="132.06781">Applications métiers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="250.67917"
+       y="406.30951"
+       id="text2990"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2992"
+         x="250.67917"
+         y="406.30951">Matlab</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="153.34111"
+       y="492.4913"
+       id="text2994"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2996"
+         x="153.34111"
+         y="492.4913">OS (Windows, Linux, ...)</tspan></text>
+    <path
+       style="fill:#000a93;fill-opacity:1;stroke:#000a93;stroke-width:16.56500053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none"
+       d="m 603.56615,184.34266 c 0,237.88387 0,237.88387 0,237.88387"
+       id="path2998"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#000a93;fill-opacity:1;stroke:#000a93;stroke-width:15.46883392;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none"
+       d="m 496.48998,184.24125 c 0,149.45852 0,149.45852 0,149.45852"
+       id="path2998-2"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6192"
+       sodipodi:sides="3"
+       sodipodi:cx="400.02042"
+       sodipodi:cy="269.49396"
+       sodipodi:r1="16.675167"
+       sodipodi:r2="8.3375835"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+       transform="translate(96.469568,50.002551)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="translate(203.54573,140.28303)"
+       sodipodi:type="star"
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6192-5"
+       sodipodi:sides="3"
+       sodipodi:cx="400.02042"
+       sodipodi:cy="269.49396"
+       sodipodi:r1="16.675167"
+       sodipodi:r2="8.3375835"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_avant.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2906-1"
+       width="581.42859"
+       height="124.28571"
+       x="82.066483"
+       y="554.44629"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2916-4"
+       width="465.68033"
+       height="75.761444"
+       x="82.066483"
+       y="849.28802"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2926-2"
+       width="581.31671"
+       height="75.652176"
+       x="82.066483"
+       y="939.24512"
+       ry="6.6543374"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="194.48"
+       y="627.00903"
+       id="text2986-3"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2988-2"
+         x="194.48"
+         y="627.00903">Applications métiers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="254.17422"
+       y="901.25073"
+       id="text2990-2"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2992-1"
+         x="254.17422"
+         y="901.25073">Matlab</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="156.83617"
+       y="987.4325"
+       id="text2994-6"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2996-8"
+         x="156.83617"
+         y="987.4325">OS (Windows, Linux, ...)</tspan></text>
+    <path
+       style="fill:#000a93;fill-opacity:1;stroke:#000a93;stroke-width:16.56500053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none"
+       d="m 607.06121,679.28387 c 0,237.88387 0,237.88387 0,237.88387"
+       id="path2998-5"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#000a93;fill-opacity:1;stroke:#000a93;stroke-width:15.46883392;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none"
+       d="m 499.98504,679.18246 c 0,149.45852 0,149.45852 0,149.45852"
+       id="path2998-2-76"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6192-18"
+       sodipodi:sides="3"
+       sodipodi:cx="400.02042"
+       sodipodi:cy="269.49396"
+       sodipodi:r1="16.675167"
+       sodipodi:r2="8.3375835"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+       transform="translate(99.964625,544.94376)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="translate(207.04079,635.22424)"
+       sodipodi:type="star"
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6192-5-9"
+       sodipodi:sides="3"
+       sodipodi:cx="400.02042"
+       sodipodi:cy="269.49396"
+       sodipodi:r1="16.675167"
+       sodipodi:r2="8.3375835"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2916-5-2"
+       width="355.71167"
+       height="75.899406"
+       x="81.997505"
+       y="758.49658"
+       ry="5.5188956"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="211.65021"
+       y="810.76263"
+       id="text6238-7"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan6240-9"
+         x="211.65021"
+         y="810.76263">BIND</tspan></text>
+    <path
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:15.46883392;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 274.21594,678.5546 c 0,64.32553 0,64.32553 0,64.32553"
+       id="path2998-2-7-5"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#000a93;fill-opacity:1;fill-rule:nonzero;stroke:#000a93;stroke-width:17.30483437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6192-1-4"
+       sodipodi:sides="3"
+       sodipodi:cx="400.02042"
+       sodipodi:cy="269.49396"
+       sodipodi:r1="16.675167"
+       sodipodi:r2="8.3375835"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.02042,286.16912 -14.44112,-25.01275 28.88223,0 -14.44111,25.01275 z"
+       transform="translate(-125.80447,454.77731)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g6334-3"
+       transform="translate(245.93168,83.304046)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         transform="translate(-237.38585,402.04071)"
+         d="m 528.30978,252.82645 c 0,20.36305 -16.50752,36.87056 -36.87057,36.87056 -20.36305,0 -36.87057,-16.50751 -36.87057,-36.87056 0,-20.36306 16.50752,-36.87057 36.87057,-36.87057 20.36305,0 36.87057,16.50751 36.87057,36.87057 z"
+         sodipodi:ry="36.870567"
+         sodipodi:rx="36.870567"
+         sodipodi:cy="252.82645"
+         sodipodi:cx="491.43921"
+         id="path6309-1"
+         style="color:#000000;fill:none;stroke:#ad0a00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         id="path6311-2"
+         d="m 229.30463,681.6362 c 50.50763,-51.51778 50.50763,-52.52793 50.50763,-52.52793"
+         style="color:#000000;fill:none;stroke:#ad0a00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       transform="translate(353.00785,83.304046)"
+       id="g6334-2-3"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\archi_apres.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         transform="translate(-237.38585,402.04071)"
+         d="m 528.30978,252.82645 c 0,20.36305 -16.50752,36.87056 -36.87057,36.87056 -20.36305,0 -36.87057,-16.50751 -36.87057,-36.87056 0,-20.36306 16.50752,-36.87057 36.87057,-36.87057 20.36305,0 36.87057,16.50751 36.87057,36.87057 z"
+         sodipodi:ry="36.870567"
+         sodipodi:rx="36.870567"
+         sodipodi:cy="252.82645"
+         sodipodi:cx="491.43921"
+         id="path6309-7-3"
+         style="color:#000000;fill:none;stroke:#ad0a00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         id="path6311-6-4"
+         d="m 229.30463,681.6362 c 50.50763,-51.51778 50.50763,-52.52793 50.50763,-52.52793"
+         style="color:#000000;fill:none;stroke:#ad0a00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>

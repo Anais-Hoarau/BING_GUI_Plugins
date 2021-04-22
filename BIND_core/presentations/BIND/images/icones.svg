@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="icones.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2891"
+       inkscape:persp3d-origin="36.425198 : 100.2874 : 1"
+       inkscape:vp_z="72.850395 : 150.43111 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 150.43111 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2973"
+       inkscape:persp3d-origin="16.494095 : 10.996063 : 1"
+       inkscape:vp_z="32.98819 : 16.494095 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 16.494095 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3861"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4253"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4297"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4344"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4387"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2849"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2868"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3661"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3694"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3721"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3742"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3763"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3794"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3794-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3829"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3853"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3884"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3910"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3940"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3940-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3940-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3940-75"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3989"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="37.386757"
+     inkscape:cy="905.72152"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1150"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10200000000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062"
+       width="58.826797"
+       height="44.661148"
+       x="45.22015"
+       y="171.06558"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\attribute.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 87.900903,193.90685 c 2.91975,1.80888 3.63678,5.89875 1.4209,8.53778 -1.77751,2.99612 -5.50965,0.67725 -7.80941,2.10852 -1.61448,1.61231 -1.90918,4.5739 -4.50146,5.0939 -2.83683,0.69457 -6.77661,0.12067 -8.0192,-2.89172 0.47787,-2.31757 -1.72238,-3.93905 -3.67197,-2.40517 -2.67432,0.23581 -5.76029,-1.26788 -6.8242,-3.83893 -1.10663,-3.22096 2.8393,-5.04527 3.4907,-7.56861 -3.54049,-0.76015 -5.04333,-6.12208 -2.11686,-8.45813 1.4442,-2.38802 4.57294,-1.68342 6.86126,-1.38516 2.79771,0.38775 1.64946,-3.43528 3.7501,-4.51717 2.36484,-2.38794 7.03973,-2.38664 8.86094,0.65497 1.19947,1.85325 2.25257,5.42557 5.02162,3.47042 3.3458,-0.75785 5.95161,2.13671 6.35746,5.21419 0.79598,2.91206 -1.07539,4.3485 -3.11086,5.29824 0.30623,0.24803 -0.0744,0.62344 0.29098,0.68687 z m -13.07571,-6.56086 c -4.97311,-0.6802 -8.81132,6.3153 -5.23473,10.00402 2.95574,3.38211 9.13747,2.90087 11.23413,-1.19311 2.29919,-3.91105 -1.6542,-9.34424 -5.9994,-8.81091 z"
+       id="4"
+       sodipodi:nodetypes="cccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\attribute.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 87.900903,193.90685 c -1.1033,-1.9313 4.03927,-1.85994 2.94144,-4.56373 -0.27276,-2.90307 -1.54323,-7.04997 -5.20125,-6.59511 -2.0533,-0.13872 -4.8958,1.47824 -5.0812,-1.61232 -1.06355,-2.75584 -3.99173,-4.91396 -7.00404,-4.13196 -2.46709,0.4433 -4.6965,2.51169 -4.76106,5.11446 -1.28214,2.80881 -4.10436,-0.33175 -6.1623,0.55665 -3.0532,0.83349 -5.56934,4.5467 -3.7473,7.53258 0.007,2.1962 5.07166,2.47413 2.07984,4.63401 -1.50205,1.39427 -3.05859,3.44428 -2.56656,5.612 1.25648,2.9132 4.58048,4.14811 7.5961,3.84219 1.74083,-0.66199 2.90741,-0.52367 2.93348,1.6629 0.0837,2.87303 3.17449,3.78842 5.55778,3.94841 2.67658,0.34429 5.28486,-1.3831 6.02853,-3.96504 0.35823,-2.90076 3.21661,-1.54714 5.08023,-1.55783 3.19714,-0.53623 6.02837,-3.87383 4.89134,-7.16984 -0.5109,-1.33368 -1.54273,-2.37101 -2.58503,-3.30737 z"
+       id="5"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\attribute.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 74.825193,187.34599 c -4.97311,-0.6802 -8.81132,6.3153 -5.23473,10.00402 2.95574,3.38211 9.13747,2.90087 11.23413,-1.19311 2.29743,-3.91495 -1.64985,-9.33955 -5.9994,-8.81091 z"
+       id="6"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\attribute.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-9"
+       width="58.826797"
+       height="44.661148"
+       x="297.19376"
+       y="300.74591"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\data.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.53452247px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 300.35714,323.93361 52.32143,0"
+       id="path4266"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\data.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-4"
+       width="58.826797"
+       height="44.661148"
+       x="219.58389"
+       y="357.69269"
+       ry="5.5088639" />
+    <g
+       id="g4311"
+       style="stroke-width:1.102;stroke-miterlimit:4;stroke-dasharray:none">
+      <path
+         d="m 248.53031,399.51271 0,-25.30617 0.93398,0 0.93398,0 0,25.30617 -0.93398,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.102;stroke-miterlimit:4;stroke-dasharray:none"
+         id="56" />
+      <path
+         d="m 249.46429,377.01834 c -4.6699,0 -8.40582,-2.8118 -8.40582,-7.49813 0,-4.68632 3.73592,-8.43539 8.40582,-8.43539 4.6699,0 7.47183,3.74907 7.47183,8.43539 0,4.68633 -2.80193,7.49813 -7.47183,7.49813 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.102;stroke-miterlimit:4;stroke-dasharray:none"
+         id="57" />
+      <path
+         d="m 249.46429,377.01834 c -4.6699,0 -8.40582,-2.8118 -8.40582,-7.49813 0,-4.68632 3.73592,-8.43539 8.40582,-8.43539 4.6699,0 7.47183,3.74907 7.47183,8.43539 0,4.68633 -2.80193,7.49813 -7.47183,7.49813"
+         style="fill:none;stroke:#000000;stroke-width:1.102;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none;stroke-miterlimit:4"
+         id="58" />
+    </g>
+    <rect
+       style="color:#000000;fill:#ffff99;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-4-5"
+       width="58.826797"
+       height="44.661148"
+       x="290.62082"
+       y="374.13876"
+       ry="5.5088639" />
+    <g
+       id="g4401"
+       transform="matrix(0.78421686,0,0,0.78421686,69.224869,85.882226)">
+      <path
+         d="m 299.27388,415.38104 0,-25.30617 0.93398,0 0.93398,0 0,25.30617 -0.93398,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="61" />
+      <path
+         d="m 300.20786,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.6699,0 8.40581,3.74906 8.40581,7.49812 0,4.68633 -3.73591,8.43539 -8.40581,8.43539 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="62" />
+      <path
+         d="m 300.20786,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.6699,0 8.40581,3.74906 8.40581,7.49812 0,4.68633 -3.73591,8.43539 -8.40581,8.43539"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="63" />
+      <path
+         d="m 338.50102,415.38104 0,-25.30617 0.93398,0 0.93397,0 0,25.30617 -0.93397,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="64" />
+      <path
+         d="m 339.435,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.66989,0 7.47183,3.74906 7.47183,7.49812 0,4.68633 -2.80194,8.43539 -7.47183,8.43539 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="65" />
+      <path
+         d="m 339.435,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.66989,0 7.47183,3.74906 7.47183,7.49812 0,4.68633 -2.80194,8.43539 -7.47183,8.43539"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="66" />
+      <path
+         d="m 289.00011,414.44378 61.64264,0"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="67" />
+      <path
+         d="m 300.20786,413.50651 39.22714,0 0,0.93727 0,0.93726 -39.22714,0 0,-0.93726 0,-0.93727 z"
+         style="fill:#800000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="68" />
+    </g>
+    <path
+       style="fill:none;stroke:#660066;stroke-width:0.767;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 302.28343,329.77742 c 0.32098,-1.80887 0.64194,-3.61776 0.96292,-5.42663 0.13216,2.71332 0.26433,5.42663 0.39649,8.13995 0.26433,-3.43687 0.52866,-6.87374 0.793,-10.31061 0.20768,4.28101 0.41539,8.56202 0.62307,12.84304 0.35874,-6.0899 0.71749,-12.17979 1.07623,-18.26967 0.26433,7.53699 0.52866,15.07398 0.793,22.61097 0.49089,-9.22528 0.98179,-18.45055 1.47269,-27.67583 0.37762,3.91924 0.75524,7.83848 1.13286,11.75772 0.52867,-4.28101 1.05734,-8.56203 1.58601,-12.84304 0.54753,5.54723 1.09508,11.09445 1.64262,16.64167 0.64195,-7.23551 1.2839,-14.47102 1.92585,-21.70652 0.47202,4.88396 0.94404,9.76794 1.41607,14.65191 0.35874,-3.97954 0.71747,-7.95907 1.07621,-11.93861 0.62307,5.96929 1.24614,11.9386 1.86921,17.90789 0.50978,-3.49716 1.01957,-6.99432 1.52935,-10.49148 0.18881,3.31628 0.37764,6.63254 0.56645,9.94882 0.37761,-1.98976 0.75522,-3.97953 1.13284,-5.96929 0.54754,2.53242 1.09509,5.06485 1.64264,7.59728 0.60418,-2.11035 1.20837,-4.22072 1.81255,-6.33107 0.64196,2.59273 1.28391,5.18544 1.92587,7.77817 0.41537,-1.98976 0.83076,-3.97952 1.24614,-5.96928 0.35872,2.9545 0.71747,5.909 1.07621,8.8635 0.54755,-1.86918 1.09509,-3.73836 1.64264,-5.60753 0.73634,2.53243 1.47271,5.06486 2.20906,7.59728 0.0944,-1.50739 0.18881,-3.01479 0.2832,-4.52218 0.58531,1.80888 1.17063,3.61775 1.75593,5.42663 0.49091,-1.86918 0.98181,-3.73835 1.47271,-5.60752 0.75524,1.50739 1.51048,3.0148 2.26571,4.52219 0.64195,-2.65302 1.2839,-5.30604 1.92585,-7.95906 0.71748,1.74858 1.43495,3.49715 2.15243,5.24575 0.55551,-2.89881 0.98018,-5.82698 1.61721,-8.70749 0.53714,-1.25793 1.07428,-2.51585 1.61142,-3.77378 0.71316,1.71867 1.17137,3.53039 2.05255,5.18774 0.713,1.16497 1.42602,2.32992 2.13901,3.49489"
+       id="path4470"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\data.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffba9d;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10177279000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-9-9"
+       width="58.826797"
+       height="44.661148"
+       x="215.77141"
+       y="38.235893"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaData.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.53452247px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 218.93479,61.423594 52.32143,0"
+       id="path4266-4"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaData.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#ffba9d;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10200000000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-4-8"
+       width="58.826797"
+       height="44.661148"
+       x="138.16154"
+       y="95.182671"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaEvent.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       transform="translate(-81.422353,-262.51001)"
+       id="g4311-8"
+       style="stroke-width:1.102;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaEvent.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         d="m 248.53031,399.51271 0,-25.30617 0.93398,0 0.93398,0 0,25.30617 -0.93398,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="56-2" />
+      <path
+         d="m 249.46429,377.01834 c -4.6699,0 -8.40582,-2.8118 -8.40582,-7.49813 0,-4.68632 3.73592,-8.43539 8.40582,-8.43539 4.6699,0 7.47183,3.74907 7.47183,8.43539 0,4.68633 -2.80193,7.49813 -7.47183,7.49813 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="57-4" />
+      <path
+         d="m 249.46429,377.01834 c -4.6699,0 -8.40582,-2.8118 -8.40582,-7.49813 0,-4.68632 3.73592,-8.43539 8.40582,-8.43539 4.6699,0 7.47183,3.74907 7.47183,8.43539 0,4.68633 -2.80193,7.49813 -7.47183,7.49813"
+         style="fill:none;stroke:#000000;stroke-width:1.102;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="58-5" />
+    </g>
+    <rect
+       style="color:#000000;fill:#ffba9d;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.10200000000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-4-5-5"
+       width="58.826797"
+       height="44.661148"
+       x="209.19847"
+       y="111.62875"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaSituation.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g4401-1"
+       transform="matrix(0.78421686,0,0,0.78421686,-12.197483,-176.62779)"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaSituation.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         d="m 299.27388,415.38104 0,-25.30617 0.93398,0 0.93398,0 0,25.30617 -0.93398,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="61-7" />
+      <path
+         d="m 300.20786,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.6699,0 8.40581,3.74906 8.40581,7.49812 0,4.68633 -3.73591,8.43539 -8.40581,8.43539 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="62-1" />
+      <path
+         d="m 300.20786,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.6699,0 8.40581,3.74906 8.40581,7.49812 0,4.68633 -3.73591,8.43539 -8.40581,8.43539"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="63-1" />
+      <path
+         d="m 338.50102,415.38104 0,-25.30617 0.93398,0 0.93397,0 0,25.30617 -0.93397,0 -0.93398,0 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="64-5" />
+      <path
+         d="m 339.435,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.66989,0 7.47183,3.74906 7.47183,7.49812 0,4.68633 -2.80194,8.43539 -7.47183,8.43539 z"
+         style="fill:#660066;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="65-2" />
+      <path
+         d="m 339.435,392.88667 c -4.6699,0 -8.40582,-3.74906 -8.40582,-8.43539 0,-3.74906 3.73592,-7.49812 8.40582,-7.49812 4.66989,0 7.47183,3.74906 7.47183,7.49812 0,4.68633 -2.80194,8.43539 -7.47183,8.43539"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="66-7" />
+      <path
+         d="m 289.00011,414.44378 61.64264,0"
+         style="fill:none;stroke:#000000;stroke-width:0.93397945px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="67-6" />
+      <path
+         d="m 300.20786,413.50651 39.22714,0 0,0.93727 0,0.93726 -39.22714,0 0,-0.93726 0,-0.93727 z"
+         style="fill:#800000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="68-1" />
+    </g>
+    <path
+       style="fill:none;stroke:#660066;stroke-width:0.76700002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 220.86108,67.267404 c 0.32098,-1.80887 0.64194,-3.61776 0.96292,-5.42663 0.13216,2.71332 0.26433,5.42663 0.39649,8.13995 0.26433,-3.43687 0.52866,-6.87374 0.793,-10.31061 0.20768,4.28101 0.41539,8.56202 0.62307,12.84304 0.35874,-6.0899 0.71749,-12.17979 1.07623,-18.26967 0.26433,7.53699 0.52866,15.07398 0.793,22.61097 0.49089,-9.22528 0.98179,-18.45055 1.47269,-27.67583 0.37762,3.91924 0.75524,7.83848 1.13286,11.75772 0.52867,-4.28101 1.05734,-8.56203 1.58601,-12.84304 0.54753,5.54723 1.09508,11.09445 1.64262,16.64167 0.64195,-7.23551 1.2839,-14.47102 1.92585,-21.70652 0.47202,4.88396 0.94404,9.76794 1.41607,14.65191 0.35874,-3.97954 0.71747,-7.95907 1.07621,-11.93861 0.62307,5.96929 1.24614,11.9386 1.86921,17.90789 0.50978,-3.49716 1.01957,-6.99432 1.52935,-10.49148 0.18881,3.31628 0.37764,6.63254 0.56645,9.94882 0.37761,-1.98976 0.75522,-3.97953 1.13284,-5.96929 0.54754,2.53242 1.09509,5.06485 1.64264,7.59728 0.60418,-2.11035 1.20837,-4.22072 1.81255,-6.33107 0.64196,2.59273 1.28391,5.18544 1.92587,7.77817 0.41537,-1.98976 0.83076,-3.97952 1.24614,-5.96928 0.35872,2.9545 0.71747,5.909 1.07621,8.8635 0.54755,-1.86918 1.09509,-3.73836 1.64264,-5.60753 0.73634,2.53243 1.47271,5.06486 2.20906,7.59728 0.0944,-1.50739 0.18881,-3.01479 0.2832,-4.52218 0.58531,1.80888 1.17063,3.61775 1.75593,5.42663 0.49091,-1.86918 0.98181,-3.73835 1.47271,-5.60752 0.75524,1.50739 1.51048,3.0148 2.26571,4.52219 0.64195,-2.65302 1.2839,-5.30604 1.92585,-7.95906 0.71748,1.74858 1.43495,3.49715 2.15243,5.24575 0.55551,-2.89881 0.98018,-5.82698 1.61721,-8.70749 0.53714,-1.25793 1.07428,-2.51585 1.61142,-3.77378 0.71316,1.71867 1.17137,3.53039 2.05255,5.18774 0.713,1.16497 1.42602,2.32992 2.13901,3.49489"
+       id="path4470-4"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\MetaData.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g3923">
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\subject.png"
+         ry="5.5088639"
+         y="239.08217"
+         x="74.632309"
+         height="44.661148"
+         width="58.826797"
+         id="rect3062-0"
+         style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         transform="translate(-53.033012,-2.2254084)"
+         d="m 162.12949,250.04852 a 5.3033009,5.3033009 0 1 1 -10.6066,0 5.3033009,5.3033009 0 1 1 10.6066,0 z"
+         sodipodi:ry="5.3033009"
+         sodipodi:rx="5.3033009"
+         sodipodi:cy="250.04852"
+         sodipodi:cx="156.82619"
+         id="path3776"
+         style="color:#000000;fill:#660066;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         id="path3778"
+         d="m 104.04571,252.62134 c 0,15.15229 0,15.15229 0,15.15229 7.10911,12.31334 7.23538,12.53204 7.23538,12.53204"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path3782"
+         d="m 94.449258,258.68226 c 19.192902,0 19.192902,0 19.192902,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path3784"
+         d="m 104.29825,267.52109 -7.252302,12.56135"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:#969696;stroke-width:1.102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3062-0-8"
+       width="58.826797"
+       height="44.661148"
+       x="147.86836"
+       y="188.82709"
+       ry="5.5088639"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#660066;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1;fill-rule:nonzero"
+       id="rect3843"
+       width="39.39595"
+       height="32.829956"
+       x="158.34142"
+       y="194.74268"
+       ry="0"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.99956185px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3874"
+       width="6.1560507"
+       height="32.830399"
+       x="158.3412"
+       y="194.74246"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.99912339px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3874-2"
+       width="6.1564889"
+       height="32.799267"
+       x="191.58131"
+       y="194.74223"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930"
+       width="4.987628"
+       height="4.987628"
+       x="158.88594"
+       y="195.23982"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-2"
+       width="4.987628"
+       height="4.987628"
+       x="158.88594"
+       y="201.94478"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-3"
+       width="4.987628"
+       height="4.987628"
+       x="158.88594"
+       y="208.64973"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-29"
+       width="4.987628"
+       height="4.987628"
+       x="158.88594"
+       y="215.35469"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-34"
+       width="4.987628"
+       height="4.987628"
+       x="158.88594"
+       y="222.05962"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-32"
+       width="4.987628"
+       height="4.987628"
+       x="192.21307"
+       y="195.19081"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-2-1"
+       width="4.987628"
+       height="4.987628"
+       x="192.21307"
+       y="201.89577"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-3-1"
+       width="4.987628"
+       height="4.987628"
+       x="192.21307"
+       y="208.60072"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-29-3"
+       width="4.987628"
+       height="4.987628"
+       x="192.21307"
+       y="215.30568"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="color:#000000;fill:#95e285;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3930-34-2"
+       width="4.987628"
+       height="4.987628"
+       x="192.21307"
+       y="222.0106"
+       ry="0.91545063"
+       inkscape:export-filename="C:\Users\sornette\Desktop\BIND_Beamer\images\video.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>

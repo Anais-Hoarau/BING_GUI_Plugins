@@ -1,0 +1,31 @@
+Title: 2.Exceptions
+
+Définition:
+
+Les exceptions sont un mécanisme de gestion et de traitement des erreurs survenant au cours de l'execution du programme. Lorsqu'une méthode rencontre une erreur et lance une exception, son fonctionnement est interrompu, et une portion de code spéciale est executée dans le code appelant la méthode defectueuse. Le code appelant peut soit traiter l'exception (via la portion de code dédiée), soit ignorer son existence, et la propager au code qui l'a lui même appelé. Si l'exception remonte toute la pile d'appel sans être traitée ("catchée"), l'execution du programme entier est alors interrompue, et un message d'erreur est affiché dans la console (s'il y'en a une) ou parfois via un message d'erreur du système d'exploitation ou du gestionnaire de bureau.
+
+Dans le diagramme suivant (see Propagation_exceptions.png) on voit la pile d'appel normale, en vert, et la manière dont l'exception se propage ou est traitée pour revenir au déroulement normal.
+
+Matlab:
+Dans Matlab, la syntaxe pour lever une exception est la suivante :
+>ex = MException('<Classe>:<Méthode>:<Identifiant>', 'Message en clair');
+>throw(ex);
+Il faut noter que <Classe>:<Méthode>:<Identifiant> n'est en rien la structure obligatoire de l'identifiant de l'exception, c'est néanmoins la convention que j'ai suivi dans le développement de Dépouillement, car elle permet de retrouver rapidement la source de l'erreur.
+
+Les deux lignes de commande précédentes construisent un objet MException, et l'envoient ensuite au code appelant, interrompant le déroulement normal du programme.
+
+Dans le code appelant notre méthode potentiellement defectueuse, on emploiera la syntaxe suivante pour "catcher" l'exception :
+>try
+>   maMéthodePotentiellementProblématique()
+>catch ME
+>   propagation de la même exception ou d'une nouvelle, ou traitement de l'exception
+>end
+
+Dans le bloc catch/end, on aura accès à la variable ME, qui contient un certain nombres de champs nous renseignants sur l'exception, afin par exemple de traiter différemment selon le type d'exception (une même méthode peut lancer différents types d'exceptions).
+
+Exercice d'application:
+Nous allons partir dans l'espace avec un vaisseau spatial peu fiable et un mécano qui fait ce qu'il peut. Les classes à développer sont les suivantes (see Espace.png).
+
+On pourra faire voyager le vaisseau spatial seul, avec un Mecano ou avec un Mecano Malin, et observer la propagation des exceptions.
+
+Un corrigé est diponible dans le dossier source de la documentation de cette formation.

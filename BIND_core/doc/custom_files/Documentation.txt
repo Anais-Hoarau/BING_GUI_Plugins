@@ -1,0 +1,7 @@
+Title: Documentation
+
+Code documentation:
+The documentation of the code is generated with Natural docs, a generic code documentation tool. It performs the generation by parsing the comments of the .m files and looking for some special formattings. More details about how to use the comments to ensure the proper generation of the doc can be found on Natural Docs homepage (http://www.naturaldocs.org/)
+
+Conception documentation:
+The source files for the conception of the application (readable here : <Conception>) are located in the doc/custom_files of Depouillement. The text files are parsed by Natural Docs as the comments in .m files, with the same syntax. In this folder the file Depouillement.zargo can also be found.

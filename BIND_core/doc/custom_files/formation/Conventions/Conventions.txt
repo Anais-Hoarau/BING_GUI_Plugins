@@ -1,0 +1,32 @@
+Title: 0.Conventions
+
+Afin de maintenir une bonne lisibilité du code, il est nécessaire que tout les développeurs suivent les mêmes conventions, de manière à produire un travail homogène et ne nécessitant moins de temps d'adaptation. Voici donc un certain nombre de conventions utilisées dans dépouillement.
+
+Langue:
+Le code est *en anglais*. Cela signifie que les noms de variables, de classes et de méthodes doivent être en anglais. Attention aux pluriels, la même variable au singulier ou au pluriel n'a pas tout à fait le même sens ! Ainsi la variable *subject* contiendra un seul sujet, là ou la variable *subjects* sera plus probablement une collection de sujets, comme par exemple un tableau.
+
+Nom des variables:
+Ils doivent être explicites (éviter les abbréviations ambigües, les simples lettres suffixées par un chiffre, ...), et correspondent généralement à des noms communs, très rarement à des verbes ou des adjectifs. Dans le cas des variables booléennes, on nommera la variable en *isXXX*, et la valeur *true* correspondra à une réponse positive à la "question" posée par le nom de la variable. Par exemple isEven vaudra *true* si le nombre est pair et false s'il est impair. Un nom de variable commence par une minuscule. S'il est composé de plusieurs mots, ils sont accolés sans séparateurs, et la première lettre de chaque (sauf le premier) est en majuscule (par ex. buttonHandler).
+
+Nom des constantes:
+Les constantes sont nommées en majuscules, avec les différents mots séparés par des underscores (_). Par exemple COLORS_LIST.
+
+Nom des méthodes:
+Les noms de méthodes sont essentiellement des verbes, ou parfois des "mini-phrases", qui décrivent ce que fait la méthode. Pour la casse, ils suivent les même conventions que les variables. A noter qu'on mettra généralement le constructeur comme première méthode, ce qui permet de le retrouver facilement. Les méthodes d'accès aux attributs de la classe sont nommés en *get<nomAttribut>* pour getters et en *set<nomAttribut>* pour les setters. Comme pour les variables booléennes, les méthodes qui retournent un booléen seront nommées *isXXX*.
+
+Nom des classes:
+Le nom doit illustrer le concept que la classe permet de manipuler. Les noms de classes commencent par une majuscule. S'il est composé de plusieurs mots, ils sont accolés sans séparateurs, et la première lettre de chaque est en majuscule (par ex. TimerMessage).
+
+Syntaxe:
+Afin d'aérer le code, on met des espaces autour des opérateurs (+/=...). Ainsi, 
+>a = a + 1 
+est plus lisible que
+>a=a+1
+En Matlab pour l'appel d'une méthode de classe sur un objet, on peut soit passer l'objet en tant que premier argument de la méthode, ou omettre cet argument et utiliser la notation pointée. On écrira donc
+>a.méthode(arg1)
+et non
+>méthode(a, arg1)
+même si cette seconde syntaxe est valide du point de vue de l'interpréteur Matlab.
+
+Commentaires:
+Sans parler de la documentation du code en elle-même, les passages un peu complexes du code, ou compréhensibles par leur seul auteur, même s'ils devraient être rares ou inexistants, se doivent d'être commentés pour les expliciter.

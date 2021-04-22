@@ -1,0 +1,8 @@
+Title: Database
+
+One of the implementations of <fr.lescot.bind.kernel.Trip> is <fr.lescot.bind.SQLiteTrip>. This implementation is based on SQLite, a lightweight public domain relational database system, that works in file mode (i.e. does not require a running server). The core of this database are the tables that describes the datas (the Meta* tables), and the tables that contains the informations about the trip, the participant and the videos.
+The Meta* are vital because the datas theirselfs are dynamic, and can be removed, added, modified, ... If the Meta* are correctly updated at each operation, it allows the programm to know what are the available datas and their variables at any time.
+
+The diagramm (see db.png) is an export of a model (db.mwb) realised with MySQL Workbench, a MySQL dedicated tool, but that provides good functionnalities for modeling any relational database.
+
+The other tables (the ones that contains all the real datas), are quite simple : a timecode column, and one additionnal column for each additionnal variable. Due to the large amount of data collected in each table and the high variability of the requests and the semantical meaning of the columns, it is impossible to define what are the most efficient indexes to add. So an index is added on each column.

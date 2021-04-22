@@ -1,0 +1,47 @@
+Title: 5.Bases de données relationnelles
+
+Avertissement:
+Les bases de données relationnelles forment un sujet complexe, et administrer une base de données conséquente est un métier en soit. Par conséquent, cette formation n'a pas vocation à rentrer dans le détail de la théorie des BDD, ni de l'algèbre relationelle, ni de la conception et de l'administration de ces bases. On abordera le sujet sous un angle simplifié et pratique. On trouvera beaucoup d'informations complémentaires sur Internet, notamment ici : http://sgbd.developpez.com/cours/ .
+
+Introduction:
+Les données de Dépouillement sont stockées dans une base de données fichier. Il est donc important de comprendre comment cette base fonctionne, et surtout comment elle s'intègre à Dépouillement.
+
+Qu'est-ce qu'une base de données relationnelle?:
+Une base de données relationnelle est un stockage de données structuré sous forme de tables (similaires à un tableau à deux dimensions). Chaque table contient des enregistrements (les lignes) définis par un certain nombre d'attributs (les colonnes). On peut donc représenter une table comme un tableau, et c'est d'ailleurs ce que font la plupart des outils graphiques d'administration de bases de données (see sqliteManager.png).Chaque enregistrement possède un identifiant unique, qui peut être un seul attribut, ou un groupe d'attributs (voir dans certains cas tout les attributs de la ligne). Cet identifiant unique a la même composition pour tout les enregistrements d'une table. On doit s'assurer, soit par la définition de contraintes dans la base (en fonction des possibilités du système), soit programmatiquement, que l'identifiant d'un enregistrement est unique. Le principe de cet identifiant est, qu'étant unique, si on effectue une requête sur l'identifiant, on obtient une unique enregistrement. Il arrive qu'une donnée soit trop complexe pour être stockée dans une seule table (c'est le cas des relations entre objets). Dans ce cas, on la stocke sur plusieurs tables, en faisant en sorte que l'identifiant soit présent dans toutes les tables, pour pouvoir "recoller les morceaux".
+
+Si on fait une analogie avec le paradigme objet, les descriptions des tables (leur structure) sont des classes, les instances d'objets sont des lignes, et les attributs sont des colonnes.
+
+Interrogation des bases:
+
+Nombre de SGBDR (Systèmes de Gestion de Bases de Données Relationnelles) utilisent *SQL* pour permettre l'interrogation de la base et sa manipulation (insertion, mise à jour et suppression d'enregistrements). SQL permet également de gérer les permissions et les transactions. Il s'agit d'une norme ISO, mais, comme à l'accoutumée, tout les SGBDR ne la respectent pas parfaitement, et la plupart ajoutent des possibilités qui ne sont pas dans la norme. Néanmoins, la plupart des requêtes simples est portable d'un SGBDR à l'autre.
+
+SQL:
+
+L'instuction de base pour récupérer des données dans une base SQL est *SELECT*. Cette fonction permet de récupérer des enregistrements de la base de données. Afin de récupérer uniquement les données qui nous interessent, on peut indiquer de quelle tables viennent les résultats, appliquer des restrictions sur les valeurs des attributs, ... A l'aide d'instructions complémentaires on peut également trier la selection, restreindre le nombre d'enregistrements retournés, ... La syntaxe de base de la commande est la suivante :
+> SELECT <* ou liste des attributs> FROM <nom de la ou des tables, avec possibilité d'alias> WHERE <condition sur les attributs>
+Par exemple
+> SELECT h.* FROM h = Habitants, a = Adresse WHERE a.ville = 'Lyon' AND h.id = a.idHabitant
+retourne tout les attributs des enregistrement d'habitants domiciliés à Lyon.
+Néanmoins, la syntaxe complète de SELECT est bien plus complexe, comme on peut le voir ici sous forme graphique : http://www.sqlite.org/lang_select.html (Il s'agit de la syntaxe de SQLite, pas de la norme SQL de l'instruction). Bien que cette syntaxe puisse sembler (relativement) simple, il ne faut pas négliger son pouvoir d'expression, car en combinant les clauses, les restrictions sur les attributs (qui peuvent par exemple se faire sous la forme d'expressions régulières), et une éventuelle imbrication des requêtes, on peut peut obtenir des selections extrêmement précises et complexes. Les trois autres principales instructions de SQL concernant la manipulation des données en elles-même (et non de leur structure) sont :
+* INSERT, qui permet d'ajouter des enregistrements dans une tables
+* DELETE, qui permet d'en enlever
+* UPDATE, qui permet d'en modifier
+
+Ces quatres instructions forment le corpus de base du SQL, et sont les plus utilisées. Il existe également un jeu d'instructions pour manipuler les tables (création, suppression, modifications des attributs, ...).
+
+SQLite et mksqlite:
+SQLite est un SGBDR qui a la particularité de fonctionner en mode fichier, sans serveur, ce qui le prédispose à l'inclusion dans des applications en client lourd, pour lesquels on dispose rarement d'un serveur de base de données prêt à servir. Il existe sous la forme d'un exécutable utilisable en ligne de commande, ou d'une librairie. C'est sous cette forme que sqlite est utilisé dans mksqlite, qui fournit un binding Matlab pour la librairie sqlite. Ce binding est particulièrement simple puisqu'il fournir une seule fonction, *mksqlite*, qui permet d'ouvrir une base de données (un fichier), et retourne un pointeur sur cette base. Elle permet également de fermer une base dont on connait le pointeur, et surtout, d'exécuter une requête sur une base ouverte. La seule restriction à SQLite causée par mksqlite que je connaisse pour le moment est l'utilisation des fonctions d'aggrégat (http://www.sqlite.org/lang_aggfunc.html) qui retournent la fonction, et non son résultat. Suite à une question au développeur, il est possible de contourner ce problème en utilisant le mot-clé AS pour renommer le resultat (http://developer.berlios.de/forum/message.php?msg_id=48129).
+
+Intégration dans dépouillement:
+On utilise pas mksqlite directement dans Dépouillement, bien que l'on conserve la possibilité de saisir directement des requêtes SQL. Il y a une classe abstraite Subject, qui demande d'implémenter un certain nombre de méthodes d'accès aux données. La classe SQLiteSubject implémente ces méthodes à l'aide de mksqlite, et permet ainsi d'accéder aux données du sujet. les données retournées par les différentes méthodes sont stockées dans les objets du package data. La classe DataRecord contient un enregistrement, et les 4 classes Meta* sont utilisées pour décrire la structure de la table, car celle-ci est générique et sera variable d'une expérimentation à une autre.
+Lorsqu'on instancie un SQLiteSubject, on lui passe en argument le chemin vers le fichier de base données correspondant, de manière à ce que l'ouverture de la base puisse se faire à l'instanciation. Ensuite, on obtient les données soit via les méthodes préfabriquées, soit en utilisant les méthodes qui permettent de lancer directement des requêtes SQL.
+
+Exercice d'application:
+- Récupérer dans le dossier src du SVN le fichier testMat2db.db (en faire une copie ailleurs).
+- Installer le plugin SQLite Manager pour Firefox : https://addons.mozilla.org/en-US/firefox/addon/5817 .
+- Ouvrir le fichier .db avec SQLite Manager (Outils > SQLite Manager).
+- Observer la structure des tables, par exemple en faisant des SELECT * FROM maTable.
+- Faire une requête SQL qui sélectionnne toutes les DonneeVehicule50Hz dont le timecode est compris entre 200 et 300.
+- Faire une requête SQL qui retourne les données facelab (DonneesFaceLab) durant lesquelles l'angle du volant (DonneeVehicule50Hz) est supérieur à 45°.
+- Ecrire une requête qui supprime toutes les DonneeVehicule50Hz dont le timecode est compris entre 200 et 300 (mot clé DELETE).
+- Instancier un objet SQLiteSubject avec en paramètre le chemin vers le fichier .db (une copie propre de préférence), et refaire les requêtes précédentes, en utilisant dans la mesure du possible les méthodes déjà implémentées. On executera les requêtes dans un fichier de script qui itère sur les enregistrements obtenus et les affiche.
