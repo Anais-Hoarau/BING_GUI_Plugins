@@ -268,6 +268,31 @@ classdef GpsViewerConfigurator < fr.lescot.bind.configurators.PluginConfigurator
     
     methods(Static)
         
+        function gpsDataAvailable =checkGpsDataStatic(metaTrip)
+        j=0;
+             gpsDataAvailable = false;
+            if metaTrip.existDataVariable('Mopad_GPS_5Hz','Latitude_5Hz') && metaTrip.existDataVariable('Mopad_GPS_5Hz','Longitude_5Hz')
+                gpsDataAvailable = true;
+                j=j+1;
+                gpsDataList{j} = 'GPS 5Hz';
+            end
+            
+            if metaTrip.existDataVariable('Mopad_CentraleInertielle_IGN500','latitude_IGN') ...
+                    && metaTrip.existDataVariable('Mopad_CentraleInertielle_IGN500','longitude_IGN')
+                gpsDataAvailable = true;
+                j=j+1;
+                gpsDataList{j} = 'Centrale Inertielle';
+            end
+            
+            if metaTrip.existDataVariable('Mopad_CentraleInertielle_IGN500','GPSraw_latitude') ...
+                    && metaTrip.existDataVariable('Mopad_CentraleInertielle_IGN500','GPSraw_longitude')
+                gpsDataAvailable = true;
+                j=j+1;
+                gpsDataList{j} = 'Centrale Inertielle (Raw Data)';   
+            end
+            
+            
+        end
         %{
         Function:
         See
