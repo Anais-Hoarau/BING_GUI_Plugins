@@ -1,0 +1,17 @@
+1.4
+Matlab
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\DataForm.m	1275384294	1	fr.lescot.matjab.extension.dataForm.DataForm
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\FormFieldType.m	1275384294	1	fr.lescot.matjab.extension.dataForm.FormFieldType
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+error\XMPPError.m	1275384294	1	fr.lescot.matjab.error.XMPPError
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\FormFieldOption.m	1275384294	1	fr.lescot.matjab.extension.dataForm.FormFieldOption
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\Extension.m	1275384294	1	fr.lescot.matjab.extension.Extension
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\MessageType.m	1275384294	1	fr.lescot.matjab.MessageType
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\FormField.m	1275384294	1	fr.lescot.matjab.extension.dataForm.FormField
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\Bot.m	1275384294	1	fr.lescot.matjab.Bot
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+error\XMPPErrorType.m	1275384294	1	fr.lescot.matjab.error.XMPPErrorType
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\MessageListener.m	1275384294	1	fr.lescot.matjab.MessageListener
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\DataFormItem.m	1275384294	1	fr.lescot.matjab.extension.dataForm.DataFormItem
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+error\XMPPErrorCondition.m	1275384294	1	fr.lescot.matjab.error.XMPPErrorCondition
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+bots\WorkspaceUpdaterBot.m	1275384293	1	fr.lescot.matjab.bots.WorkspaceUpdaterBot
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\+extension\+dataForm\DataFormReportedData.m	1275384294	1	fr.lescot.matjab.extension.dataForm.DataFormReportedData
+C:\Users\sornette\Documents\lescot-expl\Matjab\trunk\src\+fr\+lescot\+matjab\Message.m	1275384294	1	fr.lescot.matjab.Message

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+ 
+RewriteRule ^http-bind/ http://localhost:7070/http-bind/ [P] 

@@ -1,0 +1,100 @@
+Format: 1.4
+
+
+Title: Matjab
+
+# You can also add a sub-title to your menu like this:
+# SubTitle: [subtitle]
+
+# You can add a footer to your documentation like this:
+# Footer: [text]
+# If you want to add a copyright notice, this would be the place to do it.
+Timestamp: Updated mm/dd/yyyy
+#   m     - One or two digit month.  January is "1"
+#   mm    - Always two digit month.  January is "01"
+#   mon   - Short month word.  January is "Jan"
+#   month - Long month word.  January is "January"
+#   d     - One or two digit day.  1 is "1"
+#   dd    - Always two digit day.  1 is "01"
+#   day   - Day with letter extension.  1 is "1st"
+#   yy    - Two digit year.  2006 is "06"
+#   yyyy  - Four digit year.  2006 is "2006"
+#   year  - Four digit year.  2006 is "2006"
+
+
+# --------------------------------------------------------------------------
+# 
+# Cut and paste the lines below to change the order in which your files
+# appear on the menu.  Don't worry about adding or removing files, Natural
+# Docs will take care of that.
+# 
+# You can further organize the menu by grouping the entries.  Add a
+# "Group: [name] {" line to start a group, and add a "}" to end it.
+# 
+# You can add text and web links to the menu by adding "Text: [text]" and
+# "Link: [name] ([URL])" lines, respectively.
+# 
+# The formatting and comments are auto-generated, so don't worry about
+# neatness when editing the file.  Natural Docs will clean it up the next
+# time it is run.  When working with groups, just deal with the braces and
+# forget about the indentation and comments.
+# 
+# You can use this file on other computers even if they use different
+# directories.  As long as the command line points to the same source files,
+# Natural Docs will be able to correct the locations automatically.
+# 
+# --------------------------------------------------------------------------
+
+
+Group: +dataForm  {
+
+   File: BufferBot  (/cygdrive/c/Users/sornette/Documents/Matjab/BufferBot/src/org/inrets/matjab/BufferBot.java)
+
+   Group: Matjab  {
+
+      Group: +error  {
+
+         File: XMPPError  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+error/XMPPError.m)
+         File: XMPPErrorCondition  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+error/XMPPErrorCondition.m)
+         File: XMPPErrorType  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+error/XMPPErrorType.m)
+         }  # Group: +error
+
+      Group: +extension  {
+
+         Group: +dataForm  {
+
+            File: DataForm  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/DataForm.m)
+            File: DataFormItem  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/DataFormItem.m)
+            File: DataFormReportedData  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/DataFormReportedData.m)
+            File: FormField  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/FormField.m)
+            File: FormFieldOption  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/FormFieldOption.m)
+            File: FormFieldType  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/+dataForm/FormFieldType.m)
+            }  # Group: +dataForm
+
+         File: Extension  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+extension/Extension.m)
+         }  # Group: +extension
+
+      File: Bot  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/Bot.m)
+      File: bots.WorkspaceUpdaterBot  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/+bots/WorkspaceUpdaterBot.m)
+      File: Message  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/Message.m)
+      File: MessageListener  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/MessageListener.m)
+      File: MessageType  (/cygdrive/c/Users/sornette/Documents/Matjab/Matjab/+fr/+lescot/+matjab/MessageType.m)
+      }  # Group: Matjab
+
+   }  # Group: +dataForm
+
+Group: Index  {
+
+   Index: Everything
+   Class Index: Classes
+   Function Index: Functions
+   Property Index: Properties
+   Interface Index: Interfaces
+   Constant Index: Constants
+   }  # Group: Index
+
+
+
+##### Do not change or remove these lines. #####
+Data: 1(D33339Q`fH8/G393a6GH636uH\GttG3Bu9NEG\t63PptlpY3PptlpY3+cH)
+Data: 1(h33339Q`fH8/G393a6GH636uH\GttG3Bu9NEG\t63PptlpY3xNccGHxut36H9)

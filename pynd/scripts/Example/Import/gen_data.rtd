@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.3.6" EngineVersion="4.5" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages/>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="Randint_1" Model="Randint" Version="6.5" x="128" y="184" z="0">
+    <Output LongName="Randint_1.outputInteger" Name="outputInteger">
+      <Property LongName="Randint_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="Randint_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="Randint_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Randint_1.outputFloat" Name="outputFloat">
+      <Property LongName="Randint_1.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="Randint_1.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="Randint_1.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Randint_1.outputAscii" Name="outputAscii">
+      <Property LongName="Randint_1.outputAscii.subsampling" Type="1">1</Property>
+      <Property LongName="Randint_1.outputAscii.fifosize" Type="1">16</Property>
+      <Property LongName="Randint_1.outputAscii.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Randint_1.outputIntegerVector" Name="outputIntegerVector">
+      <Property LongName="Randint_1.outputIntegerVector.subsampling" Type="1">1</Property>
+      <Property LongName="Randint_1.outputIntegerVector.fifosize" Type="1">16</Property>
+      <Property LongName="Randint_1.outputIntegerVector.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Randint_1.outputFloatVector" Name="outputFloatVector">
+      <Property LongName="Randint_1.outputFloatVector.subsampling" Type="1">1</Property>
+      <Property LongName="Randint_1.outputFloatVector.fifosize" Type="1">16</Property>
+      <Property LongName="Randint_1.outputFloatVector.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Randint_1.period" Type="1">10000</Property>
+    <Property LongName="Randint_1.max" Type="1">100</Property>
+    <Property LongName="Randint_1.vectorSize" Type="1">1</Property>
+    <Property LongName="Randint_1.threaded" Type="0">true</Property>
+    <Property LongName="Randint_1.priority" Type="1">255</Property>
+    <Property LongName="Randint_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.15" x="560" y="184" z="0">
+    <Input LongName="RecFile_1.Randint_1.outputInteger.input" Name="input">
+      <Property LongName="RecFile_1.Randint_1.outputInteger.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.timestamp" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.timeOfIssue" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.timeFormat" Type="4"><![CDATA[4|3|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.separatorChar" Type="4"><![CDATA[4|0|;|,|Tab|.]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.doubles_precision" Type="1">12</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.depacketize" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.headerType" Type="4"><![CDATA[3|0|None|Manual|Auto (based on upstream graph)]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputInteger.manualHeader" Type="3"><![CDATA[Channel A; Channel B; Channel C;]]></Property>
+    </Input>
+    <Input LongName="RecFile_1.Randint_1.outputFloat.input" Name="input">
+      <Property LongName="RecFile_1.Randint_1.outputFloat.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.timestamp" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.timeOfIssue" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.timeFormat" Type="4"><![CDATA[4|3|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.separatorChar" Type="4"><![CDATA[4|0|;|,|Tab|.]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.doubles_precision" Type="1">12</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.depacketize" Type="0">false</Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.headerType" Type="4"><![CDATA[3|0|None|Manual|Auto (based on upstream graph)]]></Property>
+      <Property LongName="RecFile_1.Randint_1.outputFloat.manualHeader" Type="3"><![CDATA[Channel A; Channel B; Channel C;]]></Property>
+    </Input>
+    <Input LongName="RecFile_1.String_constant_generator_1.stringValue.input" Name="input">
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.create_secondary_file" Type="0">true</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.overload_extension" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.endl" Type="0">false</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.timestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.timeFormat" Type="4"><![CDATA[4|2|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.separator" Type="4"><![CDATA[3|0|space|tab|semicolon]]></Property>
+      <Property LongName="RecFile_1.String_constant_generator_1.stringValue.flushAfterEachData" Type="0">false</Property>
+    </Input>
+    <Property LongName="RecFile_1.path" Type="3" SubType="32"><![CDATA[D:/dev/BIND/bind/pynd/scripts/import/test/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%]]></Relative></Property>
+    <ReadOnlyProperty LongName="RecFile_1.recordPath" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.comments" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.blackbox" Type="1">0</Property>
+    <Property LongName="RecFile_1.record_buffer_delay" Type="1">1000000</Property>
+    <Property LongName="RecFile_1.delay" Type="1">0</Property>
+    <Property LongName="RecFile_1.createFolder" Type="0">true</Property>
+    <Property LongName="RecFile_1.record_to_subfolders" Type="0">false</Property>
+    <Property LongName="RecFile_1.add_record_start_time_to_folder_and_file_names" Type="0">false</Property>
+    <Property LongName="RecFile_1.allow_record_overwrite" Type="0">false</Property>
+    <ReadOnlyProperty LongName="RecFile_1.record_start_time" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RecFile_1.triggered_record_methods" Type="3"><![CDATA[Randint_1.outputInteger Randint_1.outputFloat String_constant_generator_1.stringValue]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.threaded" Type="0">false</Property>
+    <Property LongName="RecFile_1.priority" Type="1">128</Property>
+    <Property LongName="RecFile_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="String_constant_generator_1" Model="String_constant_generator" Version="2.4" x="128" y="320" z="0">
+    <Output LongName="String_constant_generator_1.stringValue" Name="stringValue">
+      <Property LongName="String_constant_generator_1.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="String_constant_generator_1.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="String_constant_generator_1.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="String_constant_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="String_constant_generator_1.outputWhenStringChanges" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.value" Type="3"><![CDATA[Hello world!]]></Property>
+    <Property LongName="String_constant_generator_1.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.maxStringLength" Type="1">255</Property>
+    <Property LongName="String_constant_generator_1.outputPeriod" Type="1">10000</Property>
+    <Property LongName="String_constant_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.priority" Type="1">128</Property>
+    <Property LongName="String_constant_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Input="RecFile_1.Randint_1.outputInteger.input" Output="Randint_1.outputInteger">
+    <Record Method="tabbed_text" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <Connection Input="RecFile_1.Randint_1.outputFloat.input" Output="Randint_1.outputFloat">
+    <Record Method="tabbed_text" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <Connection Input="RecFile_1.String_constant_generator_1.stringValue.input" Output="String_constant_generator_1.stringValue">
+    <Record Method="txt" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.python_v2_1.out.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.Randint_1.outputFloat.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.Randint_1.outputInteger.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.String_constant_generator_1.stringValue.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

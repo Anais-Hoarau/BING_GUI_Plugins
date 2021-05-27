@@ -1,0 +1,1 @@
+trip2rec.py -i "U:\00_VI-DAS\1_Dataset\1_Format trip et videos BIND" -o "U:\00_VI-DAS\1_Dataset\3_Extraits pour partenaires\16.11.04 - Essai TomTom" -t SafeEld05.trip -d Mopad_GPS_5Hz.Latitude_5Hz Mopad_GPS_5Hz.Longitude_5Hz Mopad_GPS_5Hz.Cap_5Hz Mopad_GPS_5Hz.VitesseGPS_5Hz

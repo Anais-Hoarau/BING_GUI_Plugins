@@ -1,0 +1,23 @@
+function bind_paths()
+    
+    % Get root path
+    bind_rootpath = pwd;
+    
+    % List all parent folders that need to be added to the path (all subfolders
+    % will be added too)
+    folders = {
+        'BIND_core',...
+        'BIND_GS',...
+        'BIND_GUI',...
+        'BIND_packagers',...
+        'BIND_plugins',...
+        'BIND_plugins_coding',...
+        'BIND_scripts',...
+        };
+    
+    for p = 1:length(folders)
+        % Add folders and all subfolders to Matlab path
+        addpath(genpath([bind_rootpath filesep folders{p}]));
+    end
+    
+end
