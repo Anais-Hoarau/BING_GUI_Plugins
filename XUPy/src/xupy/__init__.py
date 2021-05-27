@@ -1,0 +1,1 @@
+from xupy.udp2xmpptranslationhandler import UDP2XMPPTranslationHandler
