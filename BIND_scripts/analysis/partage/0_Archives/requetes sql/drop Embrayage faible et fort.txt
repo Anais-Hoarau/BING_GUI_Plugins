@@ -1,0 +1,8 @@
+SELECT * FROM situation_commandes
+where type = 'EmbrayageFaiblementEnfonce'
+
+SELECT * FROM situation_commandes
+where type = 'EmbrayageFortementEnfonce'
+
+DELETE  FROM situation_commandes
+where type = 'EmbrayageFortementEnfonce' OR type='EmbrayageFaiblementEnfonce' 

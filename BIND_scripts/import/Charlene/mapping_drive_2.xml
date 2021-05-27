@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio - FREE Community Edition 7.0.5.906 (http://www.liquid-technologies.com) -->
+<bind_mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<data_mapping bind_data_name="temps" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="60">	
+		<variable_mapping imported_variable_id=";pas" bind_variable_name="pas" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="temps" bind_variable_name="temps" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="heureGMT" bind_variable_name="heureGMT" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="sec" bind_variable_name="sec" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="position_vehicule" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Route" bind_variable_name="route" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="vp: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Sens" bind_variable_name="sens" bind_variable_type="TEXT" />
+	</data_mapping>
+	<data_mapping bind_data_name="dynamique_vehicule" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: T.T.C. (s)" bind_variable_name="ttc" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="vp: T.I.V. (s)" bind_variable_name="tiv" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="commandes_vehicule" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: cab.accél" bind_variable_name="accélérateur" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.volant" bind_variable_name="angle volant" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.frein" bind_variable_name="frein" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.embrayage" bind_variable_name="embrayage" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.BV" bind_variable_name="boite de vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.indics" bind_variable_name="indics" bind_variable_type="TEXT" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="simulation" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="indEssai" bind_variable_name="indEssai" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="numInstruction" bind_variable_name="numInstruction" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="commentaires" bind_variable_name="commentaires" bind_variable_type="TEXT" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-11" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-11: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-12" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-12: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-13" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-13: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-14" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-14: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-15" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-15: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-16" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-16: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+	<data_mapping bind_data_name="-17" bind_data_isbase="1" imported_timecode_id="heureGMT" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-17: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Cap (deg)" bind_variable_name="cap degres" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Topo[x](mm)" bind_variable_name="X" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Topo[y](mm)" bind_variable_name="Y" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Topo[z](mm)" bind_variable_name="Z" bind_variable_type="REAL" />
+	</data_mapping>
+	
+</bind_mapping>

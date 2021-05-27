@@ -1,0 +1,1951 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<rdfs:Class rdf:about="&kb;AUTOMATA"
+	 rdfs:label="AUTOMATA">
+	<rdfs:subClassOf rdf:resource="&kb;analyse"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;AfterPOI"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="AfterPOI">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;AverageAccelerator"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="AverageAccelerator">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;AverageAngle"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="AverageAngle">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;AverageBrake"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="AverageBrake">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;AverageClutch"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="AverageClutch">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;AverageSpeed"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="AverageSpeed">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;BeforePOI"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="BeforePOI">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;EntrySpeed"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="EntrySpeed">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;ExitSpeed"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="ExitSpeed">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Extremum"
+	 rdfs:label="Extremum">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Extremum_Locaux_maxVolant"
+	 rdfs:label="Extremum_Locaux_maxVolant">
+	<rdfs:subClassOf rdf:resource="&kb;Extremum"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Extremum_Locaux_minVolant"
+	 rdfs:label="Extremum_Locaux_minVolant">
+	<rdfs:subClassOf rdf:resource="&kb;Extremum"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;FreinBrusqueFort"
+	 rdfs:label="FreinBrusqueFort">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;FreinBrusqueFort_2"
+	 rdfs:label="FreinBrusqueFort_2">
+	<rdfs:subClassOf rdf:resource="&kb;Test_analyse"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;Id"
+	 a:maxCardinality="1"
+	 rdfs:label="Id">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Label"
+	 a:maxCardinality="1"
+	 rdfs:label="Label">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Latitude"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="Latitude">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Longitude"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="Longitude">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Name"
+	 a:maxCardinality="1"
+	 rdfs:label="Name">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Number"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="Number">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Observable"
+	 a:role="abstract"
+	 rdfs:label="Observable">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;ObservesVirages"
+	 rdfs:label="ObservesVirages">
+	<rdfs:subClassOf rdf:resource="&kb;Test_analyse"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;POI"
+	 rdfs:label="POI">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;POI_entry"
+	 rdfs:label="POI_entry">
+	<rdfs:subClassOf rdf:resource="&kb;POI"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;POI_exit"
+	 rdfs:label="POI_exit">
+	<rdfs:subClassOf rdf:resource="&kb;POI"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Plage_codage"
+	 rdfs:label="Plage_codage">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;Remark"
+	 a:maxCardinality="1"
+	 rdfs:comment="Annotation coming from the experimenter."
+	 rdfs:label="Remark">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Situations_codees_codage_tlc_ttc"
+	 rdfs:label="Situations_codees_codage_tlc_ttc">
+	<rdfs:subClassOf rdf:resource="&kb;Plage_codage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Sorties_de_voie"
+	 rdfs:label="Sorties_de_voie">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Sorties_de_voie_Chevauchement"
+	 rdfs:label="Sorties_de_voie_Chevauchement">
+	<rdfs:subClassOf rdf:resource="&kb;Sorties_de_voie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Sorties_de_voie_Franchissement"
+	 rdfs:label="Sorties_de_voie_Franchissement">
+	<rdfs:subClassOf rdf:resource="&kb;Sorties_de_voie"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;SpeedPOI"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="SpeedPOI">
+	<rdfs:domain rdf:resource="&kb;POI"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;StdevAccelerator"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="StdevAccelerator">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;StdevAngle"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="StdevAngle">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;StdevBrake"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="StdevBrake">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;StdevClutch"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="StdevClutch">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;StdevSpeed"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="StdevSpeed">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Test_analyse"
+	 rdfs:label="Test_analyse">
+	<rdfs:subClassOf rdf:resource="&kb;analyse"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Top_"
+	 rdfs:label="Top_">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Top_Virages"
+	 rdfs:label="Top_Virages">
+	<rdfs:subClassOf rdf:resource="&kb;Top_"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;Type"
+	 a:maxCardinality="1"
+	 rdfs:label="Type">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Virage_sans_decelerer"
+	 rdfs:label="Virage_sans_decelerer">
+	<rdfs:subClassOf rdf:resource="&kb;Test_analyse"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages"
+	 rdfs:label="Virages">
+	<rdfs:subClassOf rdf:resource="&kb;infrastructure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_Droite"
+	 rdfs:label="Virages_Droite">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Simple"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_Gauche"
+	 rdfs:label="Virages_Gauche">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Simple"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_Serie"
+	 rdfs:label="Virages_Serie">
+	<rdfs:subClassOf rdf:resource="&kb;Virages"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_Simple"
+	 rdfs:label="Virages_Simple">
+	<rdfs:subClassOf rdf:resource="&kb;Virages"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_vitesse_lente"
+	 rdfs:label="Virages_vitesse_lente">
+	<rdfs:subClassOf rdf:resource="&kb;AUTOMATA"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Virages_vitesse_normale"
+	 rdfs:label="Virages_vitesse_normale">
+	<rdfs:subClassOf rdf:resource="&kb;AUTOMATA"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;action"
+	 rdfs:label="action">
+	<rdfs:subClassOf rdf:resource="&kb;Observable"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;action-commande"
+	 rdfs:label="action-commande">
+	<rdfs:subClassOf rdf:resource="&kb;Observable"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;action_relachement_total_pedales"
+	 rdfs:label="action_relachement_total_pedales">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;analyse"
+	 rdfs:label="analyse">
+	<rdfs:subClassOf rdf:resource="&kb;Observable"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_Braquage"
+	 rdfs:label="commande_Braquage">
+	<rdfs:subClassOf rdf:resource="&kb;commande_Volant_delateralisee"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_Braquage_Droite"
+	 rdfs:label="commande_Braquage_Droite">
+	<rdfs:subClassOf rdf:resource="&kb;commande_Braquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_Braquage_Gauche"
+	 rdfs:label="commande_Braquage_Gauche">
+	<rdfs:subClassOf rdf:resource="&kb;commande_Braquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_ContreBraquage"
+	 rdfs:label="commande_ContreBraquage">
+	<rdfs:subClassOf rdf:resource="&kb;commande_Volant_delateralisee"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_ContreBraquage_Droite"
+	 rdfs:label="commande_ContreBraquage_Droite">
+	<rdfs:subClassOf rdf:resource="&kb;commande_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_ContreBraquage_Gauche"
+	 rdfs:label="commande_ContreBraquage_Gauche">
+	<rdfs:subClassOf rdf:resource="&kb;commande_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commande_Volant_delateralisee"
+	 rdfs:label="commande_Volant_delateralisee">
+	<rdfs:subClassOf rdf:resource="&kb;action-commande"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_AccelerateurEnfonce"
+	 rdfs:label="commandes_AccelerateurEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;action-commande"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_AccelerateurFaiblementEnfonce"
+	 rdfs:label="commandes_AccelerateurFaiblementEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales_Accelerateur"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_AccelerateurFortementEnfonce"
+	 rdfs:label="commandes_AccelerateurFortementEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales_Accelerateur"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_AccelerateurMoyennementEnfonce"
+	 rdfs:label="commandes_AccelerateurMoyennementEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales_Accelerateur"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_FreinFaiblementEnfonce"
+	 rdfs:label="commandes_FreinFaiblementEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales_Frein"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_FreinFortementEnfonce"
+	 rdfs:label="commandes_FreinFortementEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales_Frein"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_TourneDroite"
+	 rdfs:label="commandes_TourneDroite">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_volant"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_TourneGauche"
+	 rdfs:label="commandes_TourneGauche">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_volant"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_pedales"
+	 rdfs:label="commandes_pedales">
+	<rdfs:subClassOf rdf:resource="&kb;action-commande"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_pedales_Accelerateur"
+	 rdfs:label="commandes_pedales_Accelerateur">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_pedales_Frein"
+	 rdfs:label="commandes_pedales_Frein">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;commandes_volant"
+	 rdfs:label="commandes_volant">
+	<rdfs:subClassOf rdf:resource="&kb;action-commande"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;date"
+	 a:maxCardinality="1"
+	 a:minCardinality="1"
+	 a:range="float"
+	 rdfs:comment="Timecode of the observed element (obsel)"
+	 rdfs:label="date">
+	<rdfs:domain rdf:resource="&kb;Observable"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;decelerer"
+	 rdfs:label="decelerer">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_avec_accelerateur_faiblement_enfonce"
+	 rdfs:label="decelerer_avec_accelerateur_faiblement_enfonce">
+	<rdfs:subClassOf rdf:resource="&kb;decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_avec_frein_brusquement_fortement_enfonce"
+	 rdfs:label="decelerer_avec_frein_brusquement_fortement_enfonce">
+	<rdfs:subClassOf rdf:resource="&kb;decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_avec_frein_faiblement_enfonce"
+	 rdfs:label="decelerer_avec_frein_faiblement_enfonce">
+	<rdfs:subClassOf rdf:resource="&kb;decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_avec_frein_fortement_enfonce"
+	 rdfs:label="decelerer_avec_frein_fortement_enfonce">
+	<rdfs:subClassOf rdf:resource="&kb;decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_avec_relachement_total_pedales"
+	 rdfs:label="decelerer_avec_relachement_total_pedales">
+	<rdfs:subClassOf rdf:resource="&kb;decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_par_relachement_partiel_accelerateur"
+	 rdfs:label="decelerer_par_relachement_partiel_accelerateur">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;decelerer_par_relachement_total_accelerateur"
+	 rdfs:label="decelerer_par_relachement_total_accelerateur">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;distance"
+	 a:maxCardinality="1"
+	 rdfs:label="distance">
+	<rdfs:comment>Distrance travelled (in meters) from the begining of the experiment.</rdfs:comment>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;endTimecode"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:comment="End of the timecode of a situation"
+	 rdfs:label="endTimecode">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;freinFortVirage"
+	 rdfs:label="freinFortVirage">
+	<rdfs:subClassOf rdf:resource="&kb;ObservesVirages"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;infrastructure"
+	 rdfs:label="infrastructure">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;label"
+	 a:maxCardinality="1"
+	 rdfs:label="label">
+	<rdfs:comment>An information used when importing the primary trace in Abstract.
+The label matches the name of the type</rdfs:comment>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;latitude"
+	 a:maxCardinality="1"
+	 rdfs:comment="Lalitude coordinate (from GPS)"
+	 rdfs:label="latitude">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;longitude"
+	 a:maxCardinality="1"
+	 rdfs:comment="longitude coordinate (from GPS)"
+	 rdfs:label="longitude">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;manoeuvre_Braquage"
+	 rdfs:label="manoeuvre_Braquage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_Volant"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_Braquage_debut_virage"
+	 rdfs:label="manoeuvre_Braquage_debut_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_Braquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_Braquage_fin_virage"
+	 rdfs:label="manoeuvre_Braquage_fin_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_Braquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_Braquage_pendant_virage"
+	 rdfs:label="manoeuvre_Braquage_pendant_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_Braquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_ContreBraquage"
+	 rdfs:label="manoeuvre_ContreBraquage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_Volant"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_ContreBraquage_debut_virage"
+	 rdfs:label="manoeuvre_ContreBraquage_debut_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_ContreBraquage_fin_virage"
+	 rdfs:label="manoeuvre_ContreBraquage_fin_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_ContreBraquage_pendant_virage"
+	 rdfs:label="manoeuvre_ContreBraquage_pendant_virage">
+	<rdfs:subClassOf rdf:resource="&kb;manoeuvre_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;manoeuvre_Volant"
+	 rdfs:label="manoeuvre_Volant">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;mesure"
+	 rdfs:label="mesure">
+	<rdfs:subClassOf rdf:resource="&kb;Observable"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;ontologie_Class0"
+	 rdfs:label="ontologie_Class0">
+	<rdfs:subClassOf rdf:resource="&kb;action"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;ontologie_Class1"
+	 a:maxCardinality="1"
+	 rdfs:label="ontologie_Class1">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;ontologie_Class10019"
+	 a:maxCardinality="1"
+	 rdfs:label="ontologie_Class10019">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;pedaleEnfonce"
+	 rdfs:label="pedaleEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;commandes_pedales"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;pedaleEnfonce_AccelerateurEnfonce"
+	 rdfs:label="pedaleEnfonce_AccelerateurEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;pedaleEnfonce"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;pedaleEnfonce_FreinEnfonce"
+	 rdfs:label="pedaleEnfonce_FreinEnfonce">
+	<rdfs:subClassOf rdf:resource="&kb;pedaleEnfonce"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;position"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="position">
+	<rdfs:comment>Distance travelled (in meters) from the beginning of the experiment.</rdfs:comment>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;schema"
+	 rdfs:label="schema">
+	<rdfs:subClassOf rdf:resource="&kb;Observable"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel"
+	 rdfs:label="schema_operationnel">
+	<rdfs:subClassOf rdf:resource="&kb;schema"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer"
+	 rdfs:label="schema_operationnel_decelerer">
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer_par_enfoncement_faible_accelerateur">
+	<rdfs:label>schema_operationnel_decelerer_par_enfoncement_faible_accelerateur</rdfs:label>
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel_decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer_par_enfoncement_faible_frein"
+	 rdfs:label="schema_operationnel_decelerer_par_enfoncement_faible_frein">
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel_decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer_par_enfoncement_fort_brusque_frein">
+	<rdfs:label>schema_operationnel_decelerer_par_enfoncement_fort_brusque_frein</rdfs:label>
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel_decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer_par_enfoncement_fort_frein"
+	 rdfs:label="schema_operationnel_decelerer_par_enfoncement_fort_frein">
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel_decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_operationnel_decelerer_par_relachement_pedales"
+	 rdfs:label="schema_operationnel_decelerer_par_relachement_pedales">
+	<rdfs:subClassOf rdf:resource="&kb;schema_operationnel_decelerer"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique"
+	 rdfs:label="schema_tactique">
+	<rdfs:subClassOf rdf:resource="&kb;schema"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage"
+	 rdfs:label="schema_tactique_virage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage_Braquage_negociation_virage"
+	 rdfs:label="schema_tactique_virage_Braquage_negociation_virage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique_virage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage_ContreBraquage"
+	 rdfs:label="schema_tactique_virage_ContreBraquage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique_virage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage_ContreBraquage_pendant_virage"
+	 rdfs:label="schema_tactique_virage_ContreBraquage_pendant_virage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique_virage_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage_ContreBraquage_preparation_virage"
+	 rdfs:label="schema_tactique_virage_ContreBraquage_preparation_virage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique_virage_ContreBraquage"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;schema_tactique_virage_ContreBraquage_sortie_virage"
+	 rdfs:label="schema_tactique_virage_ContreBraquage_sortie_virage">
+	<rdfs:subClassOf rdf:resource="&kb;schema_tactique_virage_ContreBraquage"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;speed"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:comment="Current speed of the car at the time of the event."
+	 rdfs:label="speed">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;steering"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:comment="Angle of the steering wheel at the timecode of the obsel."
+	 rdfs:label="steering">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;subtype"
+	 a:maxCardinality="1"
+	 rdfs:label="subtype">
+	<rdfs:comment>Subtype of the obsel (for numerical data).
+Example: "minimum" for a type of obsel (i.e. the speed) extracted from a curve.</rdfs:comment>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;tendance"
+	 rdfs:label="tendance">
+	<rdfs:subClassOf rdf:resource="&kb;mesure"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;tendance_vitesse5Hzcroissante"
+	 rdfs:label="tendance_vitesse5Hzcroissante">
+	<rdfs:subClassOf rdf:resource="&kb;tendance"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;tendance_vitesse5Hzdecroissante"
+	 rdfs:label="tendance_vitesse5Hzdecroissante">
+	<rdfs:subClassOf rdf:resource="&kb;tendance"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;tendance_vitesse5Hzstable"
+	 rdfs:label="tendance_vitesse5Hzstable">
+	<rdfs:subClassOf rdf:resource="&kb;tendance"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s1-1"
+	 rdfs:label="virages_s1-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s1-2"
+	 rdfs:label="virages_s1-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s2-1"
+	 rdfs:label="virages_s2-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s2-2"
+	 rdfs:label="virages_s2-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s3-1"
+	 rdfs:label="virages_s3-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s3-2"
+	 rdfs:label="virages_s3-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s3-3"
+	 rdfs:label="virages_s3-3">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s4-1"
+	 rdfs:label="virages_s4-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s4-2"
+	 rdfs:label="virages_s4-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s5-1"
+	 rdfs:label="virages_s5-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s5-2"
+	 rdfs:label="virages_s5-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s6-1"
+	 rdfs:label="virages_s6-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s6-2"
+	 rdfs:label="virages_s6-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s6-3"
+	 rdfs:label="virages_s6-3">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s6-4"
+	 rdfs:label="virages_s6-4">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s7-1"
+	 rdfs:label="virages_s7-1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s7-2"
+	 rdfs:label="virages_s7-2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_s7-3"
+	 rdfs:label="virages_s7-3">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Serie"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir1"
+	 rdfs:label="virages_vir1">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir10"
+	 rdfs:label="virages_vir10">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir11"
+	 rdfs:label="virages_vir11">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir12"
+	 rdfs:label="virages_vir12">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir13"
+	 rdfs:label="virages_vir13">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir14"
+	 rdfs:label="virages_vir14">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir15"
+	 rdfs:label="virages_vir15">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir16"
+	 rdfs:label="virages_vir16">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir17"
+	 rdfs:label="virages_vir17">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir18_5_"
+	 rdfs:label="virages_vir18_5_">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir19_4_"
+	 rdfs:label="virages_vir19_4_">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir2"
+	 rdfs:label="virages_vir2">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir20_3_"
+	 rdfs:label="virages_vir20_3_">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir21"
+	 rdfs:label="virages_vir21">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir22"
+	 rdfs:label="virages_vir22">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir23_2_"
+	 rdfs:label="virages_vir23_2_">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir24_1_"
+	 rdfs:label="virages_vir24_1_">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir25"
+	 rdfs:label="virages_vir25">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir3"
+	 rdfs:label="virages_vir3">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir4"
+	 rdfs:label="virages_vir4">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir5"
+	 rdfs:label="virages_vir5">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir6"
+	 rdfs:label="virages_vir6">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Gauche"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir7"
+	 rdfs:label="virages_vir7">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir8"
+	 rdfs:label="virages_vir8">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;virages_vir9"
+	 rdfs:label="virages_vir9">
+	<rdfs:subClassOf rdf:resource="&kb;Virages_Droite"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;visu_abstraction"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="visu_abstraction">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<rdfs:domain rdf:resource="&kb;Observable"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;visu_color"
+	 a:maxCardinality="1"
+	 rdfs:label="visu_color">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<rdfs:domain rdf:resource="&kb;Observable"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;visu_level"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="visu_level">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<rdfs:domain rdf:resource="&kb;Observable"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;visu_shape"
+	 a:maxCardinality="1"
+	 rdfs:label="visu_shape">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<rdfs:domain rdf:resource="&kb;Observable"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<a:OverridingProperty rdf:about="&a;AUTOMATA_visu_shape"
+	 a:defaultValues="nothing"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;AUTOMATA"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_Locaux_maxVolant_visu_color"
+	 a:defaultValues="#CC33CC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum_Locaux_maxVolant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_Locaux_maxVolant_visu_level"
+	 a:defaultValues="-50"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum_Locaux_maxVolant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_Locaux_minVolant_visu_color"
+	 a:defaultValues="#CC33CC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum_Locaux_minVolant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_Locaux_minVolant_visu_level"
+	 a:defaultValues="-60"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum_Locaux_minVolant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_visu_color"
+	 a:defaultValues="#00ff00"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_visu_level"
+	 a:defaultValues="-50"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Extremum_visu_shape"
+	 a:defaultValues="nothing"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;Extremum"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_2_visu_abstraction"
+	 a:defaultValues="3"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort_2"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_2_visu_level"
+	 a:defaultValues="-90"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort_2"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_2_visu_shape"
+	 a:defaultValues="strip"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort_2"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_visu_abstraction"
+	 a:defaultValues="3"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_visu_color"
+	 a:defaultValues="#ff0000"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;FreinBrusqueFort_visu_shape"
+	 a:defaultValues="square_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;FreinBrusqueFort"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Observable_visu_shape"
+	 a:defaultValues="strip"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;Observable"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;ObservesVirages_visu_shape"
+	 a:defaultValues="circle_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;ObservesVirages"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;POI_entry_visu_color"
+	 a:defaultValues="#00FFFF"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;POI_entry"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;POI_exit_visu_shape"
+	 a:defaultValues="square"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;POI_exit"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;POI_visu_color"
+	 a:defaultValues="#11AA8C"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;POI"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;POI_visu_level"
+	 a:defaultValues="0"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;POI"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;POI_visu_shape"
+	 a:defaultValues="circle"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;POI"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Situations_codees_codage_tlc_ttc_visu_color"
+	 a:defaultValues="#FFFFFF"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Situations_codees_codage_tlc_ttc"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Situations_codees_codage_tlc_ttc_visu_level"
+	 a:defaultValues="-65"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Situations_codees_codage_tlc_ttc"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Sorties_de_voie_Chevauchement_visu_color"
+	 a:defaultValues="#FFFF99"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Sorties_de_voie_Chevauchement"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Sorties_de_voie_Chevauchement_visu_level"
+	 a:defaultValues="-72"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Sorties_de_voie_Chevauchement"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Sorties_de_voie_Franchissement_visu_level"
+	 a:defaultValues="-60"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Sorties_de_voie_Franchissement"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Sorties_de_voie_visu_color"
+	 a:defaultValues="#FFFF33"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Sorties_de_voie"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Sorties_de_voie_visu_level"
+	 a:defaultValues="-80"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Sorties_de_voie"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Test_analyse_visu_shape"
+	 a:defaultValues="circle"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;Test_analyse"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Top_Virages_visu_abstraction"
+	 a:defaultValues="3"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;Top_Virages"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Top__visu_level"
+	 a:defaultValues="95"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Top_"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Top__visu_shape"
+	 a:defaultValues="square"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;Top_"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Virages_Droite_visu_level"
+	 a:defaultValues="-10"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Virages_Droite"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Virages_Gauche_visu_level"
+	 a:defaultValues="10"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Virages_Gauche"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Virages_visu_color"
+	 a:defaultValues="#CC6600"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;Virages"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;Virages_visu_level"
+	 a:defaultValues="0"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;Virages"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commande_Braquage_visu_color"
+	 a:defaultValues="#CC33CC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commande_Braquage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commande_ContreBraquage_visu_color"
+	 a:defaultValues="#CC33CC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commande_ContreBraquage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commande_Volant_delateralisee_visu_shape"
+	 a:defaultValues="nothing"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;commande_Volant_delateralisee"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurEnfonce_visu_shape"
+	 a:defaultValues="nothing"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurFaiblementEnfonce_visu_color"
+	 a:defaultValues="#88ff88"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurFaiblementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurFortementEnfonce_visu_color"
+	 a:defaultValues="#009900"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurFortementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurFortementEnfonce_visu_level"
+	 a:defaultValues="-90"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurFortementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurMoyennementEnfonce_visu_color"
+	 a:defaultValues="#33ff33"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurMoyennementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_AccelerateurMoyennementEnfonce_visu_level"
+	 a:defaultValues="-95"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_AccelerateurMoyennementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_FreinFaiblementEnfonce_visu_color"
+	 a:defaultValues="#FFCCCC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_FreinFaiblementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_FreinFortementEnfonce_visu_color"
+	 a:defaultValues="#990000"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_FreinFortementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_FreinFortementEnfonce_visu_level"
+	 a:defaultValues="-95"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_FreinFortementEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_TourneDroite_visu_level"
+	 a:defaultValues="-15"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_TourneDroite"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_TourneGauche_visu_level"
+	 a:defaultValues="15"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_TourneGauche"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_pedales_visu_level"
+	 a:defaultValues="-100"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_pedales"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_volant_visu_color"
+	 a:defaultValues="lightblue"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_volant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_volant_visu_level"
+	 a:defaultValues="0"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_volant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;commandes_volant_visu_shape"
+	 a:defaultValues="square_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;commandes_volant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_avec_accelerateur_faiblement_enfonce_visu_color"
+	 a:defaultValues="#ffdd66"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_avec_accelerateur_faiblement_enfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_avec_frein_brusquement_fortement_enfonce_visu_color"
+	 a:defaultValues="#ff0000"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_avec_frein_brusquement_fortement_enfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_avec_frein_faiblement_enfonce_visu_color"
+	 a:defaultValues="#ffcccc"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_avec_frein_faiblement_enfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_avec_frein_fortement_enfonce_visu_color"
+	 a:defaultValues="#990000"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_avec_frein_fortement_enfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_avec_relachement_total_pedales_visu_color"
+	 a:defaultValues="#ffaa55"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_avec_relachement_total_pedales"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_par_relachement_partiel_accelerateur_visu_color"
+	 a:defaultValues="#ffcc66"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer_par_relachement_partiel_accelerateur"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_visu_abstraction"
+	 a:defaultValues="2"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;decelerer_visu_level"
+	 a:defaultValues="35"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;decelerer"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;manoeuvre_Braquage_visu_shape"
+	 a:defaultValues="right_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;manoeuvre_Braquage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;manoeuvre_ContreBraquage_visu_shape"
+	 a:defaultValues="left_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;manoeuvre_ContreBraquage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;manoeuvre_Volant_visu_level"
+	 a:defaultValues="35"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;manoeuvre_Volant"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;ontologie_Class0_visu_abstraction"
+	 a:defaultValues="3"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;ontologie_Class0"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_AccelerateurEnfonce_visu_color"
+	 a:defaultValues="#00FF00"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_AccelerateurEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_AccelerateurEnfonce_visu_level"
+	 a:defaultValues="-110"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_AccelerateurEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_AccelerateurEnfonce_visu_shape"
+	 a:defaultValues="circle_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_AccelerateurEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_FreinEnfonce_visu_color"
+	 a:defaultValues="#FF0000"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_FreinEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_FreinEnfonce_visu_level"
+	 a:defaultValues="-110"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_FreinEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;pedaleEnfonce_FreinEnfonce_visu_shape"
+	 a:defaultValues="circle_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;pedaleEnfonce_FreinEnfonce"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_Braquage_negociation_virage_visu_shape"
+	 a:defaultValues="right_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage_Braquage_negociation_virage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_ContreBraquage_pendant_virage_visu_color"
+	 a:defaultValues="#ff2222"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage_ContreBraquage_pendant_virage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_ContreBraquage_visu_shape"
+	 a:defaultValues="left_and_line"
+	 a:maxCardinality="1">
+	<rdfs:comment>Define the symbol that will be used by Abstract to represent the obsel.
+For v07 and v08, available shapes:
++ circle (default)
++ strip
++ square
+(triangles:)
++ up
++ down
++ left
++ right
+Note: in order to display the endTimecode, all the shapes (except strip) can be combined with '_and_line'. For example, up_and_line will display a triangle up at the timecode date and draw a line up to the timecode endTimecode.</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage_ContreBraquage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_shape"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_visu_abstraction"
+	 a:defaultValues="2"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>The level of abstraction.
+Raw trace should correspond to level 0.
+Some plugins of Abstract use this attribute to filter data to display.</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_abstraction"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_visu_color"
+	 a:defaultValues="#88ff88"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;schema_tactique_virage_visu_level"
+	 a:defaultValues="50"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;schema_tactique_virage"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzcroissante_visu_color"
+	 a:defaultValues="#99FFFF"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzcroissante"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzcroissante_visu_level"
+	 a:defaultValues="80"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzcroissante"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzdecroissante_visu_color"
+	 a:defaultValues="#FFCC99"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzdecroissante"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzdecroissante_visu_level"
+	 a:defaultValues="60"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzdecroissante"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzstable_visu_color"
+	 a:defaultValues="#CCCCCC"
+	 a:maxCardinality="1">
+	<rdfs:comment>Color to be displayed.
+Expressed with the rgb code.
+Example for some basic colors:
+Red: #ff0000
+Green: #00ff00
+Blue: #0000ff
+Black: #000000
+White: #ffffff</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzstable"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_color"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+<a:OverridingProperty rdf:about="&a;tendance_vitesse5Hzstable_visu_level"
+	 a:defaultValues="70"
+	 a:maxCardinality="1"
+	 a:range="integer">
+	<rdfs:comment>Used by some visualisation plugins of Abstract to chose where to display the obsel on the vertical axis (in pixels).</rdfs:comment>
+	<a:domain rdf:resource="&kb;tendance_vitesse5Hzstable"/>
+	<a:overriddenProperty rdf:resource="&kb;visu_level"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</a:OverridingProperty>
+</rdf:RDF>

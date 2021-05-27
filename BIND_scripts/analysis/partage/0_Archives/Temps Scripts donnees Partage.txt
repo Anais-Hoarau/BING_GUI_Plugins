@@ -1,0 +1,108 @@
+
+ MATLAB desktop keyboard shortcuts, such as Ctrl+S, are now customizable.
+ In addition, many keyboard shortcuts have changed for improved consistency
+ across the desktop.
+
+ To customize keyboard shortcuts, use Preferences. From there, you can also
+ restore previous default settings by selecting "R2009a Windows Default Set"
+ from the active settings drop-down list. For more information, see Help. 
+
+ Click here if you do not want to see this message again.
+ 
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet1_110218_13h34\Sujet1.trip...
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 6.957449 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet2_110223_14h37\Sujet2.trip...
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 5.654024 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet3_110309_13h51\Sujet3.trip...
+??? Error using ==> SQLiteTrip>SQLiteTrip.executeSQLSelect at
+1350
+An error occured while executing the request
+
+Error in ==> SQLiteTrip>SQLiteTrip.getAllSituationOccurences at
+163
+            out = this.executeSQLSelect(['SELECT * FROM
+            "situation_' situationName '" ORDER BY
+            "startTimecode" ASC, "endTimecode" ASC']);
+
+Error in ==> exportSituationsAndEvents2CSV at 33
+            record =
+            theTrip.getAllSituationOccurences(markerName);
+
+Error in ==> mainPartageAnalyse at 82
+exportSituationsAndEvents2CSV( trip, csvFile, ';',
+DataVariableNameForEnrichment, cellArrayOfMarkersToExport);
+
+Caused by:
+    Error using ==> sqlite4m
+    no such table: situation_commandes
+ 
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet3_110309_13h51\Sujet3.trip...
+Situations Commandes created!
+Events created!
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 1631.029523 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet4_110418_14h31\Sujet4.trip...
+Situations Commandes created!
+Events created!
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 1783.964929 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet5_110705_13h56\Sujet5.trip...
+??? Operation terminated by user during ==> num2str>convertUsingRecycledSprintf at 209
+
+In ==> num2str>handleNumericPrecision at 189
+        s = convertUsingRecycledSprintf(x, precision);
+
+In ==> num2str at 91
+            [s, forceWidth, f] = handleNumericPrecision(x, d);
+
+In ==> ThresholdComparator>@(value)eval([num2str(value),operator,num2str(threshold)])
+at 46
+            logicalFunction = @(value)eval([num2str(value) operator
+            num2str(threshold)]);
+
+In ==> SimpleLogicalFunctionDiscoverer>SimpleLogicalFunctionDiscoverer.extract at 45
+                elseif logicalFunctionHandler(signal{i}) && isInSituation && i ==
+                length(signal)
+
+In ==> ThresholdComparator>ThresholdComparator.extract at 47
+            out =
+            fr.lescot.bind.processing.situationDiscoverers.SimpleLogicalFunctionDiscoverer.extract(inputCellArray,
+            logicalFunction);
+
+In ==> Part2_CreateSituationsCommandes at 29
+situationToSave = thresholdComparator.extract(data,'>',20);
+
+In ==> mainPartageAnalyse at 72
+Part2_CreateSituationsCommandes(trip);
+ 
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet5_110705_13h56\Sujet5.trip...
+Elapsed time is 3626.167285 seconds.
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_13h54_partie1\Sujet07_part1.trip...
+Elapsed time is 1982.374909 seconds.
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_15h35_partie2\Sujet07_part2.trip...
+Elapsed time is 1384.477501 seconds.
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_14h26_partie1\Sujet09_part1.trip...
+Elapsed time is 1496.563112 seconds.
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_15h58_partie2\Sujet09_part2.trip...
+Elapsed time is 1453.487936 seconds.
+Phase Traitement signal sur fichier: D:\0_PARTAGE_Data\Acquis\Data\Sujet08_110721_14h08\Sujet08.trip...
+Elapsed time is 3173.215850 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet5_110705_13h56\Sujet5.trip...
+Situations Commandes created!
+Events created!
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 1800.216762 seconds.
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_13h54_partie1\Sujet07_part1.trip...
+Situations Commandes created!
+Events created!
+CSV created for Abstract!  
+whole post-treatment done in
+Elapsed time is 930.077778 seconds.
+>> 

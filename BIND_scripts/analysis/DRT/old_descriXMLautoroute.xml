@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio - FREE Community Edition 7.0.5.906 (http://www.liquid-technologies.com) -->
+<bind_mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <data_mapping bind_data_name="localisation" bind_data_isbase="1" imported_timecode_id="temps" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="38">
+        <variable_mapping imported_variable_id="indEssai" bind_variable_name="indEssai" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="numInstruction" bind_variable_name="numInstruction" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Route" bind_variable_name="route" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Cap (deg)" bind_variable_name="cap" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: DecalVoie (mm)" bind_variable_name="DecalVoie" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: Acc (m/s²)" bind_variable_name="accélération" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: T.I.V. (s)" bind_variable_name="TIV" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: T.L.C. droit Centre (s)" bind_variable_name="TLCDroitCentre" bind_variable_type="TEXT" />
+        <variable_mapping imported_variable_id="T.L.C. droit Cote (s)" bind_variable_name="TLCDroitCote" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="T.L.C. roue Centre (s)" bind_variable_name="TLCRoueCentre" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="T.L.C. roue Cote (s)" bind_variable_name="TLCRoueCote" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="AngleBraquage (°)" bind_variable_name="AngleBraquage" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: T.T.C. (s)" bind_variable_name="TTC" bind_variable_type="TEXT" />
+        <variable_mapping imported_variable_id="vp: cab.volant" bind_variable_name="angle volant" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: cab.accél" bind_variable_name="accélérateur" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: cab.frein" bind_variable_name="frein" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="vp: cab.embrayage" bind_variable_name="embrayage" bind_variable_type="REAL" />
+        <variable_mapping imported_variable_id="commentaires" bind_variable_name="commentaires" bind_variable_type="TEXT" />
+    </data_mapping>
+</bind_mapping>

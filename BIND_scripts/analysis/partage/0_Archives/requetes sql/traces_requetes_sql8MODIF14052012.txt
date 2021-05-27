@@ -1,0 +1,32 @@
+SELECT * from data_ObstaclesData
+WHERE etat_obstacle =1
+
+UPDATE data_ObstaclesData
+SET vitesse_obstacle = -80
+Where etat_obstacle = 1
+
+__________________________
+Modif manuelle des trips :
+
+sujet1
+- - - -
+UPDATE data_CartoData
+Set type_infrastructure=61 
+WHERE timecode between 6064 AND 6067
+
+UPDATE data_CartoData
+Set distance_ptA=50
+WHERE timecode between 6059 AND 6066
+
+sujet3
+- - - -
+
+UPDATE data_CartoData
+Set distance_ptC=0
+WHERE timecode between 6059 AND 6066
+
+sujet8
+- - - -
+UPDATE data_CartoData
+Set type_infrastructure=61
+WHERE timecode between 8810 AND 8814

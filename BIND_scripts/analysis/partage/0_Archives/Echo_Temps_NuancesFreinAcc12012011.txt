@@ -1,0 +1,224 @@
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet2_110223_14h37\Sujet2.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 347.024658 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.717699 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 472.693446 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 1.064338 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 471.703969 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.834669 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 367.929088 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.434973 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 468.593080 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.593519 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 1.249562 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet3_110309_13h51\Sujet3.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 399.913357 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.893464 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 520.320914 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 1.520070 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 523.834046 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 1.110945 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 377.105723 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.528054 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 510.137468 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.766131 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 1.265772 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet4_110418_14h31\Sujet4.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 392.978366 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.642235 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 524.362225 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 1.130729 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 531.047454 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.868307 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 380.014054 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.490358 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 517.777283 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.667902 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 1.243666 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet5_110705_13h56\Sujet5.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 411.158938 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.754921 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 556.231121 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 1.037491 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 558.068845 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.723359 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 399.920030 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.495300 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 539.315350 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.533308 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 1.226799 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_13h54_partie1\Sujet07_part1.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 214.379217 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.382996 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 291.615516 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 0.823324 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 293.174962 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.527508 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 209.627545 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.400450 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 284.292793 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.491140 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 0.937955 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_15h35_partie2\Sujet07_part2.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 161.696032 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.495543 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 219.221252 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 0.684363 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 218.342845 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.626104 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 156.136544 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.381892 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 210.361167 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.449070 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 0.767298 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_14h26_partie1\Sujet09_part1.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 173.005560 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.360977 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 235.426498 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 0.777318 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 235.069015 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.648326 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 169.630628 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.369820 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 229.975426 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.463918 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 0.835386 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_15h58_partie2\Sujet09_part2.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 166.048344 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.512980 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 224.505489 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 0.774670 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 226.279707 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 0.739121 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 164.415004 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.351936 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 221.742161 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.456198 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 0.829864 seconds.
+
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet08_110721_14h08\Sujet08.trip...
+Extract situations accelerateur_Enfonce
+Elapsed time is 360.123407 seconds.
+Sauvegarde situations accelerateur_Enfonce
+Elapsed time is 0.701166 seconds.
+Extract situations accelerateur_FaiblementEnfonce
+Elapsed time is 488.083429 seconds.
+Sauvegarde situations accelerateur_FaiblementEnfonce
+Elapsed time is 1.101494 seconds.
+Extract situations accelerateur_MoyennementEnfonce
+Elapsed time is 493.396695 seconds.
+Sauvegarde situations accelerateur_MoyennementEnfonce
+Elapsed time is 1.018685 seconds.
+Extract situations frein_Enfonce
+Elapsed time is 356.362276 seconds.
+Sauvegarde situations frein_Enfonce
+Elapsed time is 0.465645 seconds.
+Extract situations frein_FaiblementEnfonce
+Elapsed time is 479.198844 seconds.
+Sauvegarde situations frein_FaiblementEnfonce
+Elapsed time is 0.732012 seconds.
+Situations Commandes created!
+whole post-treatment done in
+Elapsed time is 1.532095 seconds.

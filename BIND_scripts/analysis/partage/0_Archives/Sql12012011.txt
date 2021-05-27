@@ -1,0 +1,24 @@
+Update situation_virages
+set nom='vir17_7_'
+where nom= 'vir17'
+
+Update situation_virages
+set nom= 'vir18_5_'
+where nom='vir18 (5)'
+
+Update situation_virages
+set nom='vir19_4_'
+where nom='vir19 (4)' 
+
+Update situation_virages
+set nom= 'vir20_3_'
+where nom='vir20 (3)'
+
+Update situation_virages
+set nom='vir23_2_'
+where nom='vir23 (2)' 
+
+Update situation_virages
+set nom='vir24_1_'
+where nom='vir24 (1)'
+ 

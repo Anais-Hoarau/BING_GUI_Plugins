@@ -1,0 +1,15 @@
+DROP TABLE 'situation_Situations codees'
+DROP TABLE 'situation_Sorties de voie'
+DROP TABLE 'event_Codages'
+
+DELETE FROM MetaSituations
+WHERE name='Sorties de voie' OR name='Situations codees'
+
+DELETE FROM MetaEvents
+WHERE name='Codages'
+
+DELETE FROM MetaSituationVariables
+WHERE situation_name='Sorties de voie' OR situation_name='Situations codees'
+
+DELETE FROM MetaEventVariables
+WHERE event_name='Codages'

@@ -1,0 +1,5 @@
+Please cite this software as:
+
+Christian, J. (2014). MoTrack – MatLab GUI for offline motion tracking (Version 1.4) [software]. Retrieved from http://motrack.sourceforge.net/
+
+Copyright (c) Josef Christian

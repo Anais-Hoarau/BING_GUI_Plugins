@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.6.0" EngineVersion="4.6" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages/>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="SerialPort_1" Model="SerialPort" Version="4.10" x="288" y="40" z="0">
+    <Input LongName="SerialPort_1.streamInput" Name="streamInput">
+      <Property LongName="SerialPort_1.streamInput.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.streamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_1.dtr_state" Name="dtr_state">
+      <Property LongName="SerialPort_1.dtr_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.dtr_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_1.rts_state" Name="rts_state">
+      <Property LongName="SerialPort_1.rts_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.rts_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="SerialPort_1.streamOutput" Name="streamOutput">
+      <Property LongName="SerialPort_1.streamOutput.subsampling" Type="1">1</Property>
+      <Property LongName="SerialPort_1.streamOutput.fifosize" Type="1">32</Property>
+      <Property LongName="SerialPort_1.streamOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SerialPort_1.port" Type="3"><![CDATA[COM5]]></Property>
+    <Property LongName="SerialPort_1.baudrate" Type="4"><![CDATA[10|9|110|300|1200|2400|4800|9600|19200|38400|57600|115200]]></Property>
+    <Property LongName="SerialPort_1.parity" Type="4"><![CDATA[5|0|None|Even|Odd|Mark|Space]]></Property>
+    <Property LongName="SerialPort_1.stopbits" Type="4"><![CDATA[3|0|1|2|1,5]]></Property>
+    <Property LongName="SerialPort_1.byteSize" Type="4"><![CDATA[4|3|5|6|7|8]]></Property>
+    <Property LongName="SerialPort_1.flowControl" Type="4"><![CDATA[3|0|None|Xon/Xoff|Hardware (RTS/CTS)]]></Property>
+    <Property LongName="SerialPort_1.XonChar" Type="1">17</Property>
+    <Property LongName="SerialPort_1.XoffChar" Type="1">19</Property>
+    <Property LongName="SerialPort_1.min" Type="1">50</Property>
+    <Property LongName="SerialPort_1.wtime" Type="1">10000</Property>
+    <Property LongName="SerialPort_1.use_non_standard_baudrate" Type="0">false</Property>
+    <Property LongName="SerialPort_1.non_standard_baudrate" Type="1">10000</Property>
+    <Property LongName="SerialPort_1.correct_timestamp_based_on_baudrate" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_data_terminal_ready" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_request_to_send" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_carrier_detect" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_clear_to_send" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_data_set_ready" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_ring" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.pin_polling_period" Type="1" SubType="1">0</Property>
+    <Property LongName="SerialPort_1.pin_filter_edge_detection" Type="0">true</Property>
+    <Property LongName="SerialPort_1.verbose" Type="0">false</Property>
+    <Property LongName="SerialPort_1.threaded" Type="0">true</Property>
+    <Property LongName="SerialPort_1.priority" Type="1">255</Property>
+    <Property LongName="SerialPort_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="String_constant_generator_1" Model="String_constant_generator" Version="2.4" x="56" y="40" z="0">
+    <Output LongName="String_constant_generator_1.stringValue" Name="stringValue">
+      <Property LongName="String_constant_generator_1.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="String_constant_generator_1.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="String_constant_generator_1.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="String_constant_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="String_constant_generator_1.outputWhenStringChanges" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.value" Type="3"><![CDATA[p0*]]></Property>
+    <Property LongName="String_constant_generator_1.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.maxStringLength" Type="1">255</Property>
+    <Property LongName="String_constant_generator_1.outputPeriod" Type="1">1200000</Property>
+    <Property LongName="String_constant_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.priority" Type="1">128</Property>
+    <Property LongName="String_constant_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="String_constant_generator_1.stringValue" Input="SerialPort_1.streamInput"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="SerialPort_1.streamInput" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

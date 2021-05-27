@@ -1,0 +1,68 @@
+V4.3	
+
+; Fichier de définition des données à enregistrer
+; -----------------------------------------------
+;
+; SYNTAXE :
+; 1ère partie :
+;	 Période= -> Temps en seconde entre 2 enregistrements (0. => à chaque pas de temps / -1. => jamais)
+;	 PériodeSauvegarde= -> possiblité d'enregistrer des fichiers tmps temporaires à intervalle
+;   de temps fixé par cette valeur)
+; 2ème partie : données simulation à enregistrer
+;	 le nombre de données simu, puis le nom des données à enregistrer, parmi :
+;	 ===> pas, temps, sec, nbVhs, dt, heureGMT
+; 3ème partie : données scénario à enregistrer
+;	 le nombre de données scénario, puis le nom des données à enregistrer, parmi :
+;	 ===> IndEssai, NumInst
+; 4ème partie :
+;	 Le nombre de véhicules à enregistrer, puis pour les lignes suivantes :
+;	 La 1ère colonne contient le numéro d'un véhicule simulé, ou 'vp' pour le véhicule piloté,
+;	 la 2ème colonne le nombre de données à enregistrer.
+;	 Les colonnes suivantes contiennent les noms des données à enregistrer, parmi la liste suivante :
+;	 ===> route, voie, cap, noVoie, sens, pk, corrPk, decalVoie
+;				noVh, dx, dy, vitesse, regime, accel, vitDepLat, accDepLat, accLat
+;				topo (topo = x, y, z), orientatio (orientatio = H P R), capAbsolu,
+;				idxSeg, segPK, segPKSucc,
+;				tiv, ttc, tlc, etatAICC, etatARCOS, vitLegale
+;				jerk, strategie, essieuAv, essieuAr1, essieuAr2, essieuAr3 (tous vp excepté)
+;				c.pk, c.vit, c.voie (Données concernant la cible (le vh devant pour vp)
+;				c.pkrel, c.type, c.genre, c.gprovoq, c.no (Données concernant la cible, vp excepté)
+;				cibAr.pk, cibAr.vit, cibAr.voie, cibAr.no, (Données concernant la cible (le vh derriere pour vp)
+;				cab.volant, cab.accel, cab.frein, c.embray, (Données concernant la cabine, vp seul)
+;				cab.BV, cab.indics, cab.bouton (Données concernant la cabine, vp seul)
+;				valCurseur (lié au curseur visuel, Données concernant la cabine, vp seul)
+;				vitAng (lié au curseur visuel, Données concernant la cabine, vp seul)
+;				CptKmTotal (distance odométrique parcourue du vehicule piloté)
+;				conflit (idxCrf + dCrf du véhicule n° X avec le vh de la ligne. X est mis en paramètre apres conflit) 
+;				sortieVoie (calcul du nombre de franchissement : sortie de voie) 
+;
+; Attention : les données d'un véhicule ne sont pas enregistrées dans l'ordre que vous indiquez, mais
+;	 selon celui des listes ci-dessus.
+; En revanche, dans le fichier résultat généré (*.VAR), les données simu sont restituées en premier,
+; puis viennent les données véhicule, l'ordre des véhicules respectant l'ordre ci-dessous
+; 5ème partie :
+;	 Le nombre de piétons à enregistrer, puis pour les lignes suivantes :
+;	 La 1ère colonne contient le numéro du piéton simulé,
+;	 la 2ème colonne le nombre de données à enregistrer.
+;	 Les colonnes suivantes contiennent les noms des données à enregistrer, parmi la liste suivante :
+;	 ===> vit, posX, posY
+
+Période=	0.E+00
+
+
+PériodeSauvegarde=	-1E+00
+
+
+Simu:	6
+Pas	temps sec	HeureGMT	dt	nbVhs	
+
+Scenario:	2
+IndEssai	NumInst	
+
+nbVéhicules:	1
+vp	20	Route	Voie	Cap Sens	Pk	Vitesse	regime topo	accel	accLat vitDepLat	TIV TTC cab.volant	cab.accel	cab.frein cab.embray	cab.BV Cab.Indics CptKmTotal	
+;-12	7	Route Voie	Cap Sens	Pk	vitesse	topo	
+;-1000	7	Route Voie	Cap Sens	Pk	vitesse	topo	
+
+nbPiétons:	0
+;-1	3	vit posX	posY

@@ -1,0 +1,17 @@
+# Config file line 2 MUST contain the name of the Event table that will used to store the coded events
+INTERACTION_Activite
+# Config file line 4 MUST contain the title of the windows (not very important)
+INTERACTION WP5 - Codage de l'activité
+# Config file line 6 MUST contain the coding windows height (>360 is recommanded)
+360
+# Config file line 8 MUST contain the coding windows width (>560 minimum)
+560
+# Config file line 10 MUST contain the width of the list that contains the Event List(360 minimum)
+360
+# The remaining lines are used to define buttons 'butt1;butt2;butt3|value1;value2;value3'
+Roule;Suivi|11;12
+ChgV+;ChgV-|13;14
+Dble+;Dble-|15;16
+Rabat+;Rabat-|17;18
+Intersect;RdP|19;20
+Fin Codage|666

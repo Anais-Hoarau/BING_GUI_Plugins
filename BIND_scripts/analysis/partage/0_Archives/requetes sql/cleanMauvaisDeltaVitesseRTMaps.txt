@@ -1,0 +1,9 @@
+DROP TABLE data_vitesseImportee
+
+DELETE
+FROM MetaDataVariables
+WHERE data_name='vitesseImportee'
+
+DELETE
+FROM MetaDatas
+WHERE name='vitesseImportee'

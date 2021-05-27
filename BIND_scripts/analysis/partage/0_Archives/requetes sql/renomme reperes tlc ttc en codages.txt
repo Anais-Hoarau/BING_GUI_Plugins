@@ -1,0 +1,10 @@
+UPDATE MetaEventVariables
+SET event_name = 'Codages'
+WHERE event_name= 'Reperes_Tlc_ttc'
+
+UPDATE MetaEvents
+SET name = 'Codages'
+WHERE name= 'Reperes_Tlc_ttc'
+
+ALTER table event_Reperes_Tlc_ttc  rename to event_Codages
+

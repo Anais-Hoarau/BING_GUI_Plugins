@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.6.0" EngineVersion="4.6" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages/>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="Condition_1" Model="Condition" Version="8.6.0" x="176" y="224" z="0">
+    <Input LongName="Condition_1.Ascii" Name="Ascii">
+      <Property LongName="Condition_1.Ascii.readerType" Type="1">0</Property>
+      <Property LongName="Condition_1.Ascii.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Condition_1.output" Name="output">
+      <Property LongName="Condition_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger" Name="outputInteger">
+      <Property LongName="Condition_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger64" Name="outputInteger64">
+      <Property LongName="Condition_1.outputInteger64.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger64.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger64.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputFloat32" Name="outputFloat32">
+      <Property LongName="Condition_1.outputFloat32.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputFloat32.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputFloat32.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Condition_1.condition" Type="3"><![CDATA[Ascii == 32]]></Property>
+    <Property LongName="Condition_1.when" Type="4"><![CDATA[4|0|condition is evaluated|condition is true|condition becomes true|condition state changes]]></Property>
+    <Property LongName="Condition_1.expression" Type="3"><![CDATA[1]]></Property>
+    <Property LongName="Condition_1.expression_false" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.autoConnect" Type="0">false</Property>
+    <Property LongName="Condition_1.then" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.else" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.preFormat" Type="0">false</Property>
+    <Property LongName="Condition_1.name" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.unit" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.period" Type="1">100000</Property>
+    <Property LongName="Condition_1.async_commands" Type="0">true</Property>
+    <Property LongName="Condition_1.synchroTolerance" Type="1">-1</Property>
+    <Property LongName="Condition_1.threaded" Type="0">true</Property>
+    <Property LongName="Condition_1.priority" Type="1">128</Property>
+    <Property LongName="Condition_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Keyboard_1" Model="Keyboard" Version="2.8" x="8" y="224" z="0">
+    <Output LongName="Keyboard_1.virtual_key" Name="virtual_key">
+      <Property LongName="Keyboard_1.virtual_key.subsampling" Type="1">1</Property>
+      <Property LongName="Keyboard_1.virtual_key.fifosize" Type="1">16</Property>
+      <Property LongName="Keyboard_1.virtual_key.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Keyboard_1.scan_code" Name="scan_code">
+      <Property LongName="Keyboard_1.scan_code.subsampling" Type="1">1</Property>
+      <Property LongName="Keyboard_1.scan_code.fifosize" Type="1">16</Property>
+      <Property LongName="Keyboard_1.scan_code.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Keyboard_1.ascii" Name="ascii">
+      <Property LongName="Keyboard_1.ascii.subsampling" Type="1">1</Property>
+      <Property LongName="Keyboard_1.ascii.fifosize" Type="1">16</Property>
+      <Property LongName="Keyboard_1.ascii.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Keyboard_1.threaded" Type="0">true</Property>
+    <Property LongName="Keyboard_1.priority" Type="1">255</Property>
+    <Property LongName="Keyboard_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="SerialPort_1" Model="SerialPort" Version="4.10" x="608" y="240" z="0">
+    <Input LongName="SerialPort_1.streamInput" Name="streamInput">
+      <Property LongName="SerialPort_1.streamInput.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.streamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_1.dtr_state" Name="dtr_state">
+      <Property LongName="SerialPort_1.dtr_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.dtr_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_1.rts_state" Name="rts_state">
+      <Property LongName="SerialPort_1.rts_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_1.rts_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="SerialPort_1.streamOutput" Name="streamOutput">
+      <Property LongName="SerialPort_1.streamOutput.subsampling" Type="1">1</Property>
+      <Property LongName="SerialPort_1.streamOutput.fifosize" Type="1">32</Property>
+      <Property LongName="SerialPort_1.streamOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SerialPort_1.port" Type="3"><![CDATA[COM2]]></Property>
+    <Property LongName="SerialPort_1.baudrate" Type="4"><![CDATA[10|5|110|300|1200|2400|4800|9600|19200|38400|57600|115200]]></Property>
+    <Property LongName="SerialPort_1.parity" Type="4"><![CDATA[5|0|None|Even|Odd|Mark|Space]]></Property>
+    <Property LongName="SerialPort_1.stopbits" Type="4"><![CDATA[3|0|1|2|1,5]]></Property>
+    <Property LongName="SerialPort_1.byteSize" Type="4"><![CDATA[4|3|5|6|7|8]]></Property>
+    <Property LongName="SerialPort_1.flowControl" Type="4"><![CDATA[3|0|None|Xon/Xoff|Hardware (RTS/CTS)]]></Property>
+    <Property LongName="SerialPort_1.XonChar" Type="1">17</Property>
+    <Property LongName="SerialPort_1.XoffChar" Type="1">19</Property>
+    <Property LongName="SerialPort_1.min" Type="1">50</Property>
+    <Property LongName="SerialPort_1.wtime" Type="1">10000</Property>
+    <Property LongName="SerialPort_1.use_non_standard_baudrate" Type="0">false</Property>
+    <Property LongName="SerialPort_1.non_standard_baudrate" Type="1">10000</Property>
+    <Property LongName="SerialPort_1.correct_timestamp_based_on_baudrate" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_data_terminal_ready" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_request_to_send" Type="0">true</Property>
+    <Property LongName="SerialPort_1.use_carrier_detect" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_clear_to_send" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_data_set_ready" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.use_ring" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_1.pin_polling_period" Type="1" SubType="1">0</Property>
+    <Property LongName="SerialPort_1.pin_filter_edge_detection" Type="0">true</Property>
+    <Property LongName="SerialPort_1.verbose" Type="0">false</Property>
+    <Property LongName="SerialPort_1.threaded" Type="0">true</Property>
+    <Property LongName="SerialPort_1.priority" Type="1">255</Property>
+    <Property LongName="SerialPort_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="SerialPort_2" Model="SerialPort" Version="4.10" x="864" y="240" z="0">
+    <Input LongName="SerialPort_2.streamInput" Name="streamInput">
+      <Property LongName="SerialPort_2.streamInput.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_2.streamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_2.dtr_state" Name="dtr_state">
+      <Property LongName="SerialPort_2.dtr_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_2.dtr_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_2.rts_state" Name="rts_state">
+      <Property LongName="SerialPort_2.rts_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_2.rts_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="SerialPort_2.streamOutput" Name="streamOutput">
+      <Property LongName="SerialPort_2.streamOutput.subsampling" Type="1">1</Property>
+      <Property LongName="SerialPort_2.streamOutput.fifosize" Type="1">32</Property>
+      <Property LongName="SerialPort_2.streamOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SerialPort_2.port" Type="3"><![CDATA[COM3]]></Property>
+    <Property LongName="SerialPort_2.baudrate" Type="4"><![CDATA[10|5|110|300|1200|2400|4800|9600|19200|38400|57600|115200]]></Property>
+    <Property LongName="SerialPort_2.parity" Type="4"><![CDATA[5|0|None|Even|Odd|Mark|Space]]></Property>
+    <Property LongName="SerialPort_2.stopbits" Type="4"><![CDATA[3|0|1|2|1,5]]></Property>
+    <Property LongName="SerialPort_2.byteSize" Type="4"><![CDATA[4|3|5|6|7|8]]></Property>
+    <Property LongName="SerialPort_2.flowControl" Type="4"><![CDATA[3|0|None|Xon/Xoff|Hardware (RTS/CTS)]]></Property>
+    <Property LongName="SerialPort_2.XonChar" Type="1">17</Property>
+    <Property LongName="SerialPort_2.XoffChar" Type="1">19</Property>
+    <Property LongName="SerialPort_2.min" Type="1">50</Property>
+    <Property LongName="SerialPort_2.wtime" Type="1">10000</Property>
+    <Property LongName="SerialPort_2.use_non_standard_baudrate" Type="0">false</Property>
+    <Property LongName="SerialPort_2.non_standard_baudrate" Type="1">10000</Property>
+    <Property LongName="SerialPort_2.correct_timestamp_based_on_baudrate" Type="0">true</Property>
+    <Property LongName="SerialPort_2.use_data_terminal_ready" Type="0">true</Property>
+    <Property LongName="SerialPort_2.use_request_to_send" Type="0">true</Property>
+    <Property LongName="SerialPort_2.use_carrier_detect" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_2.use_clear_to_send" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_2.use_data_set_ready" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_2.use_ring" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_2.pin_polling_period" Type="1" SubType="1">0</Property>
+    <Property LongName="SerialPort_2.pin_filter_edge_detection" Type="0">true</Property>
+    <Property LongName="SerialPort_2.verbose" Type="0">false</Property>
+    <Property LongName="SerialPort_2.threaded" Type="0">true</Property>
+    <Property LongName="SerialPort_2.priority" Type="1">255</Property>
+    <Property LongName="SerialPort_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="String_constant_generator_1" Model="String_constant_generator" Version="2.4" x="392" y="240" z="0">
+    <Input LongName="String_constant_generator_1.trigger" Name="trigger">
+      <Property LongName="String_constant_generator_1.trigger.readerType" Type="1">0</Property>
+      <Property LongName="String_constant_generator_1.trigger.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="String_constant_generator_1.stringValue" Name="stringValue">
+      <Property LongName="String_constant_generator_1.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="String_constant_generator_1.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="String_constant_generator_1.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="String_constant_generator_1.outputMode" Type="4"><![CDATA[3|2|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="String_constant_generator_1.outputWhenStringChanges" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.value" Type="3"><![CDATA[Hello world!]]></Property>
+    <Property LongName="String_constant_generator_1.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.maxStringLength" Type="1">255</Property>
+    <Property LongName="String_constant_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.priority" Type="1">128</Property>
+    <Property LongName="String_constant_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="1.6.1" x="1056" y="240" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">false</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[TextViewer_1]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">794</Property>
+    <Property LongName="TextViewer_1.y" Type="1">550</Property>
+    <Property LongName="TextViewer_1.width" Type="1">400</Property>
+    <Property LongName="TextViewer_1.height" Type="1">300</Property>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Keyboard_1.virtual_key" Input="Condition_1.Ascii"/>
+  <Connection Output="String_constant_generator_1.stringValue" Input="SerialPort_1.streamInput"/>
+  <Connection Output="Condition_1.outputInteger" Input="String_constant_generator_1.trigger"/>
+  <Connection Output="SerialPort_2.streamOutput" Input="TextViewer_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="Condition_1.Ascii" color="0"/>
+    <ConnectionShape InstanceName="SerialPort_1.streamInput" color="0"/>
+    <ConnectionShape InstanceName="String_constant_generator_1.trigger" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

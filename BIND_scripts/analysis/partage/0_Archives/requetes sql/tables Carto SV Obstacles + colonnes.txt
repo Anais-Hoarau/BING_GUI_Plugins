@@ -1,0 +1,25 @@
+       INSERT INTO data_CartoData SELECT timecode FROM data_SensorsData
+       INSERT INTO data_SortieVoieData SELECT timecode FROM data_SensorsData
+       INSERT INTO data_ObstaclesData SELECT timecode FROM data_SensorsData
+	ALTER TABLE data_CartoData ADD COLUMN 'type_infrastructure' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'courbure' 'REAL' DEFAULT (0)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptA' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptB' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptC' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'marquage' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'type_accotement' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'zone_virage' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'trafic_oppose' 'REAL' DEFAULT (0)
+        ALTER TABLE data_SortieVoieData ADD COLUMN 'etat_SV' 'REAL' DEFAULT (0)	
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'lateralisation_SV' 'REAL' DEFAULT (0)
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'tlcCalcule_SV' 'REAL' DEFAULT (33)
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'progression_SV' 'REAL' DEFAULT (0)
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'amplitude_SV' 'REAL' DEFAULT (0)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'etat_obstacle' 'REAL' DEFAULT (0)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'sensCirculation_obstacle' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'position_obstacle' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'type_obstacle' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'vitesse_obstacle' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'distance_obstacle' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'temps_a_obstacle' 'REAL' DEFAULT (-1)
+

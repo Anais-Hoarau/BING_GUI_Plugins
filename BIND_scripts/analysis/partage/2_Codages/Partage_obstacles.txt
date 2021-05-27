@@ -1,0 +1,18 @@
+# Config file line 2 MUST contain the name of the Event table that will used to store the coded events
+CodageObstacles
+# Config file line 4 MUST contain the title of the windows (not very important)
+Partage_codageObstacles
+# Config file line 6 MUST contain the coding windows height (>360 is recommanded)
+360
+# Config file line 8 MUST contain the coding windows width (>520 is recommanded)
+620
+# Config file line 10 MUST contain the width of the list that contains the Event List(360 minimum)
+360
+# The remaining lines are used to define buttons 'butt1;butt2;butt3|value1;value2;value3'
+debObs;finObs|1;2
+centreRoute;milieuEgoVoie;accotement;autre|10;11;12;13
+fixe;ego;contreSens|20;21;22
+pieton;velo;moto;VL;utilitaire;PL|30;31;32;33;34;35
+ttcNull|40
+trafic_oppose|99
+debCodage;finCodage|-1000;1000

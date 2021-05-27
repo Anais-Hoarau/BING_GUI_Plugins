@@ -1,0 +1,19 @@
+SortieVoieData
+
+-requete de copie de colonne :
+       INSERT INTO data_SortieVoieData SELECT timecode FROM data_SensorsData
+
+-requete de recréation des colonnes:
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'etat_SV' 'REAL' DEFAULT (0);
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'lateralisation_SV' 'REAL' DEFAULT (0);
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'tlcCalcule_SV' 'REAL' DEFAULT (33);
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'progression_SV' 'REAL' DEFAULT (0);
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'amplitude_SV' 'REAL' DEFAULT (0);
+
+
+
+Détails
+
+	ALTER TABLE data_SortieVoieData ADD COLUMN 'progression' 'REAL' DEFAULT (0)
+		en cours entre debut mord et SV max 
+		en recuperation entre SV max et fin mord

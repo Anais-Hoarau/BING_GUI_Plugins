@@ -1,0 +1,17 @@
+29-Jul-2013 14:33:47 : Error with this trip : D:\sgauthier\Desktop\Copie Trip and Struct\S002\ALLER\S002_ALLER.trip
+Error using fr.lescot.bind.kernel.implementation.SQLiteTrip/getAttribute (line 1123)
+The requested attribute wasn't found in the database
+
+Error in atlas_TripsAttributes (line 5)
+clap_stop = trip.getAttribute('mopad_top_clap_stop');
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_atlas_analysis (line 51)
+        [proc_TripsAttributes,  ~, ~]  = magic_process('atlas_TripsAttributes',trip);
+
+Error in run (line 64)
+evalin('caller', [script ';']);
+
+---------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+UPDATE MetaDatas
+SET isBase ='1'
+WHERE name='SensorsData'

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio - FREE Community Edition 7.0.5.906 (http://www.liquid-technologies.com) -->
+<bind_mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<data_mapping bind_data_name="localisation" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: Route" bind_variable_name="route" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="vp: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: CptKmTotal (mm)" bind_variable_name="compteur kilométrique total" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="trajectoire" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: Voie (mm)" bind_variable_name="voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Cap (deg)" bind_variable_name="cap" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Sens" bind_variable_name="sens" bind_variable_type="TEXT" />
+		<variable_mapping imported_variable_id="vp: DecalVoie (mm)" bind_variable_name="Décalage / axe voie" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.volant" bind_variable_name="angle volant" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="adaptation_comportementale" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: Regime (tr/min)" bind_variable_name="Régime moteur" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.BV" bind_variable_name="boite de vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.indics" bind_variable_name="indics" bind_variable_type="TEXT" />
+	</data_mapping>
+	<data_mapping bind_data_name="vitesse" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="vp: Vit (m/s)" bind_variable_name="vitesse" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: Acc (m/s²)" bind_variable_name="accélération" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: VitDepLat (m/s)" bind_variable_name="Vitesse latérale" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: T.I.V. (s)" bind_variable_name="T.I.V." bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: T.T.C. (s)" bind_variable_name="T.T.C." bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.acc" bind_variable_name="accélérateur" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.frein" bind_variable_name="frein" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="vp: cab.embrayage" bind_variable_name="embrayage" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-2" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-2: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-2: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-3" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-3: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-3: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-4" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-4: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-4: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-5" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-5: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-5: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-6" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-6: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-6: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-7" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-7: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-7: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-8" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-8: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-8: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-9" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-9: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-9: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-10" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-10: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-10: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-11" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-11: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-11: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-12" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-12: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-12: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-13" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-13: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-13: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-14" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-14: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-14: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-15" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-15: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-15: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-16" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-16: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-16: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-17" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-17: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-17: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-18" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-18: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-18: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-19" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-19: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-19: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-20" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-20: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-20: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-21" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-21: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-21: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-22" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-22: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-22: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-23" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-23: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-23: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-24" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-24: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-24: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-25" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-25: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-25: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-26" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-26: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-26: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-27" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-27: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-27: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-28" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-28: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-28: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-29" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-29: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-29: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-30" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-30: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-30: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+	<data_mapping bind_data_name="-33" bind_data_isbase="1" imported_timecode_id="sec" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="-33: Route" bind_variable_name="route" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="-33: Pk (mm)" bind_variable_name="pk" bind_variable_type="REAL" />
+	</data_mapping>
+</bind_mapping>

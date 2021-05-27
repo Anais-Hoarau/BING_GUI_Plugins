@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.8" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="3.1.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="BioFeedBack" Model="PythonBridge" Version="3.1.0" x="384" y="232" z="0">
+    <Input LongName="BioFeedBack.ecg_value" Name="ecg_value">
+      <Property LongName="BioFeedBack.ecg_value.readerType" Type="1">1</Property>
+      <Property LongName="BioFeedBack.ecg_value.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="BioFeedBack.correction_threshold" Name="correction_threshold">
+      <Property LongName="BioFeedBack.correction_threshold.readerType" Type="1">4</Property>
+      <Property LongName="BioFeedBack.correction_threshold.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="BioFeedBack.prominence" Name="prominence">
+      <Property LongName="BioFeedBack.prominence.readerType" Type="1">4</Property>
+      <Property LongName="BioFeedBack.prominence.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="BioFeedBack.peak" Name="peak">
+      <Property LongName="BioFeedBack.peak.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.peak.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.peak.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BioFeedBack.stim" Name="stim">
+      <Property LongName="BioFeedBack.stim.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.stim.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.stim.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BioFeedBack.diff" Name="diff">
+      <Property LongName="BioFeedBack.diff.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.diff.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.diff.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BioFeedBack.diff_mean" Name="diff_mean">
+      <Property LongName="BioFeedBack.diff_mean.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.diff_mean.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.diff_mean.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BioFeedBack.RRInt" Name="RRInt">
+      <Property LongName="BioFeedBack.RRInt.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.RRInt.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.RRInt.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BioFeedBack.HR" Name="HR">
+      <Property LongName="BioFeedBack.HR.subsampling" Type="1">1</Property>
+      <Property LongName="BioFeedBack.HR.fifosize" Type="1">128</Property>
+      <Property LongName="BioFeedBack.HR.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="BioFeedBack.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="BioFeedBack.internalInputs" Type="3" SubType="128"><![CDATA[ecg_value;1==#correction_threshold;1==#prominence;1==]]></Property>
+    <Property LongName="BioFeedBack.internalOutputs" Type="3" SubType="128"><![CDATA[peak;0==;0#stim;0==;0#diff;0==;0#diff_mean;0==;0#RRInt;0==;0#HR;0==;0]]></Property>
+    <Property LongName="BioFeedBack.internalProperties" Type="3" SubType="128"><![CDATA[Biofeedback_Type||13||5|0|Real|Decreased|Decreased_Correlated|Increased|Increased_Correlated||24#Biofeedback_Ratio||11||1.5#nValues_Avg||8||1#SubStep_window||8||32]]></Property>
+    <ReadOnlyProperty LongName="BioFeedBack.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="BioFeedBack.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="BioFeedBack.logDebug" Type="0">true</Property>
+    <Property LongName="BioFeedBack.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="BioFeedBack.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="BioFeedBack.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="BioFeedBack.pythonPID" Type="1">13224</ReadOnlyProperty>
+    <Property LongName="BioFeedBack.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BioFeedBack.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BioFeedBack.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="BioFeedBack.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Program Files/Python37/]]></Property>
+    <Property LongName="BioFeedBack.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/fmoreau/RTMaps-4.0/python_log/]]></Property>
+    <Property LongName="BioFeedBack.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="BioFeedBack.pythonFilename" Type="3" SubType="80"><![CDATA[D:/LESCOT/INFORMATIQUE/DEVELOPPEMENT/BIND/BIND/BIND_scripts/analysis/These_Adolphe/pyRRIntervalsRealTime/pyRRIntervalsRealTimeRTMaps.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../pyRRIntervalsRealTime/pyRRIntervalsRealTimeRTMaps.py]]></Relative></Property>
+    <Property LongName="BioFeedBack.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="BioFeedBack.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BioFeedBack.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="BioFeedBack.Biofeedback_Type" Type="4"><![CDATA[5|0|Real|Decreased|Decreased_Correlated|Increased|Increased_Correlated]]></Property>
+    <Property LongName="BioFeedBack.Biofeedback_Ratio" Type="2">1.5</Property>
+    <Property LongName="BioFeedBack.nValues_Avg" Type="1">1</Property>
+    <Property LongName="BioFeedBack.SubStep_window" Type="1">32</Property>
+    <ReadOnlyProperty LongName="BioFeedBack.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="BioFeedBack.threaded" Type="0">true</Property>
+    <Property LongName="BioFeedBack.priority" Type="1">128</Property>
+    <Property LongName="BioFeedBack.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Condition_1" Model="Condition" Version="9.0.0" x="384" y="80" z="0">
+    <Input LongName="Condition_1.stim" Name="stim">
+      <Property LongName="Condition_1.stim.readerType" Type="1">0</Property>
+      <Property LongName="Condition_1.stim.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Condition_1.output" Name="output">
+      <Property LongName="Condition_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger" Name="outputInteger">
+      <Property LongName="Condition_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger64" Name="outputInteger64">
+      <Property LongName="Condition_1.outputInteger64.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger64.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger64.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputFloat32" Name="outputFloat32">
+      <Property LongName="Condition_1.outputFloat32.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputFloat32.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputFloat32.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Condition_1.condition" Type="3"><![CDATA[stim == 1]]></Property>
+    <Property LongName="Condition_1.when" Type="4"><![CDATA[4|1|condition is evaluated|condition is true|condition becomes true|condition state changes]]></Property>
+    <Property LongName="Condition_1.expression" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.expression_false" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.autoConnect" Type="0">false</Property>
+    <Property LongName="Condition_1.then" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.else" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.preFormat" Type="0">false</Property>
+    <Property LongName="Condition_1.name" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.unit" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.period" Type="1">100000</Property>
+    <Property LongName="Condition_1.async_commands" Type="0">true</Property>
+    <Property LongName="Condition_1.synchroTolerance" Type="1">-1</Property>
+    <Property LongName="Condition_1.threaded" Type="0">true</Property>
+    <Property LongName="Condition_1.priority" Type="1">128</Property>
+    <Property LongName="Condition_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ECG_PEAK_STIM" Model="Oscilloscope" Version="5.0.3" x="584" y="192" z="0">
+    <Input LongName="ECG_PEAK_STIM.inputA" Name="inputA">
+      <Property LongName="ECG_PEAK_STIM.inputA.readerType" Type="1">1</Property>
+      <Property LongName="ECG_PEAK_STIM.inputA.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="ECG_PEAK_STIM.inputB" Name="inputB">
+      <Property LongName="ECG_PEAK_STIM.inputB.readerType" Type="1">1</Property>
+      <Property LongName="ECG_PEAK_STIM.inputB.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="ECG_PEAK_STIM.inputC" Name="inputC">
+      <Property LongName="ECG_PEAK_STIM.inputC.readerType" Type="1">1</Property>
+      <Property LongName="ECG_PEAK_STIM.inputC.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="ECG_PEAK_STIM.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="ECG_PEAK_STIM.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="ECG_PEAK_STIM.autoDirty" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.run" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="ECG_PEAK_STIM.moveable" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.hidden" Type="0">false</Property>
+    <Property LongName="ECG_PEAK_STIM.title" Type="3"><![CDATA[Oscillo_ECG_PEAK_STIM]]></Property>
+    <Property LongName="ECG_PEAK_STIM.x" Type="1">1920</Property>
+    <Property LongName="ECG_PEAK_STIM.y" Type="1">0</Property>
+    <Property LongName="ECG_PEAK_STIM.width" Type="1">1920</Property>
+    <Property LongName="ECG_PEAK_STIM.height" Type="1">1039</Property>
+    <Property LongName="ECG_PEAK_STIM.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="ECG_PEAK_STIM.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="ECG_PEAK_STIM.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="ECG_PEAK_STIM.nbInputs" Type="1">3</Property>
+    <Property LongName="ECG_PEAK_STIM.timeScale" Type="2">0.5</Property>
+    <Property LongName="ECG_PEAK_STIM.timeOffset" Type="2">0</Property>
+    <Property LongName="ECG_PEAK_STIM.scroll" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.showCommonPanel" Type="0">false</Property>
+    <Property LongName="ECG_PEAK_STIM.showChannelPanel" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.triggerChannel" Type="4"><![CDATA[3|0|A|B|C]]></Property>
+    <Property LongName="ECG_PEAK_STIM.triggerLevel" Type="2">0.5</Property>
+    <Property LongName="ECG_PEAK_STIM.triggerSlope" Type="4"><![CDATA[3|0|any|positive|negative]]></Property>
+    <Property LongName="ECG_PEAK_STIM.memory" Type="1">5000000</Property>
+    <Property LongName="ECG_PEAK_STIM.pensWidth" Type="1">2</Property>
+    <Property LongName="ECG_PEAK_STIM.refreshPeriod" Type="1">1000</Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_name" Type="3"><![CDATA[ECG]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_scale" Type="2">0.3</Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_offset" Type="2">-0.3</Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_isSigned" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_mode" Type="4"><![CDATA[3|0|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_color" Type="1" SubType="4">4227327</Property>
+    <Property LongName="ECG_PEAK_STIM.inputA_showScale" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_name" Type="3"><![CDATA[PEAK]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_scale" Type="2">0.1</Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_offset" Type="2">-0.9</Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_isSigned" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_mode" Type="4"><![CDATA[3|1|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_color" Type="1" SubType="4">16776960</Property>
+    <Property LongName="ECG_PEAK_STIM.inputB_showScale" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_name" Type="3"><![CDATA[STIM]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_scale" Type="2">0.1666666667</Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_offset" Type="2">-0.5</Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_isSigned" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_mode" Type="4"><![CDATA[3|0|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_color" Type="1" SubType="4">65535</Property>
+    <Property LongName="ECG_PEAK_STIM.inputC_showScale" Type="0">true</Property>
+    <ReadOnlyProperty LongName="ECG_PEAK_STIM.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="ECG_PEAK_STIM.threaded" Type="0">true</Property>
+    <Property LongName="ECG_PEAK_STIM.priority" Type="1">128</Property>
+    <Property LongName="ECG_PEAK_STIM.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Find_Peaks_Parameters" Model="Potentiometer" Version="2.0.4" x="32" y="64" z="0">
+    <Output LongName="Find_Peaks_Parameters.output0" Name="output0">
+      <Property LongName="Find_Peaks_Parameters.output0.subsampling" Type="1">1</Property>
+      <Property LongName="Find_Peaks_Parameters.output0.fifosize" Type="1">16</Property>
+      <Property LongName="Find_Peaks_Parameters.output0.periodic" Type="0">true</Property>
+    </Output>
+    <Output LongName="Find_Peaks_Parameters.output1" Name="output1">
+      <Property LongName="Find_Peaks_Parameters.output1.subsampling" Type="1">1</Property>
+      <Property LongName="Find_Peaks_Parameters.output1.fifosize" Type="1">16</Property>
+      <Property LongName="Find_Peaks_Parameters.output1.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Find_Peaks_Parameters.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="Find_Peaks_Parameters.autoDirty" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.run" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="Find_Peaks_Parameters.moveable" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.hidden" Type="0">false</Property>
+    <Property LongName="Find_Peaks_Parameters.title" Type="3"><![CDATA[Find Peaks Parameters]]></Property>
+    <Property LongName="Find_Peaks_Parameters.x" Type="1">1</Property>
+    <Property LongName="Find_Peaks_Parameters.y" Type="1">641</Property>
+    <Property LongName="Find_Peaks_Parameters.width" Type="1">185</Property>
+    <Property LongName="Find_Peaks_Parameters.height" Type="1">401</Property>
+    <Property LongName="Find_Peaks_Parameters.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
+    <Property LongName="Find_Peaks_Parameters.numberOfWidgets" Type="1">2</Property>
+    <Property LongName="Find_Peaks_Parameters.widgetLayout" Type="4"><![CDATA[2|1|Horizontal|Vertical]]></Property>
+    <Property LongName="Find_Peaks_Parameters.showAdditionalTitles" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.guard_vector" Type="0" SubType="128">false</Property>
+    <Property LongName="Find_Peaks_Parameters.subtitle0" Type="3"><![CDATA[Correction Threshold]]></Property>
+    <Property LongName="Find_Peaks_Parameters.subtitle1" Type="3"><![CDATA[Prominence]]></Property>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.vector_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="Find_Peaks_Parameters.unit0" Type="3"><![CDATA[Unit]]></Property>
+    <Property LongName="Find_Peaks_Parameters.min0" Type="2">1</Property>
+    <Property LongName="Find_Peaks_Parameters.max0" Type="2">2</Property>
+    <Property LongName="Find_Peaks_Parameters.value0" Type="2">1.5</Property>
+    <Property LongName="Find_Peaks_Parameters.behaviour0" Type="4"><![CDATA[2|1|On Event|Periodic]]></Property>
+    <Property LongName="Find_Peaks_Parameters.wheelSpeed0" Type="2">0.1</Property>
+    <Property LongName="Find_Peaks_Parameters.scaleMode0" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.stepAngle0" Type="1">30</Property>
+    <Property LongName="Find_Peaks_Parameters.samplingTime0" Type="1" SubType="1">40000</Property>
+    <Property LongName="Find_Peaks_Parameters.resetAtShutdown0" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.resetValue0" Type="2">1.5</Property>
+    <Property LongName="Find_Peaks_Parameters.unit1" Type="3"><![CDATA[Unit]]></Property>
+    <Property LongName="Find_Peaks_Parameters.min1" Type="2">0.8</Property>
+    <Property LongName="Find_Peaks_Parameters.max1" Type="2">1.2</Property>
+    <Property LongName="Find_Peaks_Parameters.value1" Type="2">1</Property>
+    <Property LongName="Find_Peaks_Parameters.behaviour1" Type="4"><![CDATA[2|1|On Event|Periodic]]></Property>
+    <Property LongName="Find_Peaks_Parameters.wheelSpeed1" Type="2">0.1</Property>
+    <Property LongName="Find_Peaks_Parameters.scaleMode1" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.stepAngle1" Type="1">30</Property>
+    <Property LongName="Find_Peaks_Parameters.samplingTime1" Type="1" SubType="1">40000</Property>
+    <Property LongName="Find_Peaks_Parameters.resetAtShutdown1" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.resetValue1" Type="2">1</Property>
+    <ReadOnlyProperty LongName="Find_Peaks_Parameters.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Find_Peaks_Parameters.threaded" Type="0">true</Property>
+    <Property LongName="Find_Peaks_Parameters.priority" Type="1">128</Property>
+    <Property LongName="Find_Peaks_Parameters.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="peakTCPredictDiff" Model="TextViewer" Version="2.0.3" x="952" y="248" z="0">
+    <Input LongName="peakTCPredictDiff.input" Name="input">
+      <Property LongName="peakTCPredictDiff.input.readerType" Type="1">0</Property>
+      <Property LongName="peakTCPredictDiff.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="peakTCPredictDiff.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiff.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiff.autoDirty" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiff.run" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiff.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="peakTCPredictDiff.moveable" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiff.hidden" Type="0">false</Property>
+    <Property LongName="peakTCPredictDiff.title" Type="3"><![CDATA[peakTCPredictDiff_Value]]></Property>
+    <Property LongName="peakTCPredictDiff.x" Type="1">1434</Property>
+    <Property LongName="peakTCPredictDiff.y" Type="1">641</Property>
+    <Property LongName="peakTCPredictDiff.width" Type="1">228</Property>
+    <Property LongName="peakTCPredictDiff.height" Type="1">398</Property>
+    <Property LongName="peakTCPredictDiff.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiff.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="peakTCPredictDiff.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiff.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="peakTCPredictDiff.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="peakTCPredictDiff.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="peakTCPredictDiff.hexDisplay" Type="0">false</Property>
+    <Property LongName="peakTCPredictDiff.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiff.fontSize" Type="1">12</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiff.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiff.threaded" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiff.priority" Type="1">128</Property>
+    <Property LongName="peakTCPredictDiff.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="peakTCPredictDiffMean" Model="TextViewer" Version="2.0.3" x="952" y="344" z="0">
+    <Input LongName="peakTCPredictDiffMean.input" Name="input">
+      <Property LongName="peakTCPredictDiffMean.input.readerType" Type="1">0</Property>
+      <Property LongName="peakTCPredictDiffMean.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="peakTCPredictDiffMean.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiffMean.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiffMean.autoDirty" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiffMean.run" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiffMean.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="peakTCPredictDiffMean.moveable" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiffMean.hidden" Type="0">false</Property>
+    <Property LongName="peakTCPredictDiffMean.title" Type="3"><![CDATA[peakTCPredictDiffMean_Value]]></Property>
+    <Property LongName="peakTCPredictDiffMean.x" Type="1">1660</Property>
+    <Property LongName="peakTCPredictDiffMean.y" Type="1">640</Property>
+    <Property LongName="peakTCPredictDiffMean.width" Type="1">259</Property>
+    <Property LongName="peakTCPredictDiffMean.height" Type="1">399</Property>
+    <Property LongName="peakTCPredictDiffMean.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiffMean.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="peakTCPredictDiffMean.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiffMean.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="peakTCPredictDiffMean.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="peakTCPredictDiffMean.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="peakTCPredictDiffMean.hexDisplay" Type="0">false</Property>
+    <Property LongName="peakTCPredictDiffMean.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiffMean.fontSize" Type="1">12</Property>
+    <ReadOnlyProperty LongName="peakTCPredictDiffMean.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="peakTCPredictDiffMean.threaded" Type="0">true</Property>
+    <Property LongName="peakTCPredictDiffMean.priority" Type="1">128</Property>
+    <Property LongName="peakTCPredictDiffMean.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="32" y="160" z="0">
+    <Output LongName="Player_1.DR2.message" Name="DR2.message">
+      <Property LongName="Player_1.DR2.message.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.DR2.message.fifosize" Type="1">32</Property>
+      <Property LongName="Player_1.DR2.message.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.resp" Name="BIOPAC_MP150.resp">
+      <Property LongName="Player_1.BIOPAC_MP150.resp.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.ecg" Name="BIOPAC_MP150.ecg">
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.fifosize" Type="1">480</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.periodic" Type="0">true</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.threaded" Type="0">true</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.priority" Type="1">128</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.eda" Name="BIOPAC_MP150.eda">
+      <Property LongName="Player_1.BIOPAC_MP150.eda.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_1" Name="BIOPAC_MP150.trigger_1">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_2" Name="BIOPAC_MP150.trigger_2">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_3" Name="BIOPAC_MP150.trigger_3">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_4" Name="BIOPAC_MP150.trigger_4">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_5" Name="BIOPAC_MP150.trigger_5">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.EMPATICA_E4_TXT.outputAscii" Name="EMPATICA_E4_TXT.outputAscii">
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.fifosize" Type="1">32</Property>
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.gaze" Name="PUPIL_GLASSES.gaze">
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.pupil" Name="PUPIL_GLASSES.pupil">
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.fixations" Name="PUPIL_GLASSES.fixations">
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.fifosize" Type="1">160</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CADISP.message" Name="CADISP.message">
+      <Property LongName="Player_1.CADISP.message.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CADISP.message.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CADISP.message.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.VIDEO.outputMAPSImage_1" Name="VIDEO.outputMAPSImage_1">
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.fifosize" Type="1">10</Property>
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.AUDIO.stereoOutput" Name="AUDIO.stereoOutput">
+      <Property LongName="Player_1.AUDIO.stereoOutput.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.AUDIO.stereoOutput.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.AUDIO.stereoOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.IDSCAM_MASTER.ueye_timings" Name="IDSCAM_MASTER.ueye_timings">
+      <Property LongName="Player_1.IDSCAM_MASTER.ueye_timings.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.IDSCAM_MASTER.ueye_timings.fifosize" Type="1">32</Property>
+      <Property LongName="Player_1.IDSCAM_MASTER.ueye_timings.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.IDSCAM_MASTER.image_out" Name="IDSCAM_MASTER.image_out">
+      <Property LongName="Player_1.IDSCAM_MASTER.image_out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.IDSCAM_MASTER.image_out.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.IDSCAM_MASTER.image_out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.IDSCAM_SLAVE.ueye_timings" Name="IDSCAM_SLAVE.ueye_timings">
+      <Property LongName="Player_1.IDSCAM_SLAVE.ueye_timings.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.IDSCAM_SLAVE.ueye_timings.fifosize" Type="1">32</Property>
+      <Property LongName="Player_1.IDSCAM_SLAVE.ueye_timings.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.IDSCAM_SLAVE.image_out" Name="IDSCAM_SLAVE.image_out">
+      <Property LongName="Player_1.IDSCAM_SLAVE.image_out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.IDSCAM_SLAVE.image_out.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.IDSCAM_SLAVE.image_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[D:/LESCOT/PROJETS_RECHERCHE/THESE_ADOLPHE/Data/Baseline/20190605_102403_RecFile_REC/RecFile_REC_20190605_102403.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../../../PROJETS_RECHERCHE/THESE_ADOLPHE/Data/Baseline/20190605_102403_RecFile_REC/RecFile_REC_20190605_102403.rec]]></Relative></Property>
+    <Property LongName="Player_1.offset" Type="1">0</Property>
+    <Property LongName="Player_1.beginning" Type="1">0</Property>
+    <Property LongName="Player_1.end" Type="1">0</Property>
+    <Property LongName="Player_1.timelag" Type="1">100000</Property>
+    <Property LongName="Player_1.update" Type="0">true</Property>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[D:/LESCOT/PROJETS_RECHERCHE/THESE_ADOLPHE/Data/Baseline/20190605_102403_RecFile_REC/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">16105</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.first" Type="1">628326</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.last" Type="1">308089866</ReadOnlyProperty>
+    <Property LongName="Player_1.serverThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.mainClientThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.threaded" Type="0">true</Property>
+    <Property LongName="Player_1.priority" Type="1">128</Property>
+    <Property LongName="Player_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RRInt_HR" Model="Oscilloscope" Version="5.0.3" x="584" y="296" z="0">
+    <Input LongName="RRInt_HR.inputA" Name="inputA">
+      <Property LongName="RRInt_HR.inputA.readerType" Type="1">0</Property>
+      <Property LongName="RRInt_HR.inputA.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="RRInt_HR.inputB" Name="inputB">
+      <Property LongName="RRInt_HR.inputB.readerType" Type="1">0</Property>
+      <Property LongName="RRInt_HR.inputB.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="RRInt_HR.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="RRInt_HR.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="RRInt_HR.autoDirty" Type="0">true</Property>
+    <Property LongName="RRInt_HR.run" Type="0">true</Property>
+    <Property LongName="RRInt_HR.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="RRInt_HR.moveable" Type="0">true</Property>
+    <Property LongName="RRInt_HR.hidden" Type="0">false</Property>
+    <Property LongName="RRInt_HR.title" Type="3"><![CDATA[Oscillo_RR_INT & BPM]]></Property>
+    <Property LongName="RRInt_HR.x" Type="1">183</Property>
+    <Property LongName="RRInt_HR.y" Type="1">641</Property>
+    <Property LongName="RRInt_HR.width" Type="1">1070</Property>
+    <Property LongName="RRInt_HR.height" Type="1">401</Property>
+    <Property LongName="RRInt_HR.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="RRInt_HR.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RRInt_HR.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="RRInt_HR.nbInputs" Type="1">2</Property>
+    <Property LongName="RRInt_HR.timeScale" Type="2">1</Property>
+    <Property LongName="RRInt_HR.timeOffset" Type="2">0</Property>
+    <Property LongName="RRInt_HR.scroll" Type="0">true</Property>
+    <Property LongName="RRInt_HR.showCommonPanel" Type="0">false</Property>
+    <Property LongName="RRInt_HR.showChannelPanel" Type="0">true</Property>
+    <Property LongName="RRInt_HR.triggerChannel" Type="4"><![CDATA[2|0|A|B]]></Property>
+    <Property LongName="RRInt_HR.triggerLevel" Type="2">0.8075</Property>
+    <Property LongName="RRInt_HR.triggerSlope" Type="4"><![CDATA[3|1|any|positive|negative]]></Property>
+    <Property LongName="RRInt_HR.memory" Type="1">5000000</Property>
+    <Property LongName="RRInt_HR.pensWidth" Type="1">2</Property>
+    <Property LongName="RRInt_HR.refreshPeriod" Type="1">1000</Property>
+    <Property LongName="RRInt_HR.inputA_name" Type="3"><![CDATA[RR_INT]]></Property>
+    <Property LongName="RRInt_HR.inputA_scale" Type="2">0.05</Property>
+    <Property LongName="RRInt_HR.inputA_offset" Type="2">-0.75</Property>
+    <Property LongName="RRInt_HR.inputA_isSigned" Type="0">true</Property>
+    <Property LongName="RRInt_HR.inputA_mode" Type="4"><![CDATA[3|1|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="RRInt_HR.inputA_color" Type="1" SubType="4">4227327</Property>
+    <Property LongName="RRInt_HR.inputA_showScale" Type="0">true</Property>
+    <Property LongName="RRInt_HR.inputB_name" Type="3"><![CDATA[Heart Rate]]></Property>
+    <Property LongName="RRInt_HR.inputB_scale" Type="2">7.5</Property>
+    <Property LongName="RRInt_HR.inputB_offset" Type="2">-90</Property>
+    <Property LongName="RRInt_HR.inputB_isSigned" Type="0">true</Property>
+    <Property LongName="RRInt_HR.inputB_mode" Type="4"><![CDATA[3|1|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="RRInt_HR.inputB_color" Type="1" SubType="4">16776960</Property>
+    <Property LongName="RRInt_HR.inputB_showScale" Type="0">true</Property>
+    <ReadOnlyProperty LongName="RRInt_HR.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="RRInt_HR.threaded" Type="0">true</Property>
+    <Property LongName="RRInt_HR.priority" Type="1">128</Property>
+    <Property LongName="RRInt_HR.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="SerialPort_sender" Model="SerialPort" Version="4.10" x="952" y="48" z="0">
+    <Input LongName="SerialPort_sender.streamInput" Name="streamInput">
+      <Property LongName="SerialPort_sender.streamInput.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_sender.streamInput.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_sender.dtr_state" Name="dtr_state">
+      <Property LongName="SerialPort_sender.dtr_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_sender.dtr_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="SerialPort_sender.rts_state" Name="rts_state">
+      <Property LongName="SerialPort_sender.rts_state.readerType" Type="1">0</Property>
+      <Property LongName="SerialPort_sender.rts_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="SerialPort_sender.streamOutput" Name="streamOutput">
+      <Property LongName="SerialPort_sender.streamOutput.subsampling" Type="1">1</Property>
+      <Property LongName="SerialPort_sender.streamOutput.fifosize" Type="1">32</Property>
+      <Property LongName="SerialPort_sender.streamOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SerialPort_sender.port" Type="3"><![CDATA[COM8]]></Property>
+    <Property LongName="SerialPort_sender.baudrate" Type="4"><![CDATA[10|9|110|300|1200|2400|4800|9600|19200|38400|57600|115200]]></Property>
+    <Property LongName="SerialPort_sender.parity" Type="4"><![CDATA[5|0|None|Even|Odd|Mark|Space]]></Property>
+    <Property LongName="SerialPort_sender.stopbits" Type="4"><![CDATA[3|0|1|2|1,5]]></Property>
+    <Property LongName="SerialPort_sender.byteSize" Type="4"><![CDATA[4|3|5|6|7|8]]></Property>
+    <Property LongName="SerialPort_sender.flowControl" Type="4"><![CDATA[3|0|None|Xon/Xoff|Hardware (RTS/CTS)]]></Property>
+    <Property LongName="SerialPort_sender.XonChar" Type="1">17</Property>
+    <Property LongName="SerialPort_sender.XoffChar" Type="1">19</Property>
+    <Property LongName="SerialPort_sender.min" Type="1">50</Property>
+    <Property LongName="SerialPort_sender.wtime" Type="1">10000</Property>
+    <Property LongName="SerialPort_sender.use_non_standard_baudrate" Type="0">false</Property>
+    <Property LongName="SerialPort_sender.non_standard_baudrate" Type="1">10000</Property>
+    <Property LongName="SerialPort_sender.correct_timestamp_based_on_baudrate" Type="0">true</Property>
+    <Property LongName="SerialPort_sender.use_data_terminal_ready" Type="0">true</Property>
+    <Property LongName="SerialPort_sender.use_request_to_send" Type="0">true</Property>
+    <Property LongName="SerialPort_sender.use_carrier_detect" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_sender.use_clear_to_send" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_sender.use_data_set_ready" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_sender.use_ring" Type="4"><![CDATA[4|0|No|Rising edge only|Falling edge only|Rising and falling edges]]></Property>
+    <Property LongName="SerialPort_sender.pin_polling_period" Type="1" SubType="1">0</Property>
+    <Property LongName="SerialPort_sender.pin_filter_edge_detection" Type="0">true</Property>
+    <Property LongName="SerialPort_sender.verbose" Type="0">false</Property>
+    <Property LongName="SerialPort_sender.threaded" Type="0">true</Property>
+    <Property LongName="SerialPort_sender.priority" Type="1">128</Property>
+    <Property LongName="SerialPort_sender.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="Stimulation_msg" Model="TextViewer" Version="2.0.3" x="952" y="152" z="0">
+    <Input LongName="Stimulation_msg.input" Name="input">
+      <Property LongName="Stimulation_msg.input.readerType" Type="1">0</Property>
+      <Property LongName="Stimulation_msg.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="Stimulation_msg.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Stimulation_msg.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="Stimulation_msg.autoDirty" Type="0">true</Property>
+    <Property LongName="Stimulation_msg.run" Type="0">true</Property>
+    <Property LongName="Stimulation_msg.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="Stimulation_msg.moveable" Type="0">true</Property>
+    <Property LongName="Stimulation_msg.hidden" Type="0">false</Property>
+    <Property LongName="Stimulation_msg.title" Type="3"><![CDATA[Stimulation_msg]]></Property>
+    <Property LongName="Stimulation_msg.x" Type="1">1251</Property>
+    <Property LongName="Stimulation_msg.y" Type="1">641</Property>
+    <Property LongName="Stimulation_msg.width" Type="1">185</Property>
+    <Property LongName="Stimulation_msg.height" Type="1">399</Property>
+    <Property LongName="Stimulation_msg.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Stimulation_msg.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Stimulation_msg.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="Stimulation_msg.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="Stimulation_msg.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="Stimulation_msg.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="Stimulation_msg.hexDisplay" Type="0">false</Property>
+    <Property LongName="Stimulation_msg.appendLineFeedForNewData" Type="0">false</Property>
+    <Property LongName="Stimulation_msg.fontSize" Type="1">12</Property>
+    <ReadOnlyProperty LongName="Stimulation_msg.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Stimulation_msg.threaded" Type="0">true</Property>
+    <Property LongName="Stimulation_msg.priority" Type="1">128</Property>
+    <Property LongName="Stimulation_msg.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="String_constant_generator_1" Model="String_constant_generator" Version="2.4" x="584" y="96" z="0">
+    <Input LongName="String_constant_generator_1.trigger" Name="trigger">
+      <Property LongName="String_constant_generator_1.trigger.readerType" Type="1">0</Property>
+      <Property LongName="String_constant_generator_1.trigger.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="String_constant_generator_1.stringValue" Name="stringValue">
+      <Property LongName="String_constant_generator_1.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="String_constant_generator_1.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="String_constant_generator_1.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="String_constant_generator_1.outputMode" Type="4"><![CDATA[3|2|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="String_constant_generator_1.outputWhenStringChanges" Type="0">false</Property>
+    <Property LongName="String_constant_generator_1.value" Type="3"><![CDATA[p0*]]></Property>
+    <Property LongName="String_constant_generator_1.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.maxStringLength" Type="1">255</Property>
+    <Property LongName="String_constant_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="String_constant_generator_1.priority" Type="1">128</Property>
+    <Property LongName="String_constant_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="String_constant_generator_2" Model="String_constant_generator" Version="2.4" x="584" y="8" z="0">
+    <Output LongName="String_constant_generator_2.stringValue" Name="stringValue">
+      <Property LongName="String_constant_generator_2.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="String_constant_generator_2.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="String_constant_generator_2.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="String_constant_generator_2.outputMode" Type="4"><![CDATA[3|0|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="String_constant_generator_2.outputWhenStringChanges" Type="0">true</Property>
+    <Property LongName="String_constant_generator_2.value" Type="3"><![CDATA[Init]]></Property>
+    <Property LongName="String_constant_generator_2.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_2.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="String_constant_generator_2.maxStringLength" Type="1">255</Property>
+    <Property LongName="String_constant_generator_2.threaded" Type="0">true</Property>
+    <Property LongName="String_constant_generator_2.priority" Type="1">128</Property>
+    <Property LongName="String_constant_generator_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TextMux_1" Model="TextMux" Version="1.2.1" x="776" y="48" z="0">
+    <Input LongName="TextMux_1.input0" Name="input0">
+      <Property LongName="TextMux_1.input0.readerType" Type="1">0</Property>
+      <Property LongName="TextMux_1.input0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="TextMux_1.input1" Name="input1">
+      <Property LongName="TextMux_1.input1.readerType" Type="1">0</Property>
+      <Property LongName="TextMux_1.input1.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="TextMux_1.text_out" Name="text_out">
+      <Property LongName="TextMux_1.text_out.subsampling" Type="1">1</Property>
+      <Property LongName="TextMux_1.text_out.fifosize" Type="1">32</Property>
+      <Property LongName="TextMux_1.text_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="TextMux_1.nbMaxChar" Type="1">255</Property>
+    <Property LongName="TextMux_1.nbInputs" Type="1">2</Property>
+    <Property LongName="TextMux_1.output_type" Type="4"><![CDATA[2|0|Text|Stream 8]]></Property>
+    <Property LongName="TextMux_1.threaded" Type="0">true</Property>
+    <Property LongName="TextMux_1.priority" Type="1">128</Property>
+    <Property LongName="TextMux_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Player_1.BIOPAC_MP150.ecg" Input="BioFeedBack.ecg_value">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Find_Peaks_Parameters.output0" Input="BioFeedBack.correction_threshold"/>
+  <Connection Output="Find_Peaks_Parameters.output1" Input="BioFeedBack.prominence"/>
+  <Connection Output="BioFeedBack.stim" Input="Condition_1.stim"/>
+  <Connection Output="Player_1.BIOPAC_MP150.ecg" Input="ECG_PEAK_STIM.inputA">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="BioFeedBack.peak" Input="ECG_PEAK_STIM.inputB"/>
+  <Connection Output="BioFeedBack.stim" Input="ECG_PEAK_STIM.inputC"/>
+  <Connection Output="BioFeedBack.diff" Input="peakTCPredictDiff.input"/>
+  <Connection Output="BioFeedBack.diff_mean" Input="peakTCPredictDiffMean.input"/>
+  <Connection Output="BioFeedBack.RRInt" Input="RRInt_HR.inputA"/>
+  <Connection Output="BioFeedBack.HR" Input="RRInt_HR.inputB"/>
+  <Connection Output="TextMux_1.text_out" Input="Stimulation_msg.input"/>
+  <Connection Output="Condition_1.outputInteger" Input="String_constant_generator_1.trigger"/>
+  <Connection Output="String_constant_generator_2.stringValue" Input="TextMux_1.input0"/>
+  <Connection Output="String_constant_generator_1.stringValue" Input="TextMux_1.input1"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="correctionThreshold_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="peakTCPredictDiff_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="SerialPort_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="TextViewer_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="BioFeedBack.correction_threshold" color="0"/>
+    <ConnectionShape InstanceName="BioFeedBack.ecg_value" color="0"/>
+    <ConnectionShape InstanceName="BioFeedBack.prominence" color="0"/>
+    <ConnectionShape InstanceName="Condition_1.stim" color="0"/>
+    <ConnectionShape InstanceName="ECG_PEAK_STIM.inputA" color="0"/>
+    <ConnectionShape InstanceName="ECG_PEAK_STIM.inputB" color="0"/>
+    <ConnectionShape InstanceName="ECG_PEAK_STIM.inputC" color="0"/>
+    <ConnectionShape InstanceName="peakTCPredictDiff.input" color="0"/>
+    <ConnectionShape InstanceName="peakTCPredictDiffMean.input" color="0"/>
+    <ConnectionShape InstanceName="RRInt_HR.inputA" color="0"/>
+    <ConnectionShape InstanceName="RRInt_HR.inputB" color="0"/>
+    <ConnectionShape InstanceName="RRIntervalsRT_1.correctionThreshold" color="0"/>
+    <ConnectionShape InstanceName="RRIntervalsRT_1.MPP" color="0"/>
+    <ConnectionShape InstanceName="Stimulation_msg.input" color="0"/>
+    <ConnectionShape InstanceName="String_constant_generator_1.trigger" color="0"/>
+    <ConnectionShape InstanceName="TextMux_1.input0" color="0"/>
+    <ConnectionShape InstanceName="TextMux_1.input1" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

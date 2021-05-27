@@ -1,0 +1,13 @@
+SELECT * from data_ObstaclesData
+WHERE etat_obstacle =1 AND sensCirculation_obstacle <>20
+
+SELECT * from data_ObstaclesData
+WHERE etat_obstacle =1
+
+UPDATE data_ObstaclesData
+SET vitesse_obstacle = -80
+Where etat_obstacle = 1
+
+UPDATE data_ObstaclesData
+SET vitesse_obstacle = -80
+WHERE etat_obstacle =1 AND sensCirculation_obstacle <>20

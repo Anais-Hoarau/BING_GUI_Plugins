@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.3.6" EngineVersion="4.5" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_mathworks.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_mathworks.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="Matlab_1" Model="Matlab" Version="1.5" x="464" y="160" z="0">
+    <Input LongName="Matlab_1.input" Name="input">
+      <Property LongName="Matlab_1.input.readerType" Type="1">0</Property>
+      <Property LongName="Matlab_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Matlab_1.output" Name="output">
+      <Property LongName="Matlab_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Matlab_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Matlab_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Matlab_1.outputFloat" Name="outputFloat">
+      <Property LongName="Matlab_1.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="Matlab_1.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="Matlab_1.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Matlab_1.outputVector" Name="outputVector">
+      <Property LongName="Matlab_1.outputVector.subsampling" Type="1">1</Property>
+      <Property LongName="Matlab_1.outputVector.fifosize" Type="1">16</Property>
+      <Property LongName="Matlab_1.outputVector.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Matlab_1.result" Name="result">
+      <Property LongName="Matlab_1.result.subsampling" Type="1">1</Property>
+      <Property LongName="Matlab_1.result.fifosize" Type="1">16</Property>
+      <Property LongName="Matlab_1.result.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Matlab_1.command" Type="3"><![CDATA[ecg_process]]></Property>
+    <Property LongName="Matlab_1.initCommand" Type="3"><![CDATA[addpath('D:\LESCOT\PROJETS_RECHERCHE\AUTOCONDUCT\WP5\diagnostic_processing\script_matlab')]]></Property>
+    <Property LongName="Matlab_1.endCommand" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Matlab_1.inputMatrixName" Type="3"><![CDATA[input]]></Property>
+    <Property LongName="Matlab_1.outputMatrixName" Type="3"><![CDATA[output]]></Property>
+    <Property LongName="Matlab_1.outputMatrixM" Type="1">1</Property>
+    <Property LongName="Matlab_1.outputMatrixN" Type="1">1</Property>
+    <Property LongName="Matlab_1.server" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Matlab_1.threaded" Type="0">true</Property>
+    <Property LongName="Matlab_1.priority" Type="1">128</Property>
+    <Property LongName="Matlab_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Oscilloscope_1" Model="Oscilloscope" Version="4.2" x="328" y="40" z="0">
+    <Input LongName="Oscilloscope_1.inputA" Name="inputA">
+      <Property LongName="Oscilloscope_1.inputA.readerType" Type="1">0</Property>
+      <Property LongName="Oscilloscope_1.inputA.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Oscilloscope_1.inputB" Name="inputB">
+      <Property LongName="Oscilloscope_1.inputB.readerType" Type="1">0</Property>
+      <Property LongName="Oscilloscope_1.inputB.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Oscilloscope_1.inputC" Name="inputC">
+      <Property LongName="Oscilloscope_1.inputC.readerType" Type="1">0</Property>
+      <Property LongName="Oscilloscope_1.inputC.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="Oscilloscope_1.nbInputs" Type="1">3</Property>
+    <Property LongName="Oscilloscope_1.timeScale" Type="2">0.001</Property>
+    <Property LongName="Oscilloscope_1.timeOffset" Type="2">0</Property>
+    <Property LongName="Oscilloscope_1.scroll" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.showCommonPanel" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.showChannelPanel" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.triggerChannel" Type="4"><![CDATA[3|0|A|B|C]]></Property>
+    <Property LongName="Oscilloscope_1.triggerLevel" Type="2">1.648864746</Property>
+    <Property LongName="Oscilloscope_1.triggerSlope" Type="4"><![CDATA[3|1|any|positive|negative]]></Property>
+    <Property LongName="Oscilloscope_1.memory" Type="1">500000</Property>
+    <Property LongName="Oscilloscope_1.pensWidth" Type="1">1</Property>
+    <Property LongName="Oscilloscope_1.refreshPeriod" Type="1">40000</Property>
+    <Property LongName="Oscilloscope_1.inputA_name" Type="3"><![CDATA[Channel A]]></Property>
+    <Property LongName="Oscilloscope_1.inputA_scale" Type="2">1.830749512</Property>
+    <Property LongName="Oscilloscope_1.inputA_offset" Type="2">-1.648864746</Property>
+    <Property LongName="Oscilloscope_1.inputA_isSigned" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.inputA_mode" Type="4"><![CDATA[3|0|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="Oscilloscope_1.inputA_color" Type="1" SubType="4">4227327</Property>
+    <Property LongName="Oscilloscope_1.inputA_showScale" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.inputB_name" Type="3"><![CDATA[Channel B]]></Property>
+    <Property LongName="Oscilloscope_1.inputB_scale" Type="2">0.8294169108</Property>
+    <Property LongName="Oscilloscope_1.inputB_offset" Type="2">-0.7405090332</Property>
+    <Property LongName="Oscilloscope_1.inputB_isSigned" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.inputB_mode" Type="4"><![CDATA[3|0|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="Oscilloscope_1.inputB_color" Type="1" SubType="4">16776960</Property>
+    <Property LongName="Oscilloscope_1.inputB_showScale" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.inputC_name" Type="3"><![CDATA[Channel C]]></Property>
+    <Property LongName="Oscilloscope_1.inputC_scale" Type="2">10000</Property>
+    <Property LongName="Oscilloscope_1.inputC_offset" Type="2">-0.06408691406</Property>
+    <Property LongName="Oscilloscope_1.inputC_isSigned" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.inputC_mode" Type="4"><![CDATA[3|0|Interpolated|Steps|Vertical bars]]></Property>
+    <Property LongName="Oscilloscope_1.inputC_color" Type="1" SubType="4">65535</Property>
+    <Property LongName="Oscilloscope_1.inputC_showScale" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.run" Type="0">false</Property>
+    <Property LongName="Oscilloscope_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.moveable" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.title" Type="3"><![CDATA[Oscilloscope_1]]></Property>
+    <Property LongName="Oscilloscope_1.x" Type="1">110</Property>
+    <Property LongName="Oscilloscope_1.y" Type="1">100</Property>
+    <Property LongName="Oscilloscope_1.width" Type="1">1731</Property>
+    <Property LongName="Oscilloscope_1.height" Type="1">943</Property>
+    <Property LongName="Oscilloscope_1.threaded" Type="0">true</Property>
+    <Property LongName="Oscilloscope_1.priority" Type="1">128</Property>
+    <Property LongName="Oscilloscope_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Player_1" Model="Player" Version="2.11" x="16" y="24" z="0">
+    <Output LongName="Player_1.DR2.message" Name="DR2.message">
+      <Property LongName="Player_1.DR2.message.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.DR2.message.fifosize" Type="1">32</Property>
+      <Property LongName="Player_1.DR2.message.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.resp" Name="BIOPAC_MP150.resp">
+      <Property LongName="Player_1.BIOPAC_MP150.resp.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.priority" Type="1">128</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.resp.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.ecg" Name="BIOPAC_MP150.ecg">
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.priority" Type="1">128</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.ecg.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.eda" Name="BIOPAC_MP150.eda">
+      <Property LongName="Player_1.BIOPAC_MP150.eda.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.priority" Type="1">128</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.eda.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_1" Name="BIOPAC_MP150.trigger_1">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_1.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_2" Name="BIOPAC_MP150.trigger_2">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_2.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_3" Name="BIOPAC_MP150.trigger_3">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_3.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_4" Name="BIOPAC_MP150.trigger_4">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_4.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.BIOPAC_MP150.trigger_5" Name="BIOPAC_MP150.trigger_5">
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.BIOPAC_MP150.trigger_5.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.EMPATICA_E4_TXT.outputAscii" Name="EMPATICA_E4_TXT.outputAscii">
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.EMPATICA_E4_TXT.outputAscii.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.gaze" Name="PUPIL_GLASSES.gaze">
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.gaze.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.pupil" Name="PUPIL_GLASSES.pupil">
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.fifosize" Type="1">320</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.pupil.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PUPIL_GLASSES.fixations" Name="PUPIL_GLASSES.fixations">
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.fifosize" Type="1">160</Property>
+      <Property LongName="Player_1.PUPIL_GLASSES.fixations.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CADISP.message" Name="CADISP.message">
+      <Property LongName="Player_1.CADISP.message.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CADISP.message.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CADISP.message.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.VIDEO.outputMAPSImage_1" Name="VIDEO.outputMAPSImage_1">
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.fifosize" Type="1">10</Property>
+      <Property LongName="Player_1.VIDEO.outputMAPSImage_1.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.AUDIO.stereoOutput" Name="AUDIO.stereoOutput">
+      <Property LongName="Player_1.AUDIO.stereoOutput.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.AUDIO.stereoOutput.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.AUDIO.stereoOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[\\vrlescot\AUTOCONDUCT\WP3\Data\manip\P8\Baseline_triste\20180828_140539_RecFile_BIND]]></Property>
+    <Property LongName="Player_1.offset" Type="1">0</Property>
+    <Property LongName="Player_1.beginning" Type="1">0</Property>
+    <Property LongName="Player_1.end" Type="1">0</Property>
+    <Property LongName="Player_1.timelag" Type="1">100000</Property>
+    <Property LongName="Player_1.update" Type="0">true</Property>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[\\vrlescot\AUTOCONDUCT\WP3\Data\manip\P8\Baseline_triste/20180828_140539_RecFile_BIND/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">11051</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.first" Type="1">737411</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.last" Type="1">368824853</ReadOnlyProperty>
+    <Property LongName="Player_1.serverThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.mainClientThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.threaded" Type="0">true</Property>
+    <Property LongName="Player_1.priority" Type="1">200</Property>
+    <Property LongName="Player_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Player_1.BIOPAC_MP150.ecg" Input="Matlab_1.input">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Player_1.BIOPAC_MP150.resp" Input="Oscilloscope_1.inputA">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Player_1.BIOPAC_MP150.ecg" Input="Oscilloscope_1.inputB">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Player_1.BIOPAC_MP150.eda" Input="Oscilloscope_1.inputC">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="Matlab_1.input" color="0"/>
+    <ConnectionShape InstanceName="numbers_converter_1.input" color="0"/>
+    <ConnectionShape InstanceName="Oscilloscope_1.inputA" color="0"/>
+    <ConnectionShape InstanceName="Oscilloscope_1.inputB" color="0"/>
+    <ConnectionShape InstanceName="Oscilloscope_1.inputC" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

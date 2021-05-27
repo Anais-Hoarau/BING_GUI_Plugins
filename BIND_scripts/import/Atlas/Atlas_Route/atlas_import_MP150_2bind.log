@@ -1,0 +1,266 @@
+13-May-2014 14:41:12 : Error with this trip : Y:\DATA route\Id1024_140404_09h50\DATA route_Id1024_140404_09h50.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1024_140404_09h50\atlas_structure_DATA route_Id1024_140404_09h50.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:12 : Error with this trip : Y:\DATA route\Id1030_140415_14h14\DATA route_Id1030_140415_14h14.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1030_140415_14h14\atlas_structure_DATA route_Id1030_140415_14h14.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:12 : Error with this trip : Y:\DATA route\Id1221_140404_11h11\DATA route_Id1221_140404_11h11.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1221_140404_11h11\atlas_structure_DATA route_Id1221_140404_11h11.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:13 : Error with this trip : Y:\DATA route\Id1247_140311_14h42\DATA route_Id1247_140311_14h42.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1247_140311_14h42\atlas_structure_DATA route_Id1247_140311_14h42.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:13 : Error with this trip : Y:\DATA route\Id1286_140403_10h49\DATA route_Id1286_140403_10h49.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1286_140403_10h49\atlas_structure_DATA route_Id1286_140403_10h49.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:13 : Error with this trip : Y:\DATA route\Id1492_140414_09h41\DATA route_Id1492_140414_09h41.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1492_140414_09h41\atlas_structure_DATA route_Id1492_140414_09h41.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:13 : Error with this trip : Y:\DATA route\Id1503_140415_15h30\DATA route_Id1503_140415_15h30.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1503_140415_15h30\atlas_structure_DATA route_Id1503_140415_15h30.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:13 : Error with this trip : Y:\DATA route\Id1573_140407_09h46\DATA route_Id1573_140407_09h46.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1573_140407_09h46\atlas_structure_DATA route_Id1573_140407_09h46.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:14 : Error with this trip : Y:\DATA route\Id1844_140318_13h51\DATA route_Id1844_140318_13h51.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id1844_140318_13h51\atlas_structure_DATA route_Id1844_140318_13h51.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:14 : Error with this trip : Y:\DATA route\Id196_140422_09h43\DATA route_Id196_140422_09h43.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id196_140422_09h43\atlas_structure_DATA route_Id196_140422_09h43.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:14 : Error with this trip : Y:\DATA route\Id2243_140311_13h42\DATA route_Id2243_140311_13h42.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id2243_140311_13h42\atlas_structure_DATA route_Id2243_140311_13h42.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:14 : Error with this trip : Y:\DATA route\Id2516_140407_10h49\DATA route_Id2516_140407_10h49.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id2516_140407_10h49\atlas_structure_DATA route_Id2516_140407_10h49.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:15 : Error with this trip : Y:\DATA route\Id3314_140423_15h14\DATA route_Id3314_140423_15h14.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id3314_140423_15h14\atlas_structure_DATA route_Id3314_140423_15h14.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:15 : Error with this trip : Y:\DATA route\Id646_140414_11h20\DATA route_Id646_140414_11h20.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id646_140414_11h20\atlas_structure_DATA route_Id646_140414_11h20.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:15 : Error with this trip : Y:\DATA route\Id797_140331_10h12\DATA route_Id797_140331_10h12.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id797_140331_10h12\atlas_structure_DATA route_Id797_140331_10h12.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:15 : Error with this trip : Y:\DATA route\Id840_140403_09h48\DATA route_Id840_140403_09h48.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id840_140403_09h48\atlas_structure_DATA route_Id840_140403_09h48.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:15 : Error with this trip : Y:\DATA route\Id914_140328_09h44\DATA route_Id914_140328_09h44.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id914_140328_09h44\atlas_structure_DATA route_Id914_140328_09h44.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:16 : Error with this trip : Y:\DATA route\Id91_140328_10h59\DATA route_Id91_140328_10h59.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id91_140328_10h59\atlas_structure_DATA route_Id91_140328_10h59.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------
+13-May-2014 14:41:16 : Error with this trip : Y:\DATA route\Id975_140325_14h02\DATA route_Id975_140325_14h02.trip
+Error using load
+Unable to read file 'Y:\DATA route\Id975_140325_14h02\atlas_structure_DATA route_Id975_140325_14h02.mat': no such file or directory.
+
+Error in atlas_import_MP150_2bind (line 4)
+    load(data_file);
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_SP2 (line 93)
+        [proc_syncMP150,    ~, ~]    = magic_process('atlas_import_MP150_2bind',trip,full_directory,participant_name); 
+
+---------------------------------------------------------------------------------

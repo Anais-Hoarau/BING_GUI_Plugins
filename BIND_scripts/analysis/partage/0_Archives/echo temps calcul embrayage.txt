@@ -1,0 +1,143 @@
+>> clear
+>> edit Part2_CreateSituationsCommandes.m
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet01_110218_13h34\Sujet01.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 480.880329 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.769841 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 462.999807 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 1.032231 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 343.303920 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.752489 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet02_110223_14h37\Sujet02.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 494.751026 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.755774 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 455.603547 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 1.145457 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 340.251369 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.736490 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet03_110309_13h51\Sujet3_fullTlc_filtered.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 501.913428 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.882026 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 501.706145 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.991591 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 381.128762 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.783155 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet04_110418_14h31\Sujet04.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 539.529018 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 1.099717 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 515.335485 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.726864 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 385.835065 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.682130 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet05_110705_13h56\Sujet05.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 556.458289 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.757339 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 551.765165 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.664572 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 412.061906 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.523782 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_13h54_partie1\Sujet07_part1.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 289.028935 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.808650 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 298.545371 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.666866 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 215.943028 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.562238 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet07_110727_15h35_partie2\Sujet07_part2.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 217.169116 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.559189 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 217.917538 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.516549 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 175.135004 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.399415 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet08_110721_14h08\Sujet08.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 484.746038 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 1.163792 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 485.236130 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.999438 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 360.566464 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.752540 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_14h26_partie1\Sujet09_part1.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 237.210142 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.810955 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 240.018445 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.764885 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 178.096081 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.559649 seconds.
+Situations Commandes created!
+Processing file: D:\0_PARTAGE_Data\Acquis\Data\Sujet09_110915_15h58_partie2\Sujet09_part2.trip...
+Extract situations embrayage_FaiblementEnfonce
+Elapsed time is 221.103171 seconds.
+Sauvegarde situations embrayage_FaiblementEnfonce
+Elapsed time is 0.694591 seconds.
+Extract situations embrayage_MoyenementEnfonce
+Elapsed time is 222.284452 seconds.
+Sauvegarde situations embrayage_MoyennementEnfonce
+Elapsed time is 0.554779 seconds.
+Extract situations embrayage_FortementEnfonce
+Elapsed time is 165.627967 seconds.
+Sauvegarde situations embrayage_FortementEnfonce
+Elapsed time is 0.540510 seconds.
+Situations Commandes created!
+>> 

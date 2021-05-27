@@ -1,0 +1,35 @@
+-script ml pour creer metadonnes et table
+
+-drop de toutes les colonnes sauf timecode
+
+-requete de copie de colonne :
+       INSERT INTO data_ObstaclesData SELECT timecode FROM data_SensorsData;
+
+-requete de recréation des colonnes:
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'etat_obstacle' 'REAL' DEFAULT (0);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'sensCirculation_obstacle' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'position_obstacle' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'type_obstacle' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'vitesse_obstacle' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'distance_obstacle' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'temps_a_obstacle' 'REAL' DEFAULT (-1);
+       
+      
+Détails :
+
+ALTER TABLE data_ObstaclesData ADD COLUMN 'etat_obstacle' 'REAL' DEFAULT (0)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'sensCirculation_obstacle' 'REAL' DEFAULT (0)
+		fixe
+		ego sens
+		contre sens
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'position_obstacle' 'REAL' DEFAULT (0)
+		accotement
+		centre route
+		milieu ego voie
+		autre
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'type_obstacle' 'REAL' DEFAULT (0)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'vitesse_obstacle' 'REAL' DEFAULT (0)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'distance_obstacle' 'REAL' DEFAULT (1000)
+	ALTER TABLE data_ObstaclesData ADD COLUMN 'temps_a_obstacle' 'REAL' DEFAULT (33)
+       
+      

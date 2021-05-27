@@ -1,0 +1,3 @@
+Update event_Reperes_tlc_ttc
+set textualValue ='TivZero'
+where textualValue='TtcZero'

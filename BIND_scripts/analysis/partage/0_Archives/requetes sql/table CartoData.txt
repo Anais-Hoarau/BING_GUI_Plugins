@@ -1,0 +1,36 @@
+CartoData
+
+-requete de copie de colonne :
+       INSERT INTO data_CartoData SELECT timecode FROM data_SensorsData;
+
+-requete de recréation des colonnes:
+	ALTER TABLE data_CartoData ADD COLUMN 'type_infrastructure' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'courbure' 'REAL' DEFAULT (0);
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptA' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptB' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptC' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'marquage' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'type_accotement' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'zone_virage' 'REAL' DEFAULT (-1);
+	ALTER TABLE data_CartoData ADD COLUMN 'trafic_oppose' 'REAL' DEFAULT (0);
+
+
+
+Détails :
+ALTER TABLE data_CartoData ADD COLUMN 'type_infrastructure' 'REAL' DEFAULT (-1)
+		virageGaucheIsole
+		virageGaucheSerie
+		ligneDroite
+		virageDroiteSerie
+		virageDroiteIsole
+	ALTER TABLE data_CartoData ADD COLUMN 'courbure' 'REAL' DEFAULT (0)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptA' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptB' 'REAL' DEFAULT (-1)
+	ALTER TABLE data_CartoData ADD COLUMN 'distance_ptC' 'REAL' DEFAULT (-1)
+		on définira la distance à quoi on calcule
+
+	ALTER TABLE data_CartoData ADD COLUMN 'marquage' 'REAL' DEFAULT (-1)
+		concerne le centre de la route
+		en gros, absent, discontinu, continu,
+	ALTER TABLE data_CartoData ADD COLUMN 'type_accotement' 'REAL' DEFAULT (-1)
+		roulable, piste cyclable ou talus

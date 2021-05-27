@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- imported_timecode_id n'est pas utilisé, car il n'y a qu'une possibilité pour le PDrive. Il est tout de même renseigné par souci de respect de la DTD. -->
+<bind_mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<data_mapping bind_data_name="GPS1Hz" bind_data_isbase="1" imported_timecode_id="time [s]" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<!-- 1Hz par souci d'homogénéité avec les fichiers de la voiture... mais en fait c'est pas 1Hz ! Une bonne raison de ne plus inclure
+        les fréquences dans les noms de data et de variables :-/ -->
+        <variable_mapping imported_variable_id="GPS long [degs]" bind_variable_name="Longitude_1Hz" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="GPS lat [degs]" bind_variable_name="Latitude_1Hz" bind_variable_type="REAL" />
+		<!-- <variable_mapping imported_variable_id="GPS altitude [m]" bind_variable_name="altitude" bind_variable_type="REAL" /> -->
+	</data_mapping>
+	
+	<data_mapping bind_data_name="SensorsMeasures" bind_data_isbase="1" imported_timecode_id="time [s]" bind_data_comment="Importé depuis le simulateur LEPSIS" bind_data_frequency="10">
+		<variable_mapping imported_variable_id="speed [kph]" bind_variable_name="Speed" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="long accel [g]" bind_variable_name="AccX" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="lat accel [g]" bind_variable_name="AccY" bind_variable_type="REAL" />
+		<variable_mapping imported_variable_id="distance [km]" bind_variable_name="DistanceDriven" bind_variable_type="REAL" />
+		
+	</data_mapping>
+	
+</bind_mapping>

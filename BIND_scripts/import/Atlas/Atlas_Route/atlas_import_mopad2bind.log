@@ -1,0 +1,16 @@
+17-Jul-2013 14:35:46 : Error with this trip : D:\LESCOT\PROJETS\ATLAS\Atlas Route\DONNEES\MANIPS\s005\RETOUR\s005_RETOUR.trip
+Reference to non-existent field 's005_RETOUR'.
+
+Error in atlas_import_mopad2bind (line 5)
+    import_data_struct_in_bind_trip(atlas.(participant_name).mopad,trip,'Mopad');
+
+Error in magic_process (line 51)
+            result = function_handler(trip,varargin{:});
+
+Error in batch_import_Atlas_Route (line 77)
+        [proc_import_mopad,  time_import_mopad, ~]  = magic_process('atlas_import_mopad2bind',trip,full_directory,participant_name);
+
+Error in run (line 64)
+evalin('caller', [script ';']);
+
+---------------------------------------------------------------------------------

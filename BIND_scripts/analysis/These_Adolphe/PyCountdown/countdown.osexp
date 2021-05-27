@@ -1,0 +1,129 @@
+---
+API: 2.1
+OpenSesame: 3.2.8
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title "Nouvelle expérience"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set round_decimals 2
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set canvas_backend legacy
+set background black
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Exécute séquentiellement plusieurs items"
+	run getting_started always
+	run welcome always
+	run new_inline_script always
+
+define notepad getting_started
+	__note__
+	Welcome to OpenSesame 3.2 "Kafkaesque Koffka"!
+	If you are new to OpenSesame, it is a good idea to follow one of the tutorials,
+	which can be found on the documentation site:
+	- <http://osdoc.cogsci.nl/>
+	You can also check out the examples. These can be opened via:
+	- Menu -> Tools -> Example experiments.
+	And feel free to ask for help on the forum:
+	- <http://forum.cogsci.nl/>
+	Have fun with OpenSesame!
+	__end__
+	set description "A simple notepad to document your experiment. This plug-in does nothing."
+
+define inline_script new_inline_script
+	set description "Executes Python code"
+	___run__
+	from openexp.keyboard import keyboard
+	from openexp.canvas import canvas
+	
+	my_keyboard = keyboard(exp, keylist=['z', 'm']) # if it's a 2-button response task, say)
+	cv = canvas(exp) # initialize a canvas
+	
+	def timer2clock(timer):
+		'''
+		converts a plain integer representing the seconds left to a proper
+		clock
+		'''
+		clock = str(timer//60000) + ':' + str(timer%60000)[:-3]
+		# do the formatting
+		if len(clock) == 2:
+			clock = '0' + clock[:2] + '00' + clock[2:]
+		elif len(clock) == 3:
+			clock = '0' + clock[:2] + '0' + clock[2:]
+		elif len(clock) == 4:
+			clock = '0' + clock 
+		return clock
+	
+	# define parameters
+	task_done = False
+	start_time = self.time()
+	timer = 10000 # 2 minutes
+	rest_time = 10000
+	clock = timer2clock(timer)
+	# show initial screen
+	cv.text(clock)
+	cv.show()
+	
+	# update screen
+	while (task_done == False and rest_time > 0):
+		# update time
+		cur_time = self.time()
+		rest_time = timer - (cur_time - start_time)
+		clock = timer2clock(rest_time)
+		# draw to screen
+		cv.clear()
+		cv.text(clock)
+	
+		##############
+		# DRAW YOUR STIMULUS HERE
+		##############
+	
+		cv.show()
+		# get response
+		k,t = my_keyboard.get_key(timeout = 50)
+		if k != None:
+			task_done = True
+	
+	# visualization of effects
+	if task_done:
+		cv.clear()
+		cv.text("Correct!")
+		cv.show()
+		self.sleep(1000)
+	
+	if rest_time < 0:
+		cv.clear()
+		cv.text("Time out!")
+		cv.show()
+		self.sleep(1000)
+	__end__
+	set _prepare ""
+
+define sketchpad welcome
+	set start_response_interval no
+	set reset_variables no
+	set duration keypress
+	set description "Montrer des stimuli visuels"
+	draw textline center=1 color=white font_bold=no font_family=serif font_italic=no font_size=32 html=yes show_if=always text="OpenSesame 3.2 <i>Kafkaesque Koffka</i>" x=0 y=0 z_index=0
+
