@@ -237,6 +237,9 @@ classdef VideoPlayerConfigurator < fr.lescot.bind.configurators.PluginConfigurat
         
         %}
         function validateCallback(this, src, eventdata)
+            %%%%
+             uiresume(this.getFigureHandler);
+            %%%%%
             this.closeCallback(src, eventdata);
         end
         
